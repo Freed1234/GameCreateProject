@@ -557,12 +557,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81453b902708ca418707524df191204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameAudio
-  backgroundMusic: {fileID: 8300000, guid: c438ef1170411ca4d9de209ecd139c7a, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: a6e1fcbb66e8a944fbfb4bf31d704bb7, type: 3}
   playerHitSound: {fileID: 8300000, guid: a8f66d069b597674380a75124c68bf24, type: 3}
   enemyHitSound: {fileID: 8300000, guid: 4af953f578c7ab4409beea3e4ae2ce31, type: 3}
   musicVolume: 0.03
-  playerHitVolume: 0.08
-  enemyHitVolume: 0.08
+  playerHitVolume: 0.05
+  enemyHitVolume: 0.03
   enemyHitInterval: 0.06
 --- !u!4 &911238490
 Transform:
@@ -634,7 +634,7 @@ MonoBehaviour:
   projectileSpeed: 12
   projectileRadius: 0.06
   shotSound: {fileID: 8300000, guid: 64b78bc0eb955e244831aebb6d847062, type: 3}
-  shotVolume: 0.03
+  shotVolume: 0.01
 --- !u!1 &1216989229
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ MonoBehaviour:
   tracerWidth: 0.06
   tracerColor: {r: 1, g: 0.85, b: 0.2, a: 1}
   shotSound: {fileID: 8300000, guid: 64b78bc0eb955e244831aebb6d847062, type: 3}
-  shotVolume: 0.03
+  shotVolume: 0.01
 --- !u!120 &1617380640
 LineRenderer:
   serializedVersion: 3

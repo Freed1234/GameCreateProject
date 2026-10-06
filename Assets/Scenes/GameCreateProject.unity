@@ -169,6 +169,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &719497522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719497523}
+  - component: {fileID: 719497524}
+  m_Layer: 0
+  m_Name: PiercingSkill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &719497523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719497522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 741603867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &719497524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719497522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bdf7d9691d0621458f195b5f44afacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PiercingProjectileSkill
+  enemyContainer: {fileID: 38748028}
+  projectilePrefab: {fileID: 185815569915700972, guid: 1c6ce91d606990c40a5cdb23bb239342, type: 3}
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  gameCamera: {fileID: 1557221458}
+  cooldown: 5
+  attackRange: 8
+  damage: 10
+  projectileSpeed: 12
+  projectileRadius: 0.06
+  skillKey: 122
+  showCooldown: 1
+  shotSound: {fileID: 8300000, guid: 0bb18ccd0ed5f0f459150f0690654387, type: 3}
+  shotVolume: 0.05
 --- !u!1 &741603865
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,10 +241,13 @@ GameObject:
   - component: {fileID: 741603868}
   - component: {fileID: 741603869}
   - component: {fileID: 741603872}
+  - component: {fileID: 741603874}
   - component: {fileID: 741603871}
   - component: {fileID: 741603870}
   - component: {fileID: 741603873}
-  - component: {fileID: 741603874}
+  - component: {fileID: 741603876}
+  - component: {fileID: 741603875}
+  - component: {fileID: 741603877}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -268,6 +330,7 @@ Transform:
   m_Children:
   - {fileID: 1617380638}
   - {fileID: 942102718}
+  - {fileID: 719497523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &741603868
@@ -528,6 +591,60 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &741603875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777ff675d4462e946bb72fef0178b102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelAndJobUI
+  warriorIcon: {fileID: 0}
+  archerIcon: {fileID: 0}
+  panelBackground: {fileID: 0}
+  experienceBarBackground: {fileID: 0}
+  experienceBarFill: {fileID: 0}
+  uiFont: {fileID: 0}
+--- !u!114 &741603876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32590895a7ae80e45b36f3c681d850c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerProgression
+--- !u!114 &741603877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2acdc8d72d4c64418f770ee0a1eb33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JobAttackController
+  jobAttacks:
+  - job: 0
+    attacks:
+    - {fileID: 741603869}
+    coneRange: 1.5
+  - job: 2
+    attacks:
+    - {fileID: 942102719}
+    - {fileID: 719497524}
+    coneRange: 1.5
+  unusedAttacks:
+  - {fileID: 1617380639}
 --- !u!1 &911238488
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +745,8 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 8
-  attackInterval: 0.1
+  gameCamera: {fileID: 1557221458}
+  attackInterval: 0.8
   attackRange: 8
   damage: 10
   projectileSpeed: 12

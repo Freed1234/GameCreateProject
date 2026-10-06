@@ -110,6 +110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   player: {fileID: 0}
   moveSpeed: 2
+  steeringInterval: 0.15
+  despawnOutsideLoadedMap: 1
+  showPath: 0
 --- !u!114 &1602346632897155235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +161,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.4
 --- !u!50 &3949403017176023876
 Rigidbody2D:
   serializedVersion: 5

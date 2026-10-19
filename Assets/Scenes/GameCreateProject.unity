@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 741603876}
   - component: {fileID: 741603875}
   - component: {fileID: 741603877}
+  - component: {fileID: 741603878}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -305,7 +306,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.57593775, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -346,6 +347,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
+  maxDashCharges: 3
+  dashRechargeTime: 3
+  dashDuration: 0.2
+  dashSpeed: 18
+  showDashCharges: 1
+  dashSound: {fileID: 8300000, guid: d620ad4ee6cff924db66846d3f80e72b, type: 3}
+  dashVolume: 0.15
 --- !u!114 &741603869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,6 +653,23 @@ MonoBehaviour:
     coneRange: 1.5
   unusedAttacks:
   - {fileID: 1617380639}
+--- !u!114 &741603878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84245b6d91a40614facd6991ebd2edec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttackVisual
+  targetRenderer: {fileID: 741603866}
+  idleSprite: {fileID: 21300000, guid: f42f0e25e516a394295c42bf4670d789, type: 3}
+  attackSprite: {fileID: 21300000, guid: 2165182bdadd8324db16095b7070bbde, type: 3}
+  attackPoseDuration: 0.15
+  spriteFacesRight: 1
 --- !u!1 &911238488
 GameObject:
   m_ObjectHideFlags: 0

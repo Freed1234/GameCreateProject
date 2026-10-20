@@ -860,6 +860,7 @@ GameObject:
   - component: {fileID: 1557221457}
   - component: {fileID: 1557221456}
   - component: {fileID: 1557221460}
+  - component: {fileID: 1557221461}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -998,6 +999,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   player: {fileID: 741603867}
+--- !u!114 &1557221461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557221455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5467ebdef3cc29c42a132b31794355fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenModeController
+  toggleKey: 292
+  windowWidth: 1280
+  windowHeight: 720
 --- !u!1 &1617380637
 GameObject:
   m_ObjectHideFlags: 0

@@ -525,9 +525,14 @@ MonoBehaviour:
   enemyPrefab: {fileID: 900816724626002018, guid: d09a1be2d91789b46bd2c306dfb217ad, type: 3}
   player: {fileID: 741603867}
   gameCamera: {fileID: 1557221458}
-  spawnInterval: 0.5
+  spawnInterval: 0.1
   spawnMargin: 1
-  maxEnemies: 30
+  maxEnemies: 60
+  forwardSpawnChance: 1
+  movementThreshold: 0.1
+  despawnDistantEnemies: 1
+  despawnMarginMultiplier: 2
+  despawnDelay: 1
 --- !u!4 &38748028
 Transform:
   m_ObjectHideFlags: 0
@@ -606,7 +611,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 56
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1315,7 +1320,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 44
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1564,7 +1569,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 110
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1643,7 +1648,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 44
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3223,7 +3228,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 52
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -4330,6 +4335,11 @@ GameObject:
   - component: {fileID: 741603877}
   - component: {fileID: 741603878}
   - component: {fileID: 741603879}
+  - component: {fileID: 741603884}
+  - component: {fileID: 741603883}
+  - component: {fileID: 741603882}
+  - component: {fileID: 741603881}
+  - component: {fileID: 741603880}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4433,7 +4443,7 @@ MonoBehaviour:
   dashDuration: 0.2
   dashSpeed: 18
   showDashCharges: 0
-  dashSound: {fileID: 8300000, guid: d620ad4ee6cff924db66846d3f80e72b, type: 3}
+  dashSound: {fileID: 8300000, guid: e14a1429ecd45a0449d09ebfd1537da5, type: 3}
   dashVolume: 0.15
 --- !u!114 &741603869
 MonoBehaviour:
@@ -4765,6 +4775,144 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e72f35f444b8942ba71c28e91111c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StackDashUIAdapter
+--- !u!114 &741603880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc7d847ea0eacf44a9c8cc180206814a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SecondJobSystem
+  requiredFirstJob: 2
+  requiredLevel: 30
+  disableOnAdvance:
+  - {fileID: 719497524}
+  jobs:
+  - displayName: "2\uCC28 \uAD81\uC218"
+    description: "\uBD80\uCC44\uAF34 \uC5F0\uC0AC \xB7 \uD654\uC0B4\uBE44\n\uD06C\uB9AC\uC2A4\uD0C8 \uC560\uB85C\uC6B0 \xB7 \uD68C\uD53C \uC0AC\uACA9"
+    icon: {fileID: 0}
+    enableSkills:
+    - {fileID: 741603883}
+    - {fileID: 741603882}
+    - {fileID: 741603881}
+    - {fileID: 741603884}
+  onAdvanced:
+    m_PersistentCalls:
+      m_Calls: []
+  uiFont: {fileID: 0}
+--- !u!114 &741603881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366dc5764fb94a24b949432321bf19ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrystalArrowSkill
+  key: 99
+  cooldown: 20
+  enemyContainer: {fileID: 38748028}
+  arrowSprite: {fileID: 21300000, guid: 46f16d5981978654386688b7aa5fdcf5, type: 3}
+  arrowColor: {r: 0.6, g: 0.9, b: 1, a: 1}
+  aimRange: 16
+  hitDamage: 25
+  speed: 11
+  range: 30
+  arrowScale: 0.5
+  explosionRadius: 3
+  explosionDamage: 12
+  stunSeconds: 1.5
+  scatterCount: 8
+  scatterDamage: 5
+  scatterRange: 6
+  scatterScale: 0.3
+  splitSpeeds:
+  - 18
+  - 11
+  - 6.5
+  splitCount: 3
+  splitAngle: 50
+  splitScaleFalloff: 0.9
+--- !u!114 &741603882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ce72447a83bd8458dfdb810451023c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArrowRainSkill
+  key: 120
+  cooldown: 8
+  enemyContainer: {fileID: 38748028}
+  arrowSprite: {fileID: 21300000, guid: 46f16d5981978654386688b7aa5fdcf5, type: 3}
+  arrowColor: {r: 1, g: 0.95, b: 0.7, a: 1}
+  aimRange: 7
+  radius: 2.5
+  duration: 2.5
+  tickInterval: 0.25
+  damagePerTick: 2
+  arrowsPerTick: 6
+  arrowScale: 0.2
+  defaultDistance: 3
+  zoneColor: {r: 1, g: 0.55, b: 0.25, a: 0.22}
+--- !u!114 &741603883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72af443b7cdc37428d1f6ec943c0e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArcherVolleySkill
+  key: 122
+  cooldown: 6
+  enemyContainer: {fileID: 38748028}
+  arrowSprite: {fileID: 21300000, guid: 46f16d5981978654386688b7aa5fdcf5, type: 3}
+  arrowColor: {r: 1, g: 0.95, b: 0.7, a: 1}
+  aimRange: 10
+  arrowCount: 12
+  sweepAngle: 50
+  interval: 0.035
+  sweepBack: 0
+  damage: 6
+  speed: 18
+  range: 12
+  arrowScale: 0.5
+  shotSound: {fileID: 8300000, guid: 5fb9072baaa27ba4d98e275a712bbe16, type: 3}
+  shotVolume: 0.1
+--- !u!114 &741603884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03faa1a9b9d942249b075b361f6582f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvasiveShotSkill
+  arrowSprite: {fileID: 21300000, guid: 46f16d5981978654386688b7aa5fdcf5, type: 3}
+  enemyContainer: {fileID: 38748028}
+  arrowColor: {r: 0.75, g: 0.95, b: 1, a: 1}
+  damage: 6
+  speed: 16
+  range: 10
+  spreadAngle: 24
 --- !u!1 &750279049
 GameObject:
   m_ObjectHideFlags: 0
@@ -7766,7 +7914,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 52
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -11003,7 +11151,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 44
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

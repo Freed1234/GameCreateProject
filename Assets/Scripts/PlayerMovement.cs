@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     private struct CollisionPair { public Collider2D player, enemy; }
 
     public bool IsDashing { get; private set; }
+    public Vector2 LastMoveDirection => lastDirection;
+    public event System.Action<Vector2, Vector2> DashStarted;
     public int DashCharges => charges;
     public int MaxDashCharges => Mathf.Max(1, maxDashCharges);
     public float DashRechargeDuration => Mathf.Max(0.01f, dashRechargeTime);
@@ -75,15 +77,21 @@ public class PlayerMovement : MonoBehaviour
         moveInput = new Vector2(x, y).normalized;
         if (moveInput.sqrMagnitude > 0f) lastDirection = moveInput;
 
-        if (!IsDashing && charges > 0 &&
-            (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
-        {
-            charges--;
-            dashDirection = lastDirection;
-            dashRemaining = Mathf.Max(0.01f, dashDuration);
-            IsDashing = true;
-            if (dashSound != null) dashSource.PlayOneShot(dashSound, dashVolume);
-        }
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            TryStartDash();
+    }
+
+    private bool TryStartDash()
+    {
+        if (IsDashing || charges <= 0 || Time.timeScale <= 0f || (health != null && health.IsDead))
+            return false;
+        charges--;
+        dashDirection = lastDirection;
+        dashRemaining = Mathf.Max(0.01f, dashDuration);
+        IsDashing = true;
+        if (dashSound != null) dashSource.PlayOneShot(dashSound, dashVolume);
+        DashStarted?.Invoke(body.position, dashDirection);
+        return true;
     }
 
     private void FixedUpdate()

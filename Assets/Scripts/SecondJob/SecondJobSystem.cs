@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 2차 전직 애드온 (팀 코드 수정 없음)
+// 2차 전직: 기존 직업 공격 관리 및 충전 대쉬와 연동
 //
 // Player 오브젝트에 붙이면:
 //   1차 직업(궁수) + Lv30 → 게임 정지 + "2차 전직을 하시겠습니까?" → [예] 선택창 / [나중에] 화면 버튼으로 다시 열기
@@ -15,8 +15,8 @@ using UnityEngine.UI;
 //   · 대쉬 등에 OnSecondJobAdvanced 알림 + On Advanced 이벤트 실행
 //
 // 2차 스킬 추가/삭제 : Inspector 목록에 스킬 컴포넌트를 넣고 빼기만 하면 됨
-// 기능 전체 제거     : Player에서 이 컴포넌트를 먼저 Remove → 이 파일과 2차 스킬 파일 삭제
-//                     (다른 스크립트는 이 파일을 참조하지 않으므로 지워도 에러 없음)
+// 기능을 사용하지 않을 때는 씬의 이 컴포넌트를 비활성화합니다.
+// JobAttackController도 이 타입을 참조하므로 소스 파일만 삭제하지 마세요.
 //
 // ※ 2차 스킬은 JobAttackController의 목록에 넣지 마세요. 이 컴포넌트가 직접 켜고 끕니다.
 // ※ 목록을 비워두면 실행 시 자동으로 채웁니다:
@@ -32,7 +32,7 @@ public class SecondJobSystem : MonoBehaviour
     [Serializable]
     public class SecondJob
     {
-        public string displayName = "ARCHER";
+        public string displayName = "2차 궁수";
         [TextArea(2, 4)] public string description = "2차 전직 (임시 설명)";
         [Tooltip("선택창에 표시할 이미지 (선택)")]
         public Sprite icon;
@@ -51,7 +51,7 @@ public class SecondJobSystem : MonoBehaviour
     [SerializeField]
     private SecondJob[] jobs =
     {
-        new SecondJob { displayName = "ARCHER", description = "2차 전직 (임시 설명)" },
+        new SecondJob { displayName = "2차 궁수", description = "부채꼴 연사 · 화살비\n크리스탈 애로우 · 회피 사격" },
     };
 
     [Header("2차 전직 순간 실행할 것 (예: 대쉬 데미지 켜기)")]
@@ -239,7 +239,7 @@ public class SecondJobSystem : MonoBehaviour
         IsChoosing = false;
         if (promptRoot != null) promptRoot.SetActive(false);
         if (selectRoot != null) selectRoot.SetActive(false);
-        if (resume)
+        if (resume && (health == null || !health.IsDead))
             Time.timeScale = previousTimeScale;
     }
 
@@ -257,7 +257,8 @@ public class SecondJobSystem : MonoBehaviour
 
     private void Confirm()
     {
-        if (selected < 0 || selected >= jobs.Length)
+        if (!IsChoosing || HasAdvanced || (health != null && health.IsDead)
+            || selected < 0 || selected >= jobs.Length)
             return;
 
         ChosenIndex = selected;
@@ -271,6 +272,13 @@ public class SecondJobSystem : MonoBehaviour
         BroadcastMessage("OnSecondJobAdvanced", SendMessageOptions.DontRequireReceiver);
         onAdvanced?.Invoke();
         Advanced?.Invoke(Current);
+    }
+
+    private void OnDisable()
+    {
+        if (IsChoosing) CloseSelection(true);
+        ShowLaterButton(false);
+        if (HasAdvanced) SetEnabled(Current.enableSkills, false);
     }
 
     private static void SetEnabled(MonoBehaviour[] list, bool value)

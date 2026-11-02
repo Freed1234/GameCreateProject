@@ -19,6 +19,13 @@ public class AudioVolumeController : MonoBehaviour
     private readonly List<AudioSource> stale = new List<AudioSource>();
     private float nextScan;
 
+    public void RegisterSource(AudioSource source)
+    {
+        if (source == null) return;
+        if (!original.ContainsKey(source)) original[source] = source.volume;
+        source.volume = original[source] * (source.loop ? Bgm : Sfx);
+    }
+
     private void Awake()
     {
         Bgm = PlayerPrefs.GetFloat(BgmKey, 1f);
@@ -45,8 +52,7 @@ public class AudioVolumeController : MonoBehaviour
             nextScan = Time.unscaledTime + 0.5f;
             foreach (AudioSource source in FindObjectsByType<AudioSource>(FindObjectsSortMode.None))
             {
-                if (!original.ContainsKey(source))
-                    original[source] = source.volume;
+                RegisterSource(source);
             }
         }
 

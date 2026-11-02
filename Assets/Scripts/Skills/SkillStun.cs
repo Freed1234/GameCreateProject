@@ -7,10 +7,12 @@ public class SkillStun : MonoBehaviour
     private Rigidbody2D body;
     private SpriteRenderer[] sprites;
     private float remaining;
+    private bool movementWasEnabled;
+    private Color[] originalColors;
 
     public static void Apply(EnemyHealth enemy, float seconds)
     {
-        if (enemy == null || seconds <= 0f)
+        if (enemy == null || enemy.IsDead || seconds <= 0f)
             return;
         SkillStun stun = enemy.GetComponent<SkillStun>();
         if (stun == null)
@@ -23,6 +25,9 @@ public class SkillStun : MonoBehaviour
         movement = GetComponent<EnemyMovement>();
         body = GetComponent<Rigidbody2D>();
         sprites = GetComponentsInChildren<SpriteRenderer>();
+        originalColors = new Color[sprites.Length];
+        for (int i = 0; i < sprites.Length; i++) originalColors[i] = sprites[i].color;
+        movementWasEnabled = movement != null && movement.enabled;
         if (movement != null)
             movement.enabled = false;
         Tint(new Color(0.6f, 0.85f, 1f));
@@ -40,9 +45,17 @@ public class SkillStun : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (movement != null)
-            movement.enabled = true;
-        Tint(Color.white);
+        EnemyHealth health = GetComponent<EnemyHealth>();
+        if (movement != null && (health == null || !health.IsDead))
+            movement.enabled = movementWasEnabled;
+        if (sprites != null)
+            for (int i = 0; i < sprites.Length; i++)
+                if (sprites[i] != null)
+                {
+                    Color color = originalColors[i];
+                    color.a = sprites[i].color.a;
+                    sprites[i].color = color;
+                }
     }
 
     private void Tint(Color color)

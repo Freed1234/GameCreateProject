@@ -75,7 +75,7 @@ public static class SkillUtil
         for (int i = 0; i < list.Count; i++)
         {
             EnemyHealth enemy = list[i];
-            if (enemy == null || !enemy.isActiveAndEnabled)
+            if (enemy == null || enemy.IsDead || !enemy.isActiveAndEnabled)
                 continue;
             float distance = Vector2.Distance(from, enemy.transform.position);
             if (distance <= bestDistance)
@@ -95,7 +95,7 @@ public static class SkillUtil
         for (int i = 0; i < list.Count; i++)
         {
             EnemyHealth enemy = list[i];
-            if (enemy == null || !enemy.isActiveAndEnabled)
+            if (enemy == null || enemy.IsDead || !enemy.isActiveAndEnabled)
                 continue;
             if (Vector2.Distance(center, enemy.transform.position) <= radius + EnemyRadius)
             {

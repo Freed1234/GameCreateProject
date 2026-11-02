@@ -21,6 +21,20 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
     [Tooltip("화살 크기 배율 (1 = 기본)")]
     [SerializeField, Min(0.5f)] private float arrowScale = 1.5f;
 
+    [Header("한 발 효과음 (선택)")]
+    [SerializeField] private AudioClip shotSound;
+    [SerializeField, Range(0f, 1f)] private float shotVolume = 0.5f;
+    private AudioSource shotSource;
+    private bool firing;
+
+    private void Awake()
+    {
+        shotSource = gameObject.AddComponent<AudioSource>();
+        shotSource.playOnAwake = false;
+        shotSource.loop = false;
+        shotSource.spatialBlend = 0f;
+    }
+
     private void Reset()
     {
         key = KeyCode.Z;
@@ -29,6 +43,8 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
 
     protected override bool Cast()
     {
+        if (firing || OwnerDead) return false;
+        firing = true;
         StartCoroutine(Sweep(AimDirection()));
         return true;
     }
@@ -39,13 +55,29 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
         int total = sweepBack ? arrowCount * 2 - 1 : arrowCount;
         for (int i = 0; i < total; i++)
         {
+            while (Time.timeScale <= 0f && !OwnerDead) yield return null;
+            if (OwnerDead) break;
             int step = i < arrowCount ? i : (arrowCount - 1) - (i - arrowCount + 1);
             float t = arrowCount == 1 ? 0.5f : step / (arrowCount - 1f);
             float angle = Mathf.Lerp(-sweepAngle * 0.5f, sweepAngle * 0.5f, t);
 
             SkillProjectile.Spawn(arrowSprite, arrowColor, Origin, SkillUtil.Rotate(aim, angle),
                 speed, range, SkillModifiers.Damage(damage), 0.28f, true, false, Enemies, arrowScale);
-            yield return new WaitForSeconds(interval);
+            GetComponentInParent<PlayerAttackVisual>()?.PlayAttack();
+            if (shotSound != null)
+            {
+                FindAnyObjectByType<AudioVolumeController>()?.RegisterSource(shotSource);
+                shotSource.PlayOneShot(shotSound, shotVolume);
+            }
+            yield return new WaitForSeconds(Mathf.Max(0.01f, interval));
         }
+        firing = false;
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        firing = false;
+        if (shotSource != null) shotSource.Stop();
     }
 }

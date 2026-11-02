@@ -24,10 +24,13 @@ public abstract class ArcherSkillBase : MonoBehaviour, ISkillCooldown
 
     protected Transform Enemies => SkillUtil.EnemyContainer(enemyContainer);
     protected Vector2 Origin => transform.position;
-    protected Vector2 LastMoveDirection => lastMoveDirection;
+    protected Vector2 LastMoveDirection => GetComponentInParent<PlayerMovement>() is PlayerMovement movement
+        ? movement.LastMoveDirection : lastMoveDirection;
+    protected bool OwnerDead => GetComponentInParent<PlayerHealth>() is PlayerHealth health && health.IsDead;
 
     protected virtual void Update()
     {
+        if (OwnerDead) { enabled = false; return; }
         Vector2 move = SkillUtil.MoveInput();
         if (move != Vector2.zero)
             lastMoveDirection = move;
@@ -51,9 +54,9 @@ public abstract class ArcherSkillBase : MonoBehaviour, ISkillCooldown
     {
         EnemyHealth target = SkillUtil.Nearest(Enemies, Origin, aimRange);
         if (target == null)
-            return lastMoveDirection;
+            return LastMoveDirection;
         Vector2 offset = (Vector2)target.transform.position - Origin;
-        return offset.sqrMagnitude > 0.0001f ? offset.normalized : lastMoveDirection;
+        return offset.sqrMagnitude > 0.0001f ? offset.normalized : LastMoveDirection;
     }
 
     protected virtual void OnDisable()

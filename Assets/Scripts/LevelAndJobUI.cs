@@ -98,7 +98,7 @@ public class LevelAndJobUI : MonoBehaviour
         fillRect = Rect("ExperienceFill", track, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
         AddImage(fillRect, new Color(0.85f, 0.76f, 0.18f), experienceBarFill);
         expText = Label("ExperienceText", track, "", 20, Color.white);
-        jobButton = MakeButton("JobButton", hud, "전직", new Color(0.3f, 0.28f, 0.2f));
+        jobButton = MakeButton("JobButton", hud, "1차 전직", new Color(0.3f, 0.28f, 0.2f));
         SetRect((RectTransform)jobButton.transform, new Vector2(1, 0), Vector2.one,
             new Vector2(-204, 6), new Vector2(-6, -6));
         jobText = jobButton.GetComponentInChildren<Text>();
@@ -112,7 +112,7 @@ public class LevelAndJobUI : MonoBehaviour
         RectTransform panel = Rect("JobPanel", overlay, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
             new Vector2(-250, -230), new Vector2(250, 230));
         AddImage(panel, new Color(0.77f, 0.73f, 0.64f), panelBackground);
-        Text title = Label("Title", panel, "직업 선택", 30, new Color(0.15f, 0.12f, 0.09f));
+        Text title = Label("Title", panel, "1차 전직", 30, new Color(0.15f, 0.12f, 0.09f));
         SetRect((RectTransform)title.transform, Vector2.up, Vector2.one,
             new Vector2(24, -64), new Vector2(-24, -14));
         Text description = Label("Description", panel,
@@ -147,7 +147,7 @@ public class LevelAndJobUI : MonoBehaviour
         fillRect.anchorMax = new Vector2((float)progression.Experience / progression.RequiredExperience, 1);
         expText.text = $"Lv. {progression.Level}    EXP {progression.Experience} / {progression.RequiredExperience}";
         jobText.text = progression.CurrentJob == PlayerJob.Archer ? "직업: 궁수"
-            : progression.CanChooseJob ? "전직 가능 · 선택" : "직업: 미전직";
+            : progression.CanChooseJob ? "1차 전직 가능 · 선택" : "직업: 미전직";
         jobButton.interactable = progression.CanChooseJob && !progression.IsPlayerDead;
         bool open = progression.IsChoosingJob;
         if (open && !modalWasOpen) selectedJob = PlayerJob.None;

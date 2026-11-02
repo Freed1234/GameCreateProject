@@ -24,9 +24,11 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
     [SerializeField, Range(0, 24)] private int scatterCount = 8;
     [SerializeField, Min(1)] private int scatterDamage = 5;
     [SerializeField, Min(1f)] private float scatterRange = 6f;
+    [Tooltip("첫 분열탄 이미지 크기. 다음 단계는 이 값에 Split Scale Falloff를 곱합니다. 타격 판정은 그대로입니다.")]
+    [SerializeField, Min(0.01f)] private float scatterScale = 0.9f;
 
     [Header("연쇄 분열 (맞을 때마다 갈라짐)")]
-    [Tooltip("갈라지는 단계별 속도. 1번째(사방 8발) → 2번째 → 3번째. 개수만큼 갈라짐")]
+    [Tooltip("갈라지는 단계별 속도. 1번째(사방 8발) → 2번째 → 3번째. 최대 3단계까지 갈라짐")]
     [SerializeField] private float[] splitSpeeds = { 18f, 11f, 6.5f };
     [Tooltip("2번째부터 한 번 맞을 때 몇 갈래로 갈라지는지")]
     [SerializeField, Range(1, 6)] private int splitCount = 3;
@@ -48,19 +50,21 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
         Vector2 aim = AimDirection();
         SkillProjectile arrow = SkillProjectile.Spawn(arrowSprite, arrowColor, Origin, aim,
             speed, range, SkillModifiers.Damage(hitDamage), 0.6f, false, true, Enemies, arrowScale, 62);
-        arrow.OnHit = (projectile, point, enemy) => Explode(point, enemy);
+        arrow.OnHit = (projectile, point, enemy) => Explode(point, enemy, projectile);
 
         SkillFx.Burst(Origin, 0.5f, 2.2f, new Color(0.6f, 0.9f, 1f, 0.7f), 0.3f, true);
         return true;
     }
 
-    private void Explode(Vector2 point, EnemyHealth hitEnemy)
+    private void Explode(Vector2 point, EnemyHealth hitEnemy, SkillProjectile parent)
     {
+        if (OwnerDead) return;
         SkillFx.Burst(point, 0.5f, explosionRadius * 2f, new Color(0.6f, 0.9f, 1f, 0.55f), 0.45f);
         SkillFx.Burst(point, 0.5f, explosionRadius * 2.2f, new Color(1f, 1f, 1f, 0.9f), 0.35f, true);
 
         foreach (EnemyHealth enemy in SkillUtil.Enemies(Enemies))
         {
+            if (enemy == null || enemy.IsDead || !enemy.isActiveAndEnabled) continue;
             if (Vector2.Distance(point, enemy.transform.position) > explosionRadius + SkillUtil.EnemyRadius)
                 continue;
             SkillStun.Apply(enemy, stunSeconds);
@@ -72,34 +76,35 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
         for (int i = 0; i < scatterCount; i++)
         {
             Vector2 dir = SkillUtil.Rotate(Vector2.right, 360f / scatterCount * i);
-            SpawnSplitArrow(point, dir, 0, hitEnemy);
+            SpawnSplitArrow(point, dir, 0, parent);
         }
     }
 
     // stage: 0 = 1번째(가장 빠름), 1 = 2번째, 2 = 3번째(가장 느림)
-    private void SpawnSplitArrow(Vector2 from, Vector2 dir, int stage, EnemyHealth ignore)
+    private void SpawnSplitArrow(Vector2 from, Vector2 dir, int stage, SkillProjectile parent)
     {
-        if (splitSpeeds == null || stage >= splitSpeeds.Length)
+        if (OwnerDead || splitSpeeds == null || stage >= Mathf.Min(3, splitSpeeds.Length))
             return;
 
-        float scale = 0.9f * Mathf.Pow(splitScaleFalloff, stage);
+        float scale = Mathf.Max(0.01f, scatterScale) * Mathf.Pow(splitScaleFalloff, stage);
         Color color = Color.Lerp(arrowColor, Color.white, stage * 0.25f);
         SkillProjectile p = SkillProjectile.Spawn(arrowSprite, color, from, dir,
             splitSpeeds[stage], scatterRange, SkillModifiers.Damage(scatterDamage), 0.2f,
             false, false, Enemies, scale);
-        p.Ignore(ignore);
+        p.InheritHits(parent);
 
         // 다음 단계가 있으면, 적에게 맞는 순간 splitCount갈래로 갈라짐
-        if (stage + 1 < splitSpeeds.Length)
+        if (stage + 1 < Mathf.Min(3, splitSpeeds.Length))
         {
             p.OnHit = (projectile, point, enemy) =>
             {
+                if (OwnerDead) return;
                 SkillFx.Burst(point, 0.2f, 0.9f, new Color(0.7f, 0.95f, 1f, 0.7f), 0.18f, true);
                 for (int i = 0; i < splitCount; i++)
                 {
                     float angle = splitCount == 1 ? 0f
                         : Mathf.Lerp(-splitAngle * 0.5f, splitAngle * 0.5f, i / (splitCount - 1f));
-                    SpawnSplitArrow(point, SkillUtil.Rotate(projectile.Direction, angle), stage + 1, enemy);
+                    SpawnSplitArrow(point, SkillUtil.Rotate(projectile.Direction, angle), stage + 1, projectile);
                 }
             };
         }

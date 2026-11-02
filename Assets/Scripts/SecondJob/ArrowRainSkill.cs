@@ -13,6 +13,8 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
     [SerializeField, Min(1)] private int damagePerTick = 2;
     [Tooltip("한 번에 떨어지는 화살 연출 개수")]
     [SerializeField, Range(1, 20)] private int arrowsPerTick = 6;
+    [Tooltip("떨어지는 화살 이미지 크기. 장판 범위와 피해량은 바뀌지 않습니다.")]
+    [SerializeField, Min(0.01f)] private float arrowScale = 0.7f;
     [Tooltip("적이 없을 때 앞쪽 몇 칸에 깔지")]
     [SerializeField, Min(0f)] private float defaultDistance = 3f;
     [SerializeField] private Color zoneColor = new Color(1f, 0.55f, 0.25f, 0.22f);
@@ -28,6 +30,7 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
 
     protected override bool Cast()
     {
+        StopAllCoroutines();
         EnemyHealth target = SkillUtil.Nearest(Enemies, Origin, aimRange);
         Vector2 center = target != null ? (Vector2)target.transform.position
             : Origin + LastMoveDirection * defaultDistance;
@@ -44,15 +47,18 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
         float elapsed = 0f;
         while (elapsed < duration)
         {
+            while (Time.timeScale <= 0f && !OwnerDead) yield return null;
+            if (OwnerDead) break;
             for (int i = 0; i < arrowsPerTick; i++)
             {
                 Vector2 spot = center + Random.insideUnitCircle * radius;
-                SkillFx.Fall(arrowSprite, spot, 1.6f, arrowColor, 0.14f, 0.7f);
+                SkillFx.Fall(arrowSprite, spot, 1.6f, arrowColor, 0.14f, Mathf.Max(0.01f, arrowScale));
             }
             SkillUtil.DamageInRadius(Enemies, center, radius, SkillModifiers.Damage(damagePerTick));
 
-            yield return new WaitForSeconds(tickInterval);
-            elapsed += tickInterval;
+            float wait = Mathf.Min(Mathf.Max(0.05f, tickInterval), duration - elapsed);
+            yield return new WaitForSeconds(wait);
+            elapsed += wait;
         }
 
         if (zone != null) Destroy(zone);

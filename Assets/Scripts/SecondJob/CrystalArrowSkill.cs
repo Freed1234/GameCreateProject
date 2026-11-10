@@ -9,6 +9,8 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
 {
+    [SerializeField] private bool preferMultipleTargets = true;
+    private const float HitRadius = .6f;
     [Header("거대 화살")]
     [SerializeField, Min(1)] private int hitDamage = 25;
     [SerializeField, Min(1f)] private float speed = 11f;
@@ -47,10 +49,13 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
 
     protected override bool Cast()
     {
-        Vector2 aim = AimDirection();
+        Vector2 aim = preferMultipleTargets
+            ? SkillTargeting.Explosion(Enemies, Origin, aimRange, range, HitRadius, explosionRadius, LastMoveDirection).Aim
+            : AimDirection();
         SkillProjectile arrow = SkillProjectile.Spawn(arrowSprite, arrowColor, Origin, aim,
-            speed, range, SkillModifiers.Damage(hitDamage), 0.6f, false, true, Enemies, arrowScale, 62);
+            speed, range, SkillModifiers.Damage(hitDamage), HitRadius, false, true, Enemies, arrowScale, 62);
         arrow.OnHit = (projectile, point, enemy) => Explode(point, enemy, projectile);
+        GetComponentInParent<PlayerAttackVisual>()?.PlayAttack(aim);
 
         SkillFx.Burst(Origin, 0.5f, 2.2f, new Color(0.6f, 0.9f, 1f, 0.7f), 0.3f, true);
         return true;

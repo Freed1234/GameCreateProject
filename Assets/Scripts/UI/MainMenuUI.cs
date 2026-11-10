@@ -22,9 +22,16 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private Button continueButton;
     [SerializeField] private Button quitButton;
 
+    [SerializeField] private Button settingsButton, settingsBackButton;
+    [SerializeField] private GameObject settingsPanel;
+    private void Update() {
+        if (settingsPanel != null && settingsPanel.activeSelf && !SettingsExtras.IsCapturing && UIKeyInput.EscapeDown) settingsPanel.SetActive(false);
+    }
     private void Start()
     {
         Time.timeScale = 1f;
+        if (settingsButton != null) settingsButton.onClick.AddListener(() => settingsPanel.SetActive(true));
+        if (settingsBackButton != null) settingsBackButton.onClick.AddListener(() => settingsPanel.SetActive(false));
 
         if (newGameButton != null)
             newGameButton.onClick.AddListener(StartNewGame);

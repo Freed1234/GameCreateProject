@@ -37,7 +37,7 @@ public abstract class ArcherSkillBase : MonoBehaviour, ISkillCooldown
 
         if (Time.timeScale <= 0f || Time.time < nextCastTime)
             return;
-        if (!Input.GetKeyDown(key))
+        if (!KeyBindings.SkillDown(key))
             return;
         // Ctrl+X / Ctrl+C 는 4차 스킬용이라 일반 스킬은 나가지 않음
         if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))

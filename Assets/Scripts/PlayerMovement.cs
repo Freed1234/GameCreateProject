@@ -32,12 +32,21 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsDashing { get; private set; }
     public Vector2 LastMoveDirection => lastDirection;
+    public Vector2 CurrentMoveInput => moveInput;
     public event System.Action<Vector2, Vector2> DashStarted;
     public int DashCharges => charges;
     public int MaxDashCharges => Mathf.Max(1, maxDashCharges);
     public float DashRechargeDuration => Mathf.Max(0.01f, dashRechargeTime);
     public float DashRechargeRemaining => charges >= MaxDashCharges ? 0f
         : Mathf.Max(0f, DashRechargeDuration - rechargeElapsed);
+
+    public bool TryRestoreDashCharge()
+    {
+        if (!isActiveAndEnabled || Time.timeScale <= 0f || (health != null && health.IsDead) || charges >= MaxDashCharges) return false;
+        charges++;
+        if (charges >= MaxDashCharges) rechargeElapsed = 0f;
+        return true;
+    }
 
     private void Awake()
     {
@@ -77,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         moveInput = new Vector2(x, y).normalized;
         if (moveInput.sqrMagnitude > 0f) lastDirection = moveInput;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (KeyBindings.Down(GameAction.Dash))
             TryStartDash();
     }
 

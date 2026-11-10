@@ -25,6 +25,7 @@ public class SettingsUI : MonoBehaviour
 
     private void Start()
     {
+        if (volumeSlider != null) SettingsExtras.Attach(volumeSlider.transform.parent as RectTransform);
         Bind(volumeSlider, AudioListener.volume, value =>
         {
             AudioListener.volume = value;

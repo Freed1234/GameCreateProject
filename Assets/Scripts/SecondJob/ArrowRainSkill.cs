@@ -6,6 +6,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
 {
+    [SerializeField] private bool preferMultipleTargets = true;
     [Header("화살비")]
     [SerializeField, Min(0.5f)] private float radius = 2.5f;
     [SerializeField, Min(0.2f)] private float duration = 2.5f;
@@ -31,10 +32,16 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
     protected override bool Cast()
     {
         StopAllCoroutines();
-        EnemyHealth target = SkillUtil.Nearest(Enemies, Origin, aimRange);
-        Vector2 center = target != null ? (Vector2)target.transform.position
-            : Origin + LastMoveDirection * defaultDistance;
+        Vector2 center = Origin + LastMoveDirection * defaultDistance;
+        if (preferMultipleTargets)
+            center = SkillTargeting.Rain(Enemies, Origin, aimRange, radius, center).Aim;
+        else
+        {
+            EnemyHealth target = SkillUtil.Nearest(Enemies, Origin, aimRange);
+            if (target != null) center = target.transform.position;
+        }
         StartCoroutine(Rain(center));
+        GetComponentInParent<PlayerAttackVisual>()?.PlayAttack(center - Origin);
         return true;
     }
 

@@ -24,7 +24,7 @@ public static class UIKeyInput
             var k = UnityEngine.InputSystem.Keyboard.current;
             return k != null && k.tabKey.wasPressedThisFrame;
 #else
-            return Input.GetKeyDown(KeyCode.Tab);
+            return KeyBindings.Down(GameAction.Character);
 #endif
         }
     }
@@ -37,7 +37,7 @@ public static class UIKeyInput
             var k = UnityEngine.InputSystem.Keyboard.current;
             return k != null && k.tabKey.isPressed;
 #else
-            return Input.GetKey(KeyCode.Tab);
+            return KeyBindings.Held(GameAction.Character);
 #endif
         }
     }

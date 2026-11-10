@@ -3,10 +3,12 @@ using UnityEngine;
 
 // [2차 Z] 부채꼴 연사 (임시, 메르세데스 듀얼샷 + 애쉬 W 느낌)
 // 조금 큰 관통 화살을 한 발씩 따다다닥 쏘면서, 부채꼴로 쓸어가며 퍼지게 발사.
-// 방향은 발동 순간 가장 가까운 적 (없으면 마지막 이동 방향).
+// 방향은 발동 순간 다수 타격 우선 (옵션을 끄면 최근접).
 [DisallowMultipleComponent]
 public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
 {
+    [SerializeField] private bool preferMultipleTargets = true;
+    private const float HitRadius = .28f;
     [Header("부채꼴 연사 (한 발씩)")]
     [SerializeField, Range(1, 30)] private int arrowCount = 12;
     [Tooltip("부채꼴 전체 각도")]
@@ -45,7 +47,10 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
     {
         if (firing || OwnerDead) return false;
         firing = true;
-        StartCoroutine(Sweep(AimDirection()));
+        Vector2 aim = preferMultipleTargets
+            ? SkillTargeting.Volley(Enemies, Origin, aimRange, range, HitRadius, arrowCount, sweepAngle, LastMoveDirection).Aim
+            : AimDirection();
+        StartCoroutine(Sweep(aim));
         return true;
     }
 
@@ -62,8 +67,8 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
             float angle = Mathf.Lerp(-sweepAngle * 0.5f, sweepAngle * 0.5f, t);
 
             SkillProjectile.Spawn(arrowSprite, arrowColor, Origin, SkillUtil.Rotate(aim, angle),
-                speed, range, SkillModifiers.Damage(damage), 0.28f, true, false, Enemies, arrowScale);
-            GetComponentInParent<PlayerAttackVisual>()?.PlayAttack();
+                speed, range, SkillModifiers.Damage(damage), HitRadius, true, false, Enemies, arrowScale);
+            GetComponentInParent<PlayerAttackVisual>()?.PlayAttack(SkillUtil.Rotate(aim, angle));
             if (shotSound != null)
             {
                 FindAnyObjectByType<AudioVolumeController>()?.RegisterSource(shotSource);

@@ -126,6 +126,8 @@ public class GameHUD : MonoBehaviour
 
     private void HandleKeys()
     {
+        if (SettingsExtras.IsCapturing)
+            return; // 키 설정에서 키를 기다리는 중
         if (UIKeyInput.EscapeDown)
         {
             switch (current)
@@ -137,14 +139,25 @@ public class GameHUD : MonoBehaviour
             return;
         }
 
+        bool toggleMode = KeyBindings.TabToggle;
         if (current == View.None && UIKeyInput.TabDown)
         {
             if (Open(View.Character))
-                characterHeldByTab = true;
+            {
+                characterHeldByTab = !toggleMode;
+                UpdateCharacterHint(toggleMode);
+            }
             return;
         }
 
-        // Tab을 떼면 게임으로 돌아갑니다.
+        // 눌러서 열기 방식: 한 번 더 누르면 닫힘
+        if (current == View.Character && toggleMode && UIKeyInput.TabDown)
+        {
+            CloseAll();
+            return;
+        }
+
+        // 누르고 있기 방식: 떼면 게임으로 돌아갑니다.
         if (current == View.Character && characterHeldByTab && !UIKeyInput.TabHeld)
             CloseAll();
     }
@@ -180,6 +193,26 @@ public class GameHUD : MonoBehaviour
         SetActive(pausePanel, target == View.Pause);
         SetActive(settingsPanel, target == View.Settings);
         SetActive(characterPanel, target == View.Character);
+    }
+
+    // 캐릭터 창 아래 안내 문구를 현재 키 / 방식에 맞게
+    private Text characterHint;
+    private string hintRest;
+
+    private void UpdateCharacterHint(bool toggleMode)
+    {
+        if (characterPanel == null) return;
+        if (characterHint == null)
+        {
+            Transform t = characterPanel.transform.Find("Hint");
+            characterHint = t != null ? t.GetComponent<Text>() : null;
+            if (characterHint == null) return;
+            string text = characterHint.text;
+            int dot = text.IndexOf('·');
+            hintRest = "";
+        }
+        string key = KeyBindings.Pretty(KeyBindings.Get(GameAction.Character));
+        characterHint.text = (toggleMode ? $"Press [{key}] to close" : $"Hold [{key}]") + hintRest;
     }
 
     private static void SetActive(GameObject target, bool active)
@@ -224,7 +257,7 @@ public class GameHUD : MonoBehaviour
         }
 
         PlayerStats stats = PlayerStats.Instance;
-        int points = stats != null ? stats.AvailablePoints : 0;
+        int points = 0; // Stat investment is not enabled in this merge.
         if (points != shownPoints)
         {
             shownPoints = points;

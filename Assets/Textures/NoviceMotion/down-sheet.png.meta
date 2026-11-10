@@ -1,0 +1,4981 @@
+fileFormatVersion: 2
+guid: 768b7763b4eb4654e984ec2561dada01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7422321467159849263
+    second: down-sheet_0
+  - first:
+      213: 7571280318947474459
+    second: down-sheet_1
+  - first:
+      213: 8385685507770150315
+    second: down-sheet_2
+  - first:
+      213: -6028056069309332637
+    second: down-sheet_3
+  - first:
+      213: -1498147659052044746
+    second: down-sheet_4
+  - first:
+      213: -1996144994991480325
+    second: down-sheet_5
+  - first:
+      213: 6828066559588250754
+    second: down-sheet_6
+  - first:
+      213: -8254369728716537337
+    second: down-sheet_7
+  - first:
+      213: 7326128569497387510
+    second: down-sheet_8
+  - first:
+      213: -7794205978030184814
+    second: down-sheet_9
+  - first:
+      213: 6694023088023872965
+    second: down-sheet_10
+  - first:
+      213: 3172813934673194468
+    second: down-sheet_11
+  - first:
+      213: -2907703849157045298
+    second: down-sheet_12
+  - first:
+      213: -474151362416014400
+    second: down-sheet_13
+  - first:
+      213: 596784028993349438
+    second: down-sheet_14
+  - first:
+      213: -6838308406575819193
+    second: down-sheet_15
+  - first:
+      213: 7079481828333061641
+    second: down-sheet_16
+  - first:
+      213: 3378570344972811660
+    second: down-sheet_17
+  - first:
+      213: -4608681218768551615
+    second: down-sheet_18
+  - first:
+      213: 346515984282781823
+    second: down-sheet_19
+  - first:
+      213: -1232417579230836298
+    second: down-sheet_20
+  - first:
+      213: 4441766143679042849
+    second: down-sheet_21
+  - first:
+      213: 9048225437466932865
+    second: down-sheet_22
+  - first:
+      213: 5224337190663015494
+    second: down-sheet_23
+  - first:
+      213: -1045419924071042889
+    second: down-sheet_24
+  - first:
+      213: -553872389277993153
+    second: down-sheet_25
+  - first:
+      213: -334460554782873858
+    second: down-sheet_26
+  - first:
+      213: 5238528429704614668
+    second: down-sheet_27
+  - first:
+      213: 5496887604894918518
+    second: down-sheet_28
+  - first:
+      213: 7378598862398036226
+    second: down-sheet_29
+  - first:
+      213: -1050663861017573186
+    second: down-sheet_30
+  - first:
+      213: 5174649987921350426
+    second: down-sheet_31
+  - first:
+      213: -2586541600975443545
+    second: down-sheet_32
+  - first:
+      213: 3078130989051132586
+    second: down-sheet_33
+  - first:
+      213: 3978337858233353707
+    second: down-sheet_34
+  - first:
+      213: -6779127590761345312
+    second: down-sheet_35
+  - first:
+      213: -550233956224649752
+    second: down-sheet_36
+  - first:
+      213: 8346965374214710341
+    second: down-sheet_37
+  - first:
+      213: 9098239754993312453
+    second: down-sheet_38
+  - first:
+      213: -1988041491632496559
+    second: down-sheet_39
+  - first:
+      213: 1339374296741060679
+    second: down-sheet_40
+  - first:
+      213: -713854456715569021
+    second: down-sheet_41
+  - first:
+      213: 3847273254373133526
+    second: down-sheet_42
+  - first:
+      213: 3112067700611769963
+    second: down-sheet_43
+  - first:
+      213: 216663035950949146
+    second: down-sheet_44
+  - first:
+      213: 2738496492102703629
+    second: down-sheet_45
+  - first:
+      213: -5757576659543257822
+    second: down-sheet_46
+  - first:
+      213: 4477622451307472152
+    second: down-sheet_47
+  - first:
+      213: 7666185830455289920
+    second: down-sheet_48
+  - first:
+      213: -3168169822471708771
+    second: down-sheet_49
+  - first:
+      213: 1282407996924726675
+    second: down-sheet_50
+  - first:
+      213: 6969600394353294133
+    second: down-sheet_51
+  - first:
+      213: -384802540201272721
+    second: down-sheet_52
+  - first:
+      213: 3568579497431636341
+    second: down-sheet_53
+  - first:
+      213: -611742447191752996
+    second: down-sheet_54
+  - first:
+      213: -6751795010921303720
+    second: down-sheet_55
+  - first:
+      213: -2656381818676465755
+    second: down-sheet_56
+  - first:
+      213: -3918322389448049112
+    second: down-sheet_57
+  - first:
+      213: 2557821052995008035
+    second: down-sheet_58
+  - first:
+      213: 6221854041879333595
+    second: down-sheet_59
+  - first:
+      213: 9113422002153345247
+    second: down-sheet_60
+  - first:
+      213: 977845353427855368
+    second: down-sheet_61
+  - first:
+      213: 2292759941690979172
+    second: down-sheet_62
+  - first:
+      213: -6315906918502333830
+    second: down-sheet_63
+  - first:
+      213: 4415891898964451365
+    second: down-sheet_64
+  - first:
+      213: 2509808795018578470
+    second: down-sheet_65
+  - first:
+      213: 8593148364692453123
+    second: down-sheet_66
+  - first:
+      213: 1328413202875952987
+    second: down-sheet_67
+  - first:
+      213: -8390734651704820256
+    second: down-sheet_68
+  - first:
+      213: 7500074365569073281
+    second: down-sheet_69
+  - first:
+      213: -2144708769875380689
+    second: down-sheet_70
+  - first:
+      213: -2784986634017948973
+    second: down-sheet_71
+  - first:
+      213: -3924564994453746235
+    second: down-sheet_72
+  - first:
+      213: 3327152885883025725
+    second: down-sheet_73
+  - first:
+      213: -8839766058996572425
+    second: down-sheet_74
+  - first:
+      213: -3393912886183491869
+    second: down-sheet_75
+  - first:
+      213: -6129744164665655583
+    second: down-sheet_76
+  - first:
+      213: -4287208415186694443
+    second: down-sheet_77
+  - first:
+      213: 8579168455455569576
+    second: down-sheet_78
+  - first:
+      213: -2272190898003374762
+    second: down-sheet_79
+  - first:
+      213: 5041344765610665460
+    second: down-sheet_80
+  - first:
+      213: 4930131238792580400
+    second: down-sheet_81
+  - first:
+      213: 3105090681152734957
+    second: down-sheet_82
+  - first:
+      213: 4186643559218424858
+    second: down-sheet_83
+  - first:
+      213: 8118401051098475818
+    second: down-sheet_84
+  - first:
+      213: 1964320741365500340
+    second: down-sheet_85
+  - first:
+      213: -8249532195781972908
+    second: down-sheet_86
+  - first:
+      213: -6386589603695250966
+    second: down-sheet_87
+  - first:
+      213: 4730028332771567331
+    second: down-sheet_88
+  - first:
+      213: -1019583146514811479
+    second: down-sheet_89
+  - first:
+      213: -7467993413419650439
+    second: down-sheet_90
+  - first:
+      213: 489551538236480570
+    second: down-sheet_91
+  - first:
+      213: 5537801327829220493
+    second: down-sheet_92
+  - first:
+      213: 5030490217561587925
+    second: down-sheet_93
+  - first:
+      213: 4757234994666240171
+    second: down-sheet_94
+  - first:
+      213: -1426003162146797352
+    second: down-sheet_95
+  - first:
+      213: 8170417202173569124
+    second: down-sheet_96
+  - first:
+      213: -6617681147716239235
+    second: down-sheet_97
+  - first:
+      213: 7941501932490018956
+    second: down-sheet_98
+  - first:
+      213: -1645862363217256737
+    second: down-sheet_99
+  - first:
+      213: 496241025181847938
+    second: down-sheet_100
+  - first:
+      213: -5207402632449576855
+    second: down-sheet_101
+  - first:
+      213: 3487284465623652138
+    second: down-sheet_102
+  - first:
+      213: -4634115593131651890
+    second: down-sheet_103
+  - first:
+      213: 8940948791202915617
+    second: down-sheet_104
+  - first:
+      213: -634951077621464995
+    second: down-sheet_105
+  - first:
+      213: 355307380245251344
+    second: down-sheet_106
+  - first:
+      213: 6321756535997282565
+    second: down-sheet_107
+  - first:
+      213: -7169698671287428938
+    second: down-sheet_108
+  - first:
+      213: 473382374962585961
+    second: down-sheet_109
+  - first:
+      213: 5164292218963229707
+    second: down-sheet_110
+  - first:
+      213: 6080849502101037937
+    second: down-sheet_111
+  - first:
+      213: 6869445445723912960
+    second: down-sheet_112
+  - first:
+      213: 4093167424325913703
+    second: down-sheet_113
+  - first:
+      213: -4442671419259441133
+    second: down-sheet_114
+  - first:
+      213: 6887344774837093101
+    second: down-sheet_115
+  - first:
+      213: 8372235088090303337
+    second: down-sheet_116
+  - first:
+      213: 7796529400991614081
+    second: down-sheet_117
+  - first:
+      213: 2107444619561441219
+    second: down-sheet_118
+  - first:
+      213: -2873489514817814654
+    second: down-sheet_119
+  - first:
+      213: -5561963657755706854
+    second: down-sheet_120
+  - first:
+      213: 1147049040466480590
+    second: down-sheet_121
+  - first:
+      213: -2689455596158288878
+    second: down-sheet_122
+  - first:
+      213: 6525722948441428413
+    second: down-sheet_123
+  - first:
+      213: -4157019674001894156
+    second: down-sheet_124
+  - first:
+      213: -5434347121620326576
+    second: down-sheet_125
+  - first:
+      213: -6840021279123571596
+    second: down-sheet_126
+  - first:
+      213: 2377746139018505201
+    second: down-sheet_127
+  - first:
+      213: -8470085601101132500
+    second: down-sheet_128
+  - first:
+      213: -5235684462756219922
+    second: down-sheet_129
+  - first:
+      213: 8827113889617004929
+    second: down-sheet_130
+  - first:
+      213: 5275330629586240683
+    second: down-sheet_131
+  - first:
+      213: 2111869283898365456
+    second: down-sheet_132
+  - first:
+      213: -1220516751529688636
+    second: down-sheet_133
+  - first:
+      213: -7260168378353102508
+    second: down-sheet_134
+  - first:
+      213: 3848180386737700878
+    second: down-sheet_135
+  - first:
+      213: 3564104176533355190
+    second: down-sheet_136
+  - first:
+      213: 5072021893646517010
+    second: down-sheet_137
+  - first:
+      213: 7107958220051287336
+    second: down-sheet_138
+  - first:
+      213: 8243030723388855581
+    second: down-sheet_139
+  - first:
+      213: 2020085841247773010
+    second: down-sheet_140
+  - first:
+      213: -809023688785630101
+    second: down-sheet_141
+  - first:
+      213: 7104767114207498269
+    second: down-sheet_142
+  - first:
+      213: -2064910289099081963
+    second: down-sheet_143
+  - first:
+      213: 460670924721304705
+    second: down-sheet_144
+  - first:
+      213: 1514275593920002792
+    second: down-sheet_145
+  - first:
+      213: 9040878606707132070
+    second: down-sheet_146
+  - first:
+      213: -6532755759469196897
+    second: down-sheet_147
+  - first:
+      213: 5644557138554820018
+    second: down-sheet_148
+  - first:
+      213: -1991132390869704214
+    second: down-sheet_149
+  - first:
+      213: -3161182650885134012
+    second: down-sheet_150
+  - first:
+      213: -7137660393182008740
+    second: down-sheet_151
+  - first:
+      213: -4842572498845248803
+    second: down-sheet_152
+  - first:
+      213: 3746701321758722263
+    second: down-sheet_153
+  - first:
+      213: -6494867042225241281
+    second: down-sheet_154
+  - first:
+      213: 7824057992924253732
+    second: down-sheet_155
+  - first:
+      213: -1146553152535472122
+    second: down-sheet_156
+  - first:
+      213: 4530959255503278232
+    second: down-sheet_157
+  - first:
+      213: 5308111777668416018
+    second: down-sheet_158
+  - first:
+      213: -8116298030469169040
+    second: down-sheet_159
+  - first:
+      213: -5615466993132689809
+    second: down-sheet_160
+  - first:
+      213: -8734447636055068774
+    second: down-sheet_161
+  - first:
+      213: -2665097225776900923
+    second: down-sheet_162
+  - first:
+      213: 2134060786258106746
+    second: down-sheet_163
+  - first:
+      213: -6326475717859811593
+    second: down-sheet_164
+  - first:
+      213: -8938775343413282746
+    second: down-sheet_165
+  - first:
+      213: 2866939780931534835
+    second: down-sheet_166
+  - first:
+      213: -4126392686777745765
+    second: down-sheet_167
+  - first:
+      213: 5186260369491778287
+    second: down-sheet_168
+  - first:
+      213: 4190807173526467950
+    second: down-sheet_169
+  - first:
+      213: 7447722996545645088
+    second: down-sheet_170
+  - first:
+      213: 7249796628369817171
+    second: down-sheet_171
+  - first:
+      213: -3652799812771099022
+    second: down-sheet_172
+  - first:
+      213: -4440459976420184926
+    second: down-sheet_173
+  - first:
+      213: 7709185315097759487
+    second: down-sheet_174
+  - first:
+      213: 2218473548907788514
+    second: down-sheet_175
+  - first:
+      213: -2028793208271984719
+    second: down-sheet_176
+  - first:
+      213: 8512465133467663084
+    second: down-sheet_177
+  - first:
+      213: -5622951375927528318
+    second: down-sheet_178
+  - first:
+      213: 5241316812335045547
+    second: down-sheet_179
+  - first:
+      213: -34291339902806118
+    second: down-sheet_180
+  - first:
+      213: 6925835998188902225
+    second: down-sheet_181
+  - first:
+      213: -6778996496197637536
+    second: down-sheet_182
+  - first:
+      213: -7859388428285692545
+    second: down-sheet_183
+  - first:
+      213: -5760296356837635755
+    second: down-sheet_184
+  - first:
+      213: 547651469440869920
+    second: down-sheet_185
+  - first:
+      213: 8660969001190554380
+    second: down-sheet_186
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: down-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 850
+        width: 333
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29a1da9c02610760800000000000000
+      internalID: 7422321467159849263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 915
+        width: 220
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c35c1f557921960800000000000000
+      internalID: 7571280318947474459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1295
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bade7c04a80ff5470800000000000000
+      internalID: 8385685507770150315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1239
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3630ea661fa085ca0800000000000000
+      internalID: -6028056069309332637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 838
+        width: 300
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63eae1144a2853be0800000000000000
+      internalID: -1498147659052044746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 870
+        width: 311
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1eb5df3b44c44e0800000000000000
+      internalID: -1996144994991480325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1278
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2843bfafb5a22ce50800000000000000
+      internalID: 6828066559588250754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1251
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7020d1b1776927d80800000000000000
+      internalID: -8254369728716537337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1251
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f18bb35e13aba560800000000000000
+      internalID: 7326128569497387510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1269
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296e84d55fa65d390800000000000000
+      internalID: -7794205978030184814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1241
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c52de73882f5ec50800000000000000
+      internalID: 6694023088023872965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1251
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edea9a9679180c20800000000000000
+      internalID: 3172813934673194468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1249
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec355fe31c2c5a7d0800000000000000
+      internalID: -2907703849157045298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1199
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb0d6919d97b69f0800000000000000
+      internalID: -474151362416014400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1233
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3766c799e3384800800000000000000
+      internalID: 596784028993349438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1220
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7461b713cb27911a0800000000000000
+      internalID: -6838308406575819193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1211
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90600a3d63f5f3260800000000000000
+      internalID: 7079481828333061641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1210
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8df5cc04d713ee20800000000000000
+      internalID: 3378570344972811660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1159
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141494079dcaa00c0800000000000000
+      internalID: -4608681218768551615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1149
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f788b28a3721fc400800000000000000
+      internalID: 346515984282781823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1145
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9cff6cdb295eee0800000000000000
+      internalID: -1232417579230836298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1149
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125985136c254ad30800000000000000
+      internalID: 4441766143679042849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1161
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186bed78811c19d70800000000000000
+      internalID: 9048225437466932865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1129
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64cc454cef2908840800000000000000
+      internalID: 5224337190663015494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1136
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b031a03e1ced71f0800000000000000
+      internalID: -1045419924071042889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1097
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37303a1fff3058f0800000000000000
+      internalID: -553872389277993153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1063
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef669c0c5e1cb5bf0800000000000000
+      internalID: -334460554782873858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1064
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0314561addf2b840800000000000000
+      internalID: 5238528429704614668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1065
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6776204272ed84c40800000000000000
+      internalID: 5496887604894918518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1056
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2091655629c066660800000000000000
+      internalID: 7378598862398036226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1067
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb805b9f8ca4b61f0800000000000000
+      internalID: -1050663861017573186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1040
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f080f5fbc00d740800000000000000
+      internalID: 5174649987921350426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 991
+        width: 41
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9a6153e12ca1cd0800000000000000
+      internalID: -2586541600975443545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1045
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaab38e63d7b7ba20800000000000000
+      internalID: 3078130989051132586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1010
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5cc743435e53730800000000000000
+      internalID: 3978337858233353707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1004
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eece91af53bbe1a0800000000000000
+      internalID: -6779127590761345312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1005
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e53fdfc12d2d58f0800000000000000
+      internalID: -550233956224649752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1006
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544ad82a8c066d370800000000000000
+      internalID: 8346965374214710341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1000
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2a6b54ad0734e70800000000000000
+      internalID: 9098239754993312453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 994
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150e184ebce0964e0800000000000000
+      internalID: -1988041491632496559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 970
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7402a8a93d9669210800000000000000
+      internalID: 1339374296741060679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_41
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 963
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388932e5721e716f0800000000000000
+      internalID: -713854456715569021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_42
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 976
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc85c024a2446530800000000000000
+      internalID: 3847273254373133526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 986
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b666ee3d519403b20800000000000000
+      internalID: 3112067700611769963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 982
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1360dd12edb10300800000000000000
+      internalID: 216663035950949146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_45
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 980
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a5f66ec08110620800000000000000
+      internalID: 2738496492102703629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_46
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 976
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d08d8788af810b0800000000000000
+      internalID: -5757576659543257822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_47
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 970
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815ee7065e5b32e30800000000000000
+      internalID: 4477622451307472152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_48
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 958
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048ab664563c36a60800000000000000
+      internalID: 7666185830455289920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_49
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 938
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f167705566804d0800000000000000
+      internalID: -3168169822471708771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_50
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 932
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d81d957470cc110800000000000000
+      internalID: 1282407996924726675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_51
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 932
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53bb9d3d1aef8b060800000000000000
+      internalID: 6969600394353294133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_52
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 898
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a92a2e028e8aaf0800000000000000
+      internalID: -384802540201272721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_53
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 824
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57997215524268130800000000000000
+      internalID: 3568579497431636341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_54
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 892
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde7b154c77a287f0800000000000000
+      internalID: -611742447191752996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_55
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 886
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851f7c9c53ecc42a0800000000000000
+      internalID: -6751795010921303720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_56
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 894
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5afabfd5fc2a22bd0800000000000000
+      internalID: -2656381818676465755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_57
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 844
+        width: 145
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e3d750c825f99c0800000000000000
+      internalID: -3918322389448049112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_58
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 867
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32678ce12b43f7320800000000000000
+      internalID: 2557821052995008035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_59
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 891
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdacb8a4947785650800000000000000
+      internalID: 6221854041879333595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 862
+        width: 73
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd05496a601697e70800000000000000
+      internalID: 9113422002153345247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 904
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80865580b21029d00800000000000000
+      internalID: 977845353427855368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_62
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 881
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4637cb7f40581df10800000000000000
+      internalID: 2292759941690979172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_63
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 869
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a728c38ee146958a0800000000000000
+      internalID: -6315906918502333830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_64
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 866
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5202d442946684d30800000000000000
+      internalID: 4415891898964451365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_65
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 870
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62acb313dc1a4d220800000000000000
+      internalID: 2509808795018578470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_66
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 888
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307f8b3c8eef04770800000000000000
+      internalID: 8593148364692453123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_67
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 886
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f2c5015c87f6210800000000000000
+      internalID: 1328413202875952987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_68
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 855
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edb2905a4f1e8b80800000000000000
+      internalID: -8390734651704820256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_69
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 872
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18002ccf5ed951860800000000000000
+      internalID: 7500074365569073281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_70
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 864
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26b9e8acb67c32e0800000000000000
+      internalID: -2144708769875380689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_71
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 850
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da362f696db959d0800000000000000
+      internalID: -2784986634017948973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_72
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 876
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdc6a74ee42989c0800000000000000
+      internalID: -3924564994453746235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_73
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 886
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d393974fbeb6c2e20800000000000000
+      internalID: 3327152885883025725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_74
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 878
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe54fbba97d25580800000000000000
+      internalID: -8839766058996572425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_75
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 856
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e68964363666e0d0800000000000000
+      internalID: -3393912886183491869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 887
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee7415b826ceeaa0800000000000000
+      internalID: -6129744164665655583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_77
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 872
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de4bb639a6c084c0800000000000000
+      internalID: -4287208415186694443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_78
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 872
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a67aaf71445f0770800000000000000
+      internalID: 8579168455455569576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_79
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 857
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d02a6ba6e8770e0800000000000000
+      internalID: -2272190898003374762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_80
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 870
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5af78aa5476f540800000000000000
+      internalID: 5041344765610665460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_81
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 864
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc940ad385b6440800000000000000
+      internalID: 4930131238792580400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_82
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 801
+        width: 60
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de60c75e58f771b20800000000000000
+      internalID: 3105090681152734957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_83
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 866
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c2464a222f91a30800000000000000
+      internalID: 4186643559218424858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_84
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 866
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2de1ea2eba5aa070800000000000000
+      internalID: 8118401051098475818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_85
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 870
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9c50e8e4ba24b10800000000000000
+      internalID: 1964320741365500340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_86
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 869
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c64430d26c38d80800000000000000
+      internalID: -8249532195781972908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_87
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 850
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1ba81d7964e57a0800000000000000
+      internalID: -6386589603695250966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_88
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 842
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6e16835bf64a140800000000000000
+      internalID: 4730028332771567331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_89
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 455
+        width: 305
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5720db786b9d1f0800000000000000
+      internalID: -1019583146514811479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_90
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 854
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9723a20ce8b5c5890800000000000000
+      internalID: -7467993413419650439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_91
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 788
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cd4dfb78c3bc600800000000000000
+      internalID: 489551538236480570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_92
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 854
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c72f597f83adc40800000000000000
+      internalID: 5537801327829220493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 838
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d006df3334efc540800000000000000
+      internalID: 5030490217561587925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 283
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba87322d508150240800000000000000
+      internalID: 4757234994666240171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_95
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 792
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d808a7eda1d53ce0800000000000000
+      internalID: -1426003162146797352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_96
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 408
+        width: 266
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468eb4a1827236170800000000000000
+      internalID: 8170417202173569124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_97
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 834
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d700391ee064924a0800000000000000
+      internalID: -6617681147716239235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_98
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 199
+        width: 262
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8055258ee1e53e60800000000000000
+      internalID: 7941501932490018956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_99
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 816
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde104b96e8b829e0800000000000000
+      internalID: -1645862363217256737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_100
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 694
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28190fc459003e600800000000000000
+      internalID: 496241025181847938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_101
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 712
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960b86255e69bb7b0800000000000000
+      internalID: -5207402632449576855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_102
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 696
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a275c3cbeb2556030800000000000000
+      internalID: 3487284465623652138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_103
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 694
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc0a4fab6050bfb0800000000000000
+      internalID: -4634115593131651890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_104
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 654
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125ab9eed81a41c70800000000000000
+      internalID: 8940948791202915617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_105
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 662
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d500f98eb533037f0800000000000000
+      internalID: -634951077621464995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_106
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 664
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015c7990e2e4ee400800000000000000
+      internalID: 355307380245251344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_107
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 667
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5093f9c43146bb750800000000000000
+      internalID: 6321756535997282565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_108
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 648
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8925f8b0d108c90800000000000000
+      internalID: -7169698671287428938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_109
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 654
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961639e03cac19600800000000000000
+      internalID: 473382374962585961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_110
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 550
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cfd9b59604ba740800000000000000
+      internalID: 5164292218963229707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_111
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 608
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173e7598764836450800000000000000
+      internalID: 6080849502101037937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_112
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 595
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b7c4cac3c255f50800000000000000
+      internalID: 6869445445723912960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_113
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 526
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c852df51addc830800000000000000
+      internalID: 4093167424325913703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_114
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 572
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310b249e1e57852c0800000000000000
+      internalID: -4442671419259441133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_115
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 576
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2cecdf493c49f50800000000000000
+      internalID: 6887344774837093101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_116
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 579
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b0fa16477203470800000000000000
+      internalID: 8372235088090303337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_117
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 560
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1848ef2be26d23c60800000000000000
+      internalID: 7796529400991614081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_118
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 550
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c794cc37b52f3d10800000000000000
+      internalID: 2107444619561441219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_119
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 547
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f797bb2805f18d0800000000000000
+      internalID: -2873489514817814654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_120
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 562
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ab6d5958fefc2b0800000000000000
+      internalID: -5561963657755706854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 555
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd05f466032bef00800000000000000
+      internalID: 1147049040466480590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_122
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 516
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c7cc772622daad0800000000000000
+      internalID: -2689455596158288878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_123
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 546
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db157746276009a50800000000000000
+      internalID: 6525722948441428413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_124
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 526
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f49ece91ac4f46c0800000000000000
+      internalID: -4157019674001894156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_125
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 503
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05767a5d5125594b0800000000000000
+      internalID: -5434347121620326576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_126
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 534
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cf9b9f2ec5311a0800000000000000
+      internalID: -6840021279123571596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_127
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 497
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb214ef3837ff020800000000000000
+      internalID: 2377746139018505201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_128
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 510
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d4731b506347a80800000000000000
+      internalID: -8470085601101132500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_129
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 494
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3326198bc1757b0800000000000000
+      internalID: -5235684462756219922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_130
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 432
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189c9868055308a70800000000000000
+      internalID: 8827113889617004929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_131
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 434
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4c939f14db53940800000000000000
+      internalID: 5275330629586240683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_132
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 446
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01612deacedde4d10800000000000000
+      internalID: 2111869283898365456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_133
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 444
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1c8a62b7adf0fe0800000000000000
+      internalID: -1220516751529688636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_134
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 430
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4515dbe6353be3b90800000000000000
+      internalID: -7260168378353102508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_135
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 353
+        width: 266
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0040275cab776530800000000000000
+      internalID: 3848180386737700878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_136
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 434
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bab1c87ddd367130800000000000000
+      internalID: 3564104176533355190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_137
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 400
+        width: 86
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2130ecf1a01736640800000000000000
+      internalID: 5072021893646517010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_138
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 448
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d8970775a84a260800000000000000
+      internalID: 7107958220051287336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_139
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 418
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15593cf4c0256270800000000000000
+      internalID: 8243030723388855581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_140
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 380
+        width: 103
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251ae57ae59c80c10800000000000000
+      internalID: 2020085841247773010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_141
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 434
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c6e0fcd35c5c4f0800000000000000
+      internalID: -809023688785630101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_142
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 359
+        width: 80
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1017363c04399260800000000000000
+      internalID: 7104767114207498269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_143
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 432
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517333d4807f753e0800000000000000
+      internalID: -2064910289099081963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_144
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 414
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1843d5ae3c1a46600800000000000000
+      internalID: 460670924721304705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_145
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 400
+        width: 66
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea35a331a9c30510800000000000000
+      internalID: 1514275593920002792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_146
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 420
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a605323137a77d70800000000000000
+      internalID: 9040878606707132070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_147
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 275
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f998370bf3df655a0800000000000000
+      internalID: -6532755759469196897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_148
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 0
+        width: 265
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b594f5bfce755e40800000000000000
+      internalID: 5644557138554820018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_149
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 0
+        width: 325
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1ef65d3a31e54e0800000000000000
+      internalID: -1991132390869704214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_150
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 396
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4492ddfa0293124d0800000000000000
+      internalID: -3161182650885134012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_151
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 369
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ae20970bfe1fc90800000000000000
+      internalID: -7137660393182008740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_152
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 374
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2d04728f9bbccb0800000000000000
+      internalID: -4842572498845248803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_153
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 367
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d84ae25005fef330800000000000000
+      internalID: 3746701321758722263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_154
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 363
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33c5cc16d89dd5a0800000000000000
+      internalID: -6494867042225241281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_155
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 357
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e4e4a7a43a49c60800000000000000
+      internalID: 7824057992924253732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_156
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 371
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608d4038bff9610f0800000000000000
+      internalID: -1146553152535472122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_157
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 285
+        width: 29
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8909a04df6331ee30800000000000000
+      internalID: 4530959255503278232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_158
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 358
+        width: 9
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2124ef7c9833aa940800000000000000
+      internalID: 5308111777668416018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_159
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 359
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070ceaa71fd1d5f80800000000000000
+      internalID: -8116298030469169040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_160
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 373
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f662562958ad112b0800000000000000
+      internalID: -5615466993132689809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_161
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 369
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fefafe62209c680800000000000000
+      internalID: -8734447636055068774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_162
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 357
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c450b5813ca30bd0800000000000000
+      internalID: -2665097225776900923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_163
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 335
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7951067af4bd9d10800000000000000
+      internalID: 2134060786258106746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_164
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 259
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fed4dc8ad7d338a0800000000000000
+      internalID: -6326475717859811593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_165
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648b4d05f2713f380800000000000000
+      internalID: -8938775343413282746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_166
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 247
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff3cd28a8a69c720800000000000000
+      internalID: 2866939780931534835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_167
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 215
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9eb7d4c6bb1cb6c0800000000000000
+      internalID: -4126392686777745765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_168
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 215
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea5e3cf35c49f740800000000000000
+      internalID: 5186260369491778287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_169
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 167
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e653434abecb82a30800000000000000
+      internalID: 4190807173526467950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_170
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 149
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a6c9a0b90ab5760800000000000000
+      internalID: 7447722996545645088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_171
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 143
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ebec75f937c9460800000000000000
+      internalID: 7249796628369817171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_172
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 236
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e4a247ce5ae4dc0800000000000000
+      internalID: -3652799812771099022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_173
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 95
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aca2229d215062c0800000000000000
+      internalID: -4440459976420184926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_174
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 130
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe4f06f2378cfa60800000000000000
+      internalID: 7709185315097759487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_175
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 132
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8bf3250f999ce10800000000000000
+      internalID: 2218473548907788514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_176
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 93
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7293a735748d3e0800000000000000
+      internalID: -2028793208271984719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_177
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 109
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceafc3b10f9522670800000000000000
+      internalID: 8512465133467663084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_178
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 86
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284bb88e38347f1b0800000000000000
+      internalID: -5622951375927528318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_179
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 117
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab53820fd5ecb840800000000000000
+      internalID: 5241316812335045547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_180
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 95
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a979832453c268ff0800000000000000
+      internalID: -34291339902806118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_181
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 97
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15799ac45238d1060800000000000000
+      internalID: 6925835998188902225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_182
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 103
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06aa5867a9a2ce1a0800000000000000
+      internalID: -6778996496197637536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_183
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 79
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7537348dd7dde290800000000000000
+      internalID: -7859388428285692545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_184
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 65
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55947b99bf05f00b0800000000000000
+      internalID: -5760296356837635755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_185
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0266eb02c16a99700800000000000000
+      internalID: 547651469440869920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-sheet_186
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 57
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bf1a63b61f13870800000000000000
+      internalID: 8660969001190554380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      down-sheet_0: 7422321467159849263
+      down-sheet_1: 7571280318947474459
+      down-sheet_10: 6694023088023872965
+      down-sheet_100: 496241025181847938
+      down-sheet_101: -5207402632449576855
+      down-sheet_102: 3487284465623652138
+      down-sheet_103: -4634115593131651890
+      down-sheet_104: 8940948791202915617
+      down-sheet_105: -634951077621464995
+      down-sheet_106: 355307380245251344
+      down-sheet_107: 6321756535997282565
+      down-sheet_108: -7169698671287428938
+      down-sheet_109: 473382374962585961
+      down-sheet_11: 3172813934673194468
+      down-sheet_110: 5164292218963229707
+      down-sheet_111: 6080849502101037937
+      down-sheet_112: 6869445445723912960
+      down-sheet_113: 4093167424325913703
+      down-sheet_114: -4442671419259441133
+      down-sheet_115: 6887344774837093101
+      down-sheet_116: 8372235088090303337
+      down-sheet_117: 7796529400991614081
+      down-sheet_118: 2107444619561441219
+      down-sheet_119: -2873489514817814654
+      down-sheet_12: -2907703849157045298
+      down-sheet_120: -5561963657755706854
+      down-sheet_121: 1147049040466480590
+      down-sheet_122: -2689455596158288878
+      down-sheet_123: 6525722948441428413
+      down-sheet_124: -4157019674001894156
+      down-sheet_125: -5434347121620326576
+      down-sheet_126: -6840021279123571596
+      down-sheet_127: 2377746139018505201
+      down-sheet_128: -8470085601101132500
+      down-sheet_129: -5235684462756219922
+      down-sheet_13: -474151362416014400
+      down-sheet_130: 8827113889617004929
+      down-sheet_131: 5275330629586240683
+      down-sheet_132: 2111869283898365456
+      down-sheet_133: -1220516751529688636
+      down-sheet_134: -7260168378353102508
+      down-sheet_135: 3848180386737700878
+      down-sheet_136: 3564104176533355190
+      down-sheet_137: 5072021893646517010
+      down-sheet_138: 7107958220051287336
+      down-sheet_139: 8243030723388855581
+      down-sheet_14: 596784028993349438
+      down-sheet_140: 2020085841247773010
+      down-sheet_141: -809023688785630101
+      down-sheet_142: 7104767114207498269
+      down-sheet_143: -2064910289099081963
+      down-sheet_144: 460670924721304705
+      down-sheet_145: 1514275593920002792
+      down-sheet_146: 9040878606707132070
+      down-sheet_147: -6532755759469196897
+      down-sheet_148: 5644557138554820018
+      down-sheet_149: -1991132390869704214
+      down-sheet_15: -6838308406575819193
+      down-sheet_150: -3161182650885134012
+      down-sheet_151: -7137660393182008740
+      down-sheet_152: -4842572498845248803
+      down-sheet_153: 3746701321758722263
+      down-sheet_154: -6494867042225241281
+      down-sheet_155: 7824057992924253732
+      down-sheet_156: -1146553152535472122
+      down-sheet_157: 4530959255503278232
+      down-sheet_158: 5308111777668416018
+      down-sheet_159: -8116298030469169040
+      down-sheet_16: 7079481828333061641
+      down-sheet_160: -5615466993132689809
+      down-sheet_161: -8734447636055068774
+      down-sheet_162: -2665097225776900923
+      down-sheet_163: 2134060786258106746
+      down-sheet_164: -6326475717859811593
+      down-sheet_165: -8938775343413282746
+      down-sheet_166: 2866939780931534835
+      down-sheet_167: -4126392686777745765
+      down-sheet_168: 5186260369491778287
+      down-sheet_169: 4190807173526467950
+      down-sheet_17: 3378570344972811660
+      down-sheet_170: 7447722996545645088
+      down-sheet_171: 7249796628369817171
+      down-sheet_172: -3652799812771099022
+      down-sheet_173: -4440459976420184926
+      down-sheet_174: 7709185315097759487
+      down-sheet_175: 2218473548907788514
+      down-sheet_176: -2028793208271984719
+      down-sheet_177: 8512465133467663084
+      down-sheet_178: -5622951375927528318
+      down-sheet_179: 5241316812335045547
+      down-sheet_18: -4608681218768551615
+      down-sheet_180: -34291339902806118
+      down-sheet_181: 6925835998188902225
+      down-sheet_182: -6778996496197637536
+      down-sheet_183: -7859388428285692545
+      down-sheet_184: -5760296356837635755
+      down-sheet_185: 547651469440869920
+      down-sheet_186: 8660969001190554380
+      down-sheet_19: 346515984282781823
+      down-sheet_2: 8385685507770150315
+      down-sheet_20: -1232417579230836298
+      down-sheet_21: 4441766143679042849
+      down-sheet_22: 9048225437466932865
+      down-sheet_23: 5224337190663015494
+      down-sheet_24: -1045419924071042889
+      down-sheet_25: -553872389277993153
+      down-sheet_26: -334460554782873858
+      down-sheet_27: 5238528429704614668
+      down-sheet_28: 5496887604894918518
+      down-sheet_29: 7378598862398036226
+      down-sheet_3: -6028056069309332637
+      down-sheet_30: -1050663861017573186
+      down-sheet_31: 5174649987921350426
+      down-sheet_32: -2586541600975443545
+      down-sheet_33: 3078130989051132586
+      down-sheet_34: 3978337858233353707
+      down-sheet_35: -6779127590761345312
+      down-sheet_36: -550233956224649752
+      down-sheet_37: 8346965374214710341
+      down-sheet_38: 9098239754993312453
+      down-sheet_39: -1988041491632496559
+      down-sheet_4: -1498147659052044746
+      down-sheet_40: 1339374296741060679
+      down-sheet_41: -713854456715569021
+      down-sheet_42: 3847273254373133526
+      down-sheet_43: 3112067700611769963
+      down-sheet_44: 216663035950949146
+      down-sheet_45: 2738496492102703629
+      down-sheet_46: -5757576659543257822
+      down-sheet_47: 4477622451307472152
+      down-sheet_48: 7666185830455289920
+      down-sheet_49: -3168169822471708771
+      down-sheet_5: -1996144994991480325
+      down-sheet_50: 1282407996924726675
+      down-sheet_51: 6969600394353294133
+      down-sheet_52: -384802540201272721
+      down-sheet_53: 3568579497431636341
+      down-sheet_54: -611742447191752996
+      down-sheet_55: -6751795010921303720
+      down-sheet_56: -2656381818676465755
+      down-sheet_57: -3918322389448049112
+      down-sheet_58: 2557821052995008035
+      down-sheet_59: 6221854041879333595
+      down-sheet_6: 6828066559588250754
+      down-sheet_60: 9113422002153345247
+      down-sheet_61: 977845353427855368
+      down-sheet_62: 2292759941690979172
+      down-sheet_63: -6315906918502333830
+      down-sheet_64: 4415891898964451365
+      down-sheet_65: 2509808795018578470
+      down-sheet_66: 8593148364692453123
+      down-sheet_67: 1328413202875952987
+      down-sheet_68: -8390734651704820256
+      down-sheet_69: 7500074365569073281
+      down-sheet_7: -8254369728716537337
+      down-sheet_70: -2144708769875380689
+      down-sheet_71: -2784986634017948973
+      down-sheet_72: -3924564994453746235
+      down-sheet_73: 3327152885883025725
+      down-sheet_74: -8839766058996572425
+      down-sheet_75: -3393912886183491869
+      down-sheet_76: -6129744164665655583
+      down-sheet_77: -4287208415186694443
+      down-sheet_78: 8579168455455569576
+      down-sheet_79: -2272190898003374762
+      down-sheet_8: 7326128569497387510
+      down-sheet_80: 5041344765610665460
+      down-sheet_81: 4930131238792580400
+      down-sheet_82: 3105090681152734957
+      down-sheet_83: 4186643559218424858
+      down-sheet_84: 8118401051098475818
+      down-sheet_85: 1964320741365500340
+      down-sheet_86: -8249532195781972908
+      down-sheet_87: -6386589603695250966
+      down-sheet_88: 4730028332771567331
+      down-sheet_89: -1019583146514811479
+      down-sheet_9: -7794205978030184814
+      down-sheet_90: -7467993413419650439
+      down-sheet_91: 489551538236480570
+      down-sheet_92: 5537801327829220493
+      down-sheet_93: 5030490217561587925
+      down-sheet_94: 4757234994666240171
+      down-sheet_95: -1426003162146797352
+      down-sheet_96: 8170417202173569124
+      down-sheet_97: -6617681147716239235
+      down-sheet_98: 7941501932490018956
+      down-sheet_99: -1645862363217256737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

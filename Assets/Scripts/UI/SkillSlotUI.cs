@@ -192,8 +192,9 @@ public class SkillSlotUI : MonoBehaviour
             group.alpha = Mathf.MoveTowards(group.alpha, target, fadeSpeed * Time.unscaledDeltaTime);
         }
 
+        bool ready = usable && (skillSource is StackDashUIAdapter stack ? stack.Charges > 0 : remaining <= 0f);
         if (background != null)
-            background.color = !hasSkill ? emptyColor : usable ? readyColor : lockedColor;
+            background.color = !hasSkill ? emptyColor : ready ? readyColor : lockedColor;
 
         if (icon != null)
         {
@@ -214,10 +215,12 @@ public class SkillSlotUI : MonoBehaviour
                 : remaining.ToString("0.0");
         }
 
+        string shownKey = KeyBindings.ActionForSlotLabel(fallbackKeyLabel, out GameAction action)
+            ? KeyBindings.Pretty(KeyBindings.Get(action)) : (hasSkill ? PrettyKey(skill.KeyLabel) : fallbackKeyLabel);
         if (keyText != null)
             keyText.text = skillSource is StackDashUIAdapter dash
-                ? $"SHIFT  {dash.Charges}/{dash.MaxCharges}"
-                : hasSkill ? PrettyKey(skill.KeyLabel) : fallbackKeyLabel;
+                ? $"{shownKey}  {dash.Charges}/{dash.MaxCharges}"
+                : shownKey;
     }
 
     private static string PrettyKey(string key)

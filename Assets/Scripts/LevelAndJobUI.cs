@@ -17,6 +17,7 @@ public class LevelAndJobUI : MonoBehaviour
     [SerializeField] private Sprite experienceBarFill;
     [SerializeField] private Font uiFont;
 
+    [SerializeField] private bool useExternalJobWindow;
     [SerializeField] private bool showExperienceHUD = true;
     private PlayerProgression progression;
     private GameObject canvasObject;
@@ -149,7 +150,7 @@ public class LevelAndJobUI : MonoBehaviour
         jobText.text = progression.CurrentJob == PlayerJob.Archer ? "직업: 궁수"
             : progression.CanChooseJob ? "1차 전직 가능 · 선택" : "직업: 미전직";
         jobButton.interactable = progression.CanChooseJob && !progression.IsPlayerDead;
-        bool open = progression.IsChoosingJob;
+        bool open = progression.IsChoosingJob && !useExternalJobWindow;
         if (open && !modalWasOpen) selectedJob = PlayerJob.None;
         modal.SetActive(open);
         if (open && !modalWasOpen && EventSystem.current != null)

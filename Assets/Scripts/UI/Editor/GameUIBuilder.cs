@@ -191,6 +191,29 @@ public static class GameUIBuilder
         Debug.Log($"[GameUIBuilder] 시작 화면 씬 생성 완료: {MenuScenePath} → 시작하면 '{gameName}' 씬으로 이동합니다.");
     }
 
+    public static void CreateWoodMainMenu(string gamePath) {
+        LoadAssets(); EnsureFolder("Assets/Scenes");
+        Scene menu = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+        var camera = new GameObject("Main Camera", typeof(Camera), typeof(AudioListener));
+        camera.tag = "MainCamera"; camera.transform.position = new Vector3(0,0,-10);
+        camera.GetComponent<Camera>().backgroundColor = new Color(0.08f,0.12f,0.07f);
+        EnsureEventSystem(); var canvas = CreateCanvas(); canvas.name = "MainMenuCanvas";
+        BuildMainMenu(canvas, System.IO.Path.GetFileNameWithoutExtension(gamePath));
+        // Reuse the existing settings builder, then transfer its references to the menu.
+        var bridge = canvas.AddComponent<GameHUD>(); var hs = new SerializedObject(bridge);
+        BuildSettings(canvas, hs); hs.ApplyModifiedPropertiesWithoutUndo();
+        var menuUI = canvas.GetComponent<MainMenuUI>(); var ms = new SerializedObject(menuUI);
+        Set(ms, "settingsPanel", hs.FindProperty("settingsPanel").objectReferenceValue);
+        Set(ms, "settingsBackButton", hs.FindProperty("settingsBackButton").objectReferenceValue);
+        var buttons = canvas.transform.Find("Buttons");
+        var settings = MakeButton("SettingsButton", buttons, "SETTINGS", ButtonColor, rounded, TopCenter, TopCenter, Vector2.zero, new Vector2(440,90),36);
+        settings.transform.SetSiblingIndex(1); Set(ms,"settingsButton",settings); ms.ApplyModifiedPropertiesWithoutUndo();
+        Object.DestroyImmediate(bridge);
+        canvas.transform.Find("Buttons/ContinueButton").gameObject.SetActive(false);
+        canvas.AddComponent<GameUIFont>(); canvas.AddComponent<AudioVolumeController>(); canvas.AddComponent<ScreenModeController>();
+        EditorSceneManager.SaveScene(menu, MenuScenePath);
+    }
+
     private static void BuildMainMenu(GameObject canvasObject, string gameSceneName)
     {
         Transform root = canvasObject.transform;

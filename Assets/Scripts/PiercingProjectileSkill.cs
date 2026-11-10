@@ -9,6 +9,7 @@ public class PiercingProjectileSkill : MonoBehaviour, ISkillCooldown
     [SerializeField] private LayerMask obstacleLayers;
     [SerializeField] private Camera gameCamera;
 
+    [SerializeField] private bool preferMultipleTargets = true;
     [Header("공격")]
     [SerializeField, Min(0.02f)] private float cooldown = 5f;
     [SerializeField, Min(0.1f)] private float attackRange = 8f;
@@ -61,7 +62,7 @@ public class PiercingProjectileSkill : MonoBehaviour, ISkillCooldown
             gameCamera = Camera.main;
         if (gameCamera == null)
             return;
-        if (!Input.GetKeyDown(skillKey))
+        if (!KeyBindings.Down(GameAction.Skill1))
             return;
 
         // 장애물 뒤의 적은 조준하지 않습니다.
@@ -70,6 +71,15 @@ public class PiercingProjectileSkill : MonoBehaviour, ISkillCooldown
         obstacleFilter.useTriggers = false;
 
         Vector2 origin = transform.position;
+        Vector2 aim;
+        if (preferMultipleTargets)
+        {
+            var result = SkillTargeting.Piercing(enemyContainer, owner, origin, attackRange, projectileRadius, obstacleLayers, Vector2.right);
+            if (!result.Found) return;
+            aim = result.Aim;
+        }
+        else
+        {
         Transform target = null;
         float nearest = float.PositiveInfinity;
         foreach (Transform child in enemyContainer)
@@ -77,7 +87,7 @@ public class PiercingProjectileSkill : MonoBehaviour, ISkillCooldown
             if (!child.gameObject.activeInHierarchy)
                 continue;
             EnemyHealth health = child.GetComponent<EnemyHealth>();
-            if (health == null || !health.isActiveAndEnabled)
+            if (health == null || health.IsDead || !health.isActiveAndEnabled)
                 continue;
 
             Vector2 offset = (Vector2)child.position - origin;
@@ -110,8 +120,9 @@ public class PiercingProjectileSkill : MonoBehaviour, ISkillCooldown
             return;
         }
 
-        Vector2 aim = (Vector2)target.position - origin;
+        aim = (Vector2)target.position - origin;
         aim = aim.sqrMagnitude > 0.000001f ? aim.normalized : Vector2.right;
+        }
         Quaternion rotation = Quaternion.Euler(0f, 0f,
             Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg);
 
@@ -121,7 +132,7 @@ public class PiercingProjectileSkill : MonoBehaviour, ISkillCooldown
         projectile.Launch(owner, aim, projectileSpeed,
             attackRange, damage, projectileRadius, obstacleLayers, gameCamera, true);
 
-        attackVisual?.PlayAttack();
+        attackVisual?.PlayAttack(aim);
 
         // 발사 시에는 피해를 주지 않습니다.
         nextShotTime = Time.time + Mathf.Max(0.02f, cooldown);

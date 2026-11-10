@@ -60,16 +60,25 @@ public class JobAttackController : MonoBehaviour
         // 비활성 자식도 찾아 연결합니다. GameObject는 사용자가 켜두어야 합니다.
         AutoAttack[] basic = GetComponentsInChildren<AutoAttack>(true);
         AutoProjectileAttack[] arrows = GetComponentsInChildren<AutoProjectileAttack>(true);
-        PiercingProjectileSkill[] skills = GetComponentsInChildren<PiercingProjectileSkill>(true);
+        float noviceRange = 1.5f;
+        if (jobAttacks != null)
+            foreach (JobAttackSet set in jobAttacks)
+                if (set != null && set.job == PlayerJob.None) { noviceRange = set.coneRange; break; }
         var archer = new List<MonoBehaviour>();
         archer.AddRange(arrows);
-        archer.AddRange(skills);
+        archer.AddRange(GetComponentsInChildren<ArcherVolleySkill>(true));
+        archer.AddRange(GetComponentsInChildren<ArrowRainSkill>(true));
+        archer.AddRange(GetComponentsInChildren<CrystalArrowSkill>(true));
+        archer.AddRange(GetComponentsInChildren<EvasiveShotSkill>(true));
         jobAttacks = new[]
         {
-            new JobAttackSet { job = PlayerJob.None, attacks = basic, coneRange = 1.5f },
+            new JobAttackSet { job = PlayerJob.None, attacks = basic, coneRange = noviceRange },
             new JobAttackSet { job = PlayerJob.Archer, attacks = archer.ToArray() }
         };
-        unusedAttacks = GetComponentsInChildren<AutoGunAttack>(true);
+        var unused = new List<MonoBehaviour>();
+        unused.AddRange(GetComponentsInChildren<AutoGunAttack>(true));
+        unused.AddRange(GetComponentsInChildren<PiercingProjectileSkill>(true));
+        unusedAttacks = unused.ToArray();
         if (Application.isPlaying)
         {
             // 기존 관리 대상도 먼저 정지시켜 연결을 제거한 공격이 남지 않게 합니다.
@@ -126,9 +135,8 @@ public class JobAttackController : MonoBehaviour
             foreach (MonoBehaviour attack in unusedAttacks) selected.Remove(attack);
 
         // 이전 공격을 먼저 끈 다음 새 공격을 켭니다.
-        SecondJobSystem secondJob = GetComponent<SecondJobSystem>();
-        if (secondJob != null && secondJob.HasAdvanced)
-            selected.RemoveWhere(attack => attack is PiercingProjectileSkill);
+        // The retired single piercing shot must never return through an old attack list.
+        selected.RemoveWhere(attack => attack is PiercingProjectileSkill);
 
         foreach (MonoBehaviour attack in managed)
             if (attack != null && !selected.Contains(attack)) attack.enabled = false;

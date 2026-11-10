@@ -2248,15 +2248,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a40a5f210244d4cb637831e4ee32da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillSlotUI
-  skillSource: {fileID: 0}
-  autoBindKeywords: []
+  skillSource: {fileID: 741603882}
+  autoBindKeywords:
+  - ArrowRainSkill
   fallbackKeyLabel: X
   background: {fileID: 1886467480}
   icon: {fileID: 1482651985}
   cooldownOverlay: {fileID: 1389193621}
   cooldownText: {fileID: 969609774}
   keyText: {fileID: 1515084054}
-  hideWhenUnavailable: 1
+  hideWhenUnavailable: 0
   showAfterJob: 0
   fadeSpeed: 6
   readyColor: {r: 0.11, g: 0.12, b: 0.15, a: 0.95}
@@ -4199,7 +4200,7 @@ MonoBehaviour:
   framePixelsPerUnit: 5
   title: "1\uCC28 \uC804\uC9C1"
   warriorName: "\uC804\uC0AC"
-  archerName: "\uAD81\uC218"
+  archerName: "1\uCC28 \uAD81\uC218"
   warriorUnlocked: 0
   windowSize: {x: 760, y: 900}
   artSize: 600
@@ -4836,16 +4837,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a40a5f210244d4cb637831e4ee32da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillSlotUI
-  skillSource: {fileID: 719497524}
+  skillSource: {fileID: 741603883}
   autoBindKeywords:
-  - Piercing
+  - ArcherVolleySkill
   fallbackKeyLabel: Z
   background: {fileID: 145787380}
   icon: {fileID: 850786785}
   cooldownOverlay: {fileID: 1927315851}
   cooldownText: {fileID: 189057269}
   keyText: {fileID: 678582709}
-  hideWhenUnavailable: 1
+  hideWhenUnavailable: 0
   showAfterJob: 0
   fadeSpeed: 6
   readyColor: {r: 0.11, g: 0.12, b: 0.15, a: 0.95}
@@ -5184,7 +5185,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 719497523}
-  - component: {fileID: 719497524}
   m_Layer: 0
   m_Name: PiercingSkill
   m_TagString: Untagged
@@ -5207,34 +5207,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 741603867}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &719497524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719497522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bdf7d9691d0621458f195b5f44afacf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PiercingProjectileSkill
-  enemyContainer: {fileID: 38748028}
-  projectilePrefab: {fileID: 185815569915700972, guid: 1c6ce91d606990c40a5cdb23bb239342, type: 3}
-  obstacleLayers:
-    serializedVersion: 2
-    m_Bits: 8
-  gameCamera: {fileID: 1557221458}
-  preferMultipleTargets: 1
-  cooldown: 5
-  attackRange: 8
-  damage: 10
-  projectileSpeed: 12
-  projectileRadius: 0.06
-  skillKey: 122
-  showCooldown: 0
-  shotSound: {fileID: 8300000, guid: 0bb18ccd0ed5f0f459150f0690654387, type: 3}
-  shotVolume: 0.05
 --- !u!1 &741603865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5261,8 +5233,8 @@ GameObject:
   - component: {fileID: 741603883}
   - component: {fileID: 741603882}
   - component: {fileID: 741603881}
-  - component: {fileID: 741603880}
   - component: {fileID: 741603885}
+  - component: {fileID: 741603886}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5666,7 +5638,10 @@ MonoBehaviour:
   - job: 2
     attacks:
     - {fileID: 942102719}
-    - {fileID: 719497524}
+    - {fileID: 741603883}
+    - {fileID: 741603882}
+    - {fileID: 741603881}
+    - {fileID: 741603884}
     coneRange: 1.5
   unusedAttacks:
   - {fileID: 1617380639}
@@ -5831,35 +5806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e72f35f444b8942ba71c28e91111c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StackDashUIAdapter
---- !u!114 &741603880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741603865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc7d847ea0eacf44a9c8cc180206814a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SecondJobSystem
-  requiredFirstJob: 2
-  requiredLevel: 30
-  disableOnAdvance:
-  - {fileID: 719497524}
-  jobs:
-  - displayName: "2\uCC28 \uAD81\uC218"
-    description: "\uBD80\uCC44\uAF34 \uC5F0\uC0AC \xB7 \uD654\uC0B4\uBE44\n\uD06C\uB9AC\uC2A4\uD0C8 \uC560\uB85C\uC6B0 \xB7 \uD68C\uD53C \uC0AC\uACA9"
-    icon: {fileID: 0}
-    enableSkills:
-    - {fileID: 741603883}
-    - {fileID: 741603882}
-    - {fileID: 741603881}
-    - {fileID: 741603884}
-  onAdvanced:
-    m_PersistentCalls:
-      m_Calls: []
-  uiFont: {fileID: 0}
 --- !u!114 &741603881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5997,6 +5943,26 @@ MonoBehaviour:
   ringWidth: 1.3
   particleSize: 0.1
   particleTravel: 0.65
+--- !u!114 &741603886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b798d0fd1ce32f94181551ad29d1deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterGroundShadow
+  targetRenderer: {fileID: 741603866}
+  shadowSprite: {fileID: 21300000, guid: f395384ef36250b4eb54e384e1c2ca78, type: 3}
+  shadowMaterial: {fileID: 2100000, guid: 907299599dc28484c81fb13503f9754f, type: 2}
+  footOffset: {x: 0, y: -0.7782083}
+  width: 0.7700167
+  height: 0.26213333
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.28}
+  orderBehindCharacter: 3
 --- !u!1 &750279049
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,7 +6763,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942102717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac4fefc97e86b864bbaa413bcbbf3668, type: 3}
   m_Name: 
@@ -7755,14 +7721,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillSlotUI
   skillSource: {fileID: 741603879}
   autoBindKeywords:
-  - Dash
+  - StackDashUIAdapter
   fallbackKeyLabel: SHIFT
   background: {fileID: 1696816006}
   icon: {fileID: 298242717}
   cooldownOverlay: {fileID: 1108438310}
   cooldownText: {fileID: 1323467286}
   keyText: {fileID: 1392829104}
-  hideWhenUnavailable: 1
+  hideWhenUnavailable: 0
   showAfterJob: 1
   fadeSpeed: 6
   readyColor: {r: 0.11, g: 0.12, b: 0.15, a: 0.95}
@@ -14825,15 +14791,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a40a5f210244d4cb637831e4ee32da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillSlotUI
-  skillSource: {fileID: 0}
-  autoBindKeywords: []
+  skillSource: {fileID: 741603881}
+  autoBindKeywords:
+  - CrystalArrowSkill
   fallbackKeyLabel: C
   background: {fileID: 1130696978}
   icon: {fileID: 1125387849}
   cooldownOverlay: {fileID: 1727691190}
   cooldownText: {fileID: 309841488}
   keyText: {fileID: 990346966}
-  hideWhenUnavailable: 1
+  hideWhenUnavailable: 0
   showAfterJob: 0
   fadeSpeed: 6
   readyColor: {r: 0.11, g: 0.12, b: 0.15, a: 0.95}

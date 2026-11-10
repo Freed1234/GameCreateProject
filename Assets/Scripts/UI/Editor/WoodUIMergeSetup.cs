@@ -680,7 +680,7 @@ public static class WoodUIMergeSetup
 
     // 스킬 칸(SkillSlot1~4)에 SkillSlotUI가 빠져 있으면 (예: SHIFT 대쉬 칸) 다시 붙이고 자식들과 연결
     private static readonly string[] SlotKeys = { "SHIFT", "Z", "X", "C" };
-    private static readonly string[][] SlotWords = { new[] { "Dash" }, new[] { "Piercing" }, new string[0], new string[0] }; // 빌더와 같게 (X·C는 키로 연결)
+    private static readonly string[][] SlotWords = { new[] { "Dash" }, new[] { "ArcherVolley" }, new[] { "ArrowRain" }, new[] { "CrystalArrow" } }; // 빌더와 같게 (X·C는 키로 연결)
     private static void RepairSkillSlots(Transform hud)
     {
         Transform bar = hud.Find("SkillBar");
@@ -696,6 +696,7 @@ public static class WoodUIMergeSetup
             var so = new SerializedObject(ui);
             so.FindProperty("fallbackKeyLabel").stringValue = SlotKeys[index];
             so.FindProperty("showAfterJob").boolValue = index == 0;
+            so.FindProperty("hideWhenUnavailable").boolValue = false;
             SerializedProperty words = so.FindProperty("autoBindKeywords");
             words.arraySize = SlotWords[index].Length;
             for (int i = 0; i < SlotWords[index].Length; i++) words.GetArrayElementAtIndex(i).stringValue = SlotWords[index][i];

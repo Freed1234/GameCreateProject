@@ -117,7 +117,7 @@ public class LevelAndJobUI : MonoBehaviour
         SetRect((RectTransform)title.transform, Vector2.up, Vector2.one,
             new Vector2(24, -64), new Vector2(-24, -14));
         Text description = Label("Description", panel,
-            "직업을 선택한 뒤 확인을 눌러주세요.", 17, new Color(0.25f, 0.22f, 0.18f));
+            "궁수: 부채꼴 연사 · 화살비\n크리스탈 애로우 · 회피 사격", 16, new Color(0.25f, 0.22f, 0.18f));
         SetRect((RectTransform)description.transform, Vector2.up, Vector2.one,
             new Vector2(20, -108), new Vector2(-20, -64));
 
@@ -147,7 +147,7 @@ public class LevelAndJobUI : MonoBehaviour
         if (canvasObject == null) return;
         fillRect.anchorMax = new Vector2((float)progression.Experience / progression.RequiredExperience, 1);
         expText.text = $"Lv. {progression.Level}    EXP {progression.Experience} / {progression.RequiredExperience}";
-        jobText.text = progression.CurrentJob == PlayerJob.Archer ? "직업: 궁수"
+        jobText.text = progression.CurrentJob == PlayerJob.Archer ? "직업: 1차 궁수"
             : progression.CanChooseJob ? "1차 전직 가능 · 선택" : "직업: 미전직";
         jobButton.interactable = progression.CanChooseJob && !progression.IsPlayerDead;
         bool open = progression.IsChoosingJob && !useExternalJobWindow;

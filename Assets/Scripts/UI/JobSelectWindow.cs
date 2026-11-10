@@ -87,7 +87,9 @@ public class JobSelectWindow : MonoBehaviour
         confirm.interactable = has;
         confirmArt.sprite = has || buttonDisabled == null ? buttonGreen : buttonDisabled;
         confirmLabel.color = has ? Color.white : Dim;
-        message.text = has ? "선택한 직업: " + (job == PlayerJob.Warrior ? warriorName : archerName) : "직업을 선택하세요.";
+        message.text = job == PlayerJob.Archer
+            ? "선택한 직업: 1차 궁수\n부채꼴 연사 · 화살비 · 크리스탈 애로우 · 회피 사격"
+            : has ? "선택한 직업: " + warriorName : "직업을 선택하세요.";
     }
 
     private void Confirm()
@@ -156,13 +158,13 @@ public class JobSelectWindow : MonoBehaviour
 
         // 안내 글
         float below = artTop - artSize;
-        message = Label("Message", w, "직업을 선택하세요.", 24, new Color(0.88f, 0.8f, 0.65f), tc, tc, new Vector2(0f, below - 26f), new Vector2(artSize, 40f));
+        message = Label("Message", w, "직업을 선택하세요.", 21, new Color(0.88f, 0.8f, 0.65f), tc, tc, new Vector2(0f, below - 26f), new Vector2(artSize, 62f));
 
         // 확인 / 닫기
         Vector2 bs = new Vector2(230f, 66f);
-        confirm = MakeButton("Confirm", w, "확인", buttonGreen, new Vector2(-bs.x * 0.5f - 20f, below - 76f), bs, out confirmArt, out confirmLabel);
+        confirm = MakeButton("Confirm", w, "확인", buttonGreen, new Vector2(-bs.x * 0.5f - 20f, below - 96f), bs, out confirmArt, out confirmLabel);
         confirm.onClick.AddListener(Confirm);
-        Button close = MakeButton("Close", w, "닫기", buttonRed, new Vector2(bs.x * 0.5f + 20f, below - 76f), bs, out _, out _);
+        Button close = MakeButton("Close", w, "닫기", buttonRed, new Vector2(bs.x * 0.5f + 20f, below - 96f), bs, out _, out _);
         close.onClick.AddListener(progression.CloseJobSelection);
 
         root.SetActive(false);

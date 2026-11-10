@@ -51,9 +51,9 @@ public static class GameUIBuilder
     private static readonly string[][] SlotKeywords =
     {
         new[] { "Dash" },
-        new[] { "Piercing" },
-        new string[0],
-        new string[0],
+        new[] { "ArcherVolley" },
+        new[] { "ArrowRain" },
+        new[] { "CrystalArrow" },
     };
     private static readonly string[] SlotFallbackKeys = { "SHIFT", "Z", "X", "C" };
 
@@ -410,6 +410,7 @@ public static class GameUIBuilder
         SetStrings(so, "autoBindKeywords", keywords);
         so.FindProperty("fallbackKeyLabel").stringValue = fallbackKey;
         so.FindProperty("showAfterJob").boolValue = showAfterJob;
+        so.FindProperty("hideWhenUnavailable").boolValue = false;
         Set(so, "background", background);
         Set(so, "icon", icon);
         Set(so, "cooldownOverlay", overlay);

@@ -18,6 +18,9 @@ public class CharacterWindowUI : MonoBehaviour
     [SerializeField] private Text timeText;
     [SerializeField] private Text killText;
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetJobName() { JobNameOverride = null; }
+
     private void OnEnable()
     {
         UpdatePortrait();
@@ -84,7 +87,7 @@ public class CharacterWindowUI : MonoBehaviour
         switch (job)
         {
             case PlayerJob.Warrior: return "WARRIOR";
-            case PlayerJob.Archer: return "ARCHER";
+            case PlayerJob.Archer: return "1차 궁수";
             default: return "NOVICE";
         }
     }

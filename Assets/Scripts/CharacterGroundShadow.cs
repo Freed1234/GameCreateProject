@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 // A flat ground decal: no colliders, sprite animation changes or combat tint changes.
 [DisallowMultipleComponent, RequireComponent(typeof(SpriteRenderer))]
@@ -46,8 +46,8 @@ public sealed class CharacterGroundShadow : MonoBehaviour
             Mathf.Max(.01f, width) * Mathf.Abs(scale.x) / shadowSprite.bounds.size.x,
             Mathf.Max(.01f, height) * Mathf.Abs(scale.y) / shadowSprite.bounds.size.y, 1f);
         shadow.color = shadowColor;
-        shadow.sortingLayerID = targetRenderer.sortingLayerID;
-        shadow.sortingOrder = targetRenderer.sortingOrder - Mathf.Max(1, orderBehindCharacter);
+        shadow.sortingLayerName = "WorldGround";
+        shadow.sortingOrder = -Mathf.Max(1, orderBehindCharacter);
     }
     private void OnEnable() { Refresh(); }
     private void OnDisable() { if (shadow != null) shadow.enabled = false; }

@@ -5484,6 +5484,8 @@ GameObject:
   - component: {fileID: 741603881}
   - component: {fileID: 741603885}
   - component: {fileID: 741603886}
+  - component: {fileID: 741603888}
+  - component: {fileID: 741603887}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5536,8 +5538,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 17911002
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
@@ -12105,6 +12107,7 @@ GameObject:
   - component: {fileID: 1557221456}
   - component: {fileID: 1557221460}
   - component: {fileID: 1557221461}
+  - component: {fileID: 1557221462}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -16802,3 +16805,49 @@ SceneRoots:
   - {fileID: 533133191}
   - {fileID: 1387000311}
   - {fileID: 1630735058}
+--- !u!114 &741603887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d343a491888f0104b8d698a5f349a231, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterOcclusion
+  silhouetteMaterial: {fileID: 2100000, guid: 2f05ab000972d4f4293e59297d250095, type: 2}
+  fillColor: {r: 0.65, g: 0.9, b: 1, a: 0.6}
+  outlineColor: {r: 0.9, g: 1, b: 1, a: 0.85}
+  outlinePixels: 1
+  transitionTime: 0.1
+--- !u!114 &741603888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df0b24de4e841b46b0b413e643392d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::WorldDepthSort
+  footOffset: {x: 0, y: -0.7782083}
+  renderers:
+  - {fileID: 741603866}
+  obstacle: 0
+--- !u!114 &1557221462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557221455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16dd98e93d6bc448af55de11be039d2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::WorldOcclusionCamera
+  maskMaterial: {fileID: 2100000, guid: 6a7d5245cafdf0944adc14ee607ceff4, type: 2}

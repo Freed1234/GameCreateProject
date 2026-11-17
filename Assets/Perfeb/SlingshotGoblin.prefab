@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 3949403017176023876}
   - component: {fileID: 8795332105087835679}
   - component: {fileID: 1690564916900912421}
+  - component: {fileID: 867525841574794467}
+  - component: {fileID: 4264037923078973659}
   m_Layer: 0
   m_Name: SlingshotGoblin
   m_TagString: Untagged
@@ -83,8 +85,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 17911002
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 0a1cfa6ce43747c8bd71035cb8ffc3c2, type: 3}
@@ -252,3 +254,36 @@ MonoBehaviour:
   height: 0.28
   shadowColor: {r: 0, g: 0, b: 0, a: 0.28}
   orderBehindCharacter: 3
+--- !u!114 &867525841574794467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162994298513841495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df0b24de4e841b46b0b413e643392d6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::WorldDepthSort
+  footOffset: {x: 0, y: 0}
+  renderers:
+  - {fileID: 8251530946780385999}
+  obstacle: 0
+--- !u!114 &4264037923078973659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162994298513841495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d343a491888f0104b8d698a5f349a231, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterOcclusion
+  silhouetteMaterial: {fileID: 2100000, guid: 2f05ab000972d4f4293e59297d250095, type: 2}
+  fillColor: {r: 0.65, g: 0.08, b: 0.1, a: 0.4}
+  outlineColor: {r: 1, g: 0.55, b: 0.5, a: 0.75}
+  outlinePixels: 1
+  transitionTime: 0.1

@@ -6,12 +6,12 @@ using UnityEngine;
 //   Dash / Skill1(Z) / Skill2(X) / Skill3(C) / Character(Tab)
 // 4차 스킬 Ctrl+X / Ctrl+C 는 Skill2 / Skill3 키를 따라갑니다. (예: X를 E로 바꾸면 Ctrl+E)
 // Tab 창 방식(누르고 있기 / 눌러서 열고 닫기)도 여기 저장합니다.
-public enum GameAction { Dash, Skill1, Skill2, Skill3, Character }
+public enum GameAction { Dash, Skill1, Skill2, Skill3, Character, Potion }
 
 public static class KeyBindings
 {
     public static readonly GameAction[] All =
-        { GameAction.Dash, GameAction.Skill1, GameAction.Skill2, GameAction.Skill3, GameAction.Character };
+        { GameAction.Dash, GameAction.Skill1, GameAction.Skill2, GameAction.Skill3, GameAction.Character, GameAction.Potion };
 
     public static event Action Changed;
     public static KeyCode Normalize(KeyCode key) => key == KeyCode.RightShift ? KeyCode.LeftShift : key;
@@ -42,6 +42,7 @@ public static class KeyBindings
             case GameAction.Skill1: return KeyCode.Z;
             case GameAction.Skill2: return KeyCode.X;
             case GameAction.Skill3: return KeyCode.C;
+            case GameAction.Potion: return KeyCode.Alpha1;
             default: return KeyCode.Tab;
         }
     }
@@ -54,6 +55,7 @@ public static class KeyBindings
             case GameAction.Skill1: return "SKILL 1";
             case GameAction.Skill2: return "SKILL 2";
             case GameAction.Skill3: return "SKILL 3";
+            case GameAction.Potion: return "POTION";
             default: return "CHARACTER";
         }
     }
@@ -65,6 +67,18 @@ public static class KeyBindings
             key = (KeyCode)PlayerPrefs.GetInt("Key_" + action, (int)Default(action));
             key = Normalize(key);
             if (!IsAllowed(key)) key = Default(action);
+            // Older profiles may already use 1 for another action.
+            if (action == GameAction.Potion && !PlayerPrefs.HasKey("Key_Potion")
+                && Array.Exists(All, other => other != action && Get(other) == key))
+            {
+                for (KeyCode candidate = KeyCode.Alpha2; candidate <= KeyCode.Alpha9; candidate++)
+                {
+                    if (Array.Exists(All, other => other != action && Get(other) == candidate)) continue;
+                    key = candidate;
+                    Store(action, key);
+                    break;
+                }
+            }
             cache[action] = key;
         }
         return key;

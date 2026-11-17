@@ -338,12 +338,12 @@ public static class GameUIBuilder
 
         // 레벨, 스탯 포인트 알림, 전직 버튼 (체력 바 아래)
         Text levelText = Label("LevelText", hud, "Lv. 1", 30, AccentColor, TextAnchor.MiddleLeft,
-            TopLeft, TopLeft, new Vector2(34f, -80f), new Vector2(120f, 40f), true);
+            TopLeft, TopLeft, new Vector2(130f, -80f), new Vector2(120f, 40f), true);
         Text statHint = Label("StatHint", hud, "STAT +0  [TAB]", 22, ExpColor, TextAnchor.MiddleLeft,
-            TopLeft, MiddleLeft, new Vector2(34f, -140f), new Vector2(300f, 32f), true);
+            TopLeft, MiddleLeft, new Vector2(130f, -140f), new Vector2(300f, 32f), true);
         statHint.gameObject.SetActive(false);
         Button jobButton = MakeButton("JobButton", hud, "CHOOSE JOB", GoodColor, rounded,
-            TopLeft, TopLeft, new Vector2(150f, -80f), new Vector2(200f, 40f), 20);
+            TopLeft, TopLeft, new Vector2(246f, -80f), new Vector2(200f, 40f), 20);
         jobButton.gameObject.SetActive(false);
 
         // 생존 시간 (상단 중앙)
@@ -372,6 +372,7 @@ public static class GameUIBuilder
             BuildSkillSlot(skillBar, i, new Vector2(x, 0f), skill, SlotKeywords[i], SlotFallbackKeys[i], i == 0);
         }
 
+        BuildPotionSlot(hpTrack, so);
         Set(so, "hpFill", hpFill);
         Set(so, "hpText", hpText);
         Set(so, "expFill", expFill);
@@ -382,6 +383,23 @@ public static class GameUIBuilder
         Set(so, "timeText", timeText);
         Set(so, "killText", killText);
         Set(so, "pauseButton", pauseButton);
+    }
+
+    public static void BuildPotionSlot(RectTransform hpTrack, SerializedObject hud)
+    {
+        // The slot is authored into the scene so it is visible on the first frame.
+        font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        var slot = Anchored("PotionSlot", hpTrack, Vector2.zero, TopLeft,
+            new Vector2(0f, -8f), new Vector2(84f, 84f));
+        Img(slot, AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/Generated/UI_Circle.png"), new Color(.11f,.12f,.15f,.95f));
+        Img(Anchored("Ring", slot, Center, Center, Vector2.zero, Vector2.one * 94f),
+            AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/PixelUI/HUD/ui_skill_slot_normal.png"), Color.white);
+        Img(Anchored("Bottle", slot, Center, Center, Vector2.zero, Vector2.one * 53f),
+            AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/PotionIcon.png"), Color.white).preserveAspect = true;
+        Set(hud, "potionCountText", Label("Count", slot, "0", 22, Color.white, TextAnchor.MiddleCenter,
+            Center, Center, new Vector2(20f,-19f), new Vector2(80f,30f), true));
+        Set(hud, "potionKeyText", Label("Key", slot, "1", 18, Color.white, TextAnchor.MiddleCenter,
+            Center, Center, new Vector2(0f,-49f), new Vector2(80f,30f), true));
     }
 
     private static void BuildSkillSlot(Transform parent, int index, Vector2 position, MonoBehaviour skill,

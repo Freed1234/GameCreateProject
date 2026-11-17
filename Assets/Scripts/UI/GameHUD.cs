@@ -14,6 +14,9 @@ public class GameHUD : MonoBehaviour
     [SerializeField] private Image hpFill;
     [SerializeField] private Text hpText;
 
+    [SerializeField] private Text potionCountText, potionKeyText;
+    private ChestManager chests;
+
     [Header("레벨 / 경험치")]
     [SerializeField] private Image expFill;
     [SerializeField] private Text levelText;
@@ -70,8 +73,6 @@ public class GameHUD : MonoBehaviour
             levelUpBasePos = levelUpText.rectTransform.anchoredPosition;
             levelUpText.gameObject.SetActive(false);
         }
-        if (statHintText != null)
-            statHintBasePos = statHintText.rectTransform.anchoredPosition;
 
         session = GameSession.Instance;
         progression = PlayerProgression.Instance;
@@ -90,6 +91,8 @@ public class GameHUD : MonoBehaviour
         if (mainMenuButton != null)
             mainMenuButton.gameObject.SetActive(session != null && session.HasMainMenu);
 
+        chests = FindAnyObjectByType<ChestManager>();
+        if (statHintText != null) statHintBasePos = statHintText.rectTransform.anchoredPosition;
         Show(View.None);
     }
 
@@ -108,6 +111,11 @@ public class GameHUD : MonoBehaviour
             HandleKeys();
         }
 
+        if (potionCountText != null)
+        {
+            potionCountText.text = (chests != null ? chests.PotionCount : 0).ToString();
+            potionKeyText.text = KeyBindings.Pretty(KeyBindings.Get(GameAction.Potion));
+        }
         RefreshHealth();
         RefreshLevel();
         RefreshStats();

@@ -15,6 +15,9 @@ public abstract class ArcherSkillBase : MonoBehaviour, ISkillCooldown
     [Tooltip("적을 자동 조준하는 거리")]
     [SerializeField, Min(0.5f)] protected float aimRange = 10f;
 
+    [SerializeField] private Sprite skillIcon;
+    public Sprite SkillIcon => skillIcon;
+
     private float nextCastTime;
     private Vector2 lastMoveDirection = Vector2.right;
 
@@ -42,6 +45,11 @@ public abstract class ArcherSkillBase : MonoBehaviour, ISkillCooldown
         // Ctrl+X / Ctrl+C 는 4차 스킬용이라 일반 스킬은 나가지 않음
         if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
             return;
+        CastAndStartCooldown();
+    }
+
+    private void CastAndStartCooldown()
+    {
         if (Cast())
             nextCastTime = Time.time + SkillModifiers.Cooldown(cooldown);
     }

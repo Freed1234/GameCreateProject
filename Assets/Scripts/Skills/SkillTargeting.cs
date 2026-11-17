@@ -12,7 +12,7 @@ public static class SkillTargeting
         public float MeanDistance;
         public bool Found => HitCount > 0;
     }
-    struct Target { public EnemyHealth health; public Vector2 position; public float distance; }
+    struct Target { public EnemyHealth health; public Vector2 position; public float distance; public float rainWeight; }
     static List<Target> Snapshot(Transform container, Vector2 origin, float limit)
     {
         var result = new List<Target>();
@@ -158,11 +158,20 @@ public static class SkillTargeting
         var targets=Snapshot(container,origin,aimRange+reach);
         Vector2 nearest=NearestDirection(targets,origin,aimRange,fallbackCenter-origin);
         var best=new Result{Aim=fallbackCenter};float alignment=-2;
-        var spatial = new CircleIndex(targets);
+        double bestWeight = 0;
+        var spatial = new CircleIndex(targets, aimRange);
         Action<Vector2> score=center=>{
             if((center-origin).sqrMagnitude>aimRange*aimRange+.0001f)return;
             int count=0;float sum=0;
-            spatial.Count(center.x,center.y,reach*reach+.0001f,ref count,ref sum);
+            double weight = 0;
+            spatial.Count(center.x,center.y,reach*reach,ref count,ref sum,ref weight);
+            if (count == 0 || weight < bestWeight - 1e-6) return;
+            if (weight > bestWeight + 1e-6)
+            {
+                best.HitCount = 0;
+                bestWeight = weight;
+            }
+            // Equal weighted coverage uses the existing count, distance and direction ordering.
             Consider(ref best,ref alignment,center,count,sum,center-origin,nearest);
         };
         score(origin);
@@ -182,15 +191,21 @@ public static class SkillTargeting
     // Aggregate fully covered spatial nodes instead of scanning every enemy for every circle candidate.
     sealed class CircleIndex
     {
-        sealed class Node { public float minX,minY,maxX,maxY,sum; public int start,count; public Node left,right; }
+        sealed class Node { public float minX,minY,maxX,maxY,sum; public double weight; public int start,count; public Node left,right; }
         readonly Target[] data;
         readonly Node root;
-        public CircleIndex(List<Target> targets) { data=targets.ToArray();root=Build(0,data.Length,0); }
+        public CircleIndex(List<Target> targets, float aimRange)
+        {
+            data = targets.ToArray();
+            for (int i = 0; i < data.Length; i++)
+                data[i].rainWeight = 4f - 3f * Mathf.Clamp01(data[i].distance / Mathf.Max(aimRange, .00001f));
+            root = Build(0, data.Length, 0);
+        }
         Node Build(int start,int count,int depth)
         {
             if(count==0)return null;
             var n=new Node{start=start,count=count,minX=float.PositiveInfinity,minY=float.PositiveInfinity,maxX=float.NegativeInfinity,maxY=float.NegativeInfinity};
-            for(int i=start;i<start+count;i++){var t=data[i];n.minX=Mathf.Min(n.minX,t.position.x);n.maxX=Mathf.Max(n.maxX,t.position.x);n.minY=Mathf.Min(n.minY,t.position.y);n.maxY=Mathf.Max(n.maxY,t.position.y);n.sum+=t.distance;}
+            for(int i=start;i<start+count;i++){var t=data[i];n.minX=Mathf.Min(n.minX,t.position.x);n.maxX=Mathf.Max(n.maxX,t.position.x);n.minY=Mathf.Min(n.minY,t.position.y);n.maxY=Mathf.Max(n.maxY,t.position.y);n.sum+=t.distance;n.weight+=t.rainWeight;}
             if(count>8)
             {
                 bool horizontal=(depth&1)==0;
@@ -199,16 +214,16 @@ public static class SkillTargeting
             }
             return n;
         }
-        public void Count(float x,float y,float squared,ref int count,ref float sum) { Query(root,x,y,squared,ref count,ref sum); }
-        void Query(Node n,float x,float y,float squared,ref int count,ref float sum)
+        public void Count(float x,float y,float squared,ref int count,ref float sum,ref double weight) { Query(root,x,y,squared,ref count,ref sum,ref weight); }
+        void Query(Node n,float x,float y,float squared,ref int count,ref float sum,ref double weight)
         {
             if(n==null)return;
             float dx=x<n.minX?n.minX-x:x>n.maxX?x-n.maxX:0,dy=y<n.minY?n.minY-y:y>n.maxY?y-n.maxY:0;
             if(dx*dx+dy*dy>squared)return;
             dx=Mathf.Max(Mathf.Abs(x-n.minX),Mathf.Abs(x-n.maxX));dy=Mathf.Max(Mathf.Abs(y-n.minY),Mathf.Abs(y-n.maxY));
-            if(dx*dx+dy*dy<=squared){count+=n.count;sum+=n.sum;return;}
-            if(n.left!=null){Query(n.left,x,y,squared,ref count,ref sum);Query(n.right,x,y,squared,ref count,ref sum);return;}
-            for(int i=n.start;i<n.start+n.count;i++){var t=data[i];dx=t.position.x-x;dy=t.position.y-y;if(dx*dx+dy*dy<=squared){count++;sum+=t.distance;}}
+            if(dx*dx+dy*dy<=squared){count+=n.count;sum+=n.sum;weight+=n.weight;return;}
+            if(n.left!=null){Query(n.left,x,y,squared,ref count,ref sum,ref weight);Query(n.right,x,y,squared,ref count,ref sum,ref weight);return;}
+            for(int i=n.start;i<n.start+n.count;i++){var t=data[i];dx=t.position.x-x;dy=t.position.y-y;if(dx*dx+dy*dy<=squared){count++;sum+=t.distance;weight+=t.rainWeight;}}
         }
     }
     static void CircleIntersections(Vector2 a,float ar,Vector2 b,float br,Action<Vector2> emit)

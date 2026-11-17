@@ -28,9 +28,12 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
     [SerializeField, Range(0f, 1f)] private float shotVolume = 0.5f;
     private AudioSource shotSource;
     private bool firing;
+    private Sprite volleyArrow;
+    private ArcherSkillFrames sweepFx;
 
     private void Awake()
     {
+        volleyArrow = Resources.Load<Sprite>("ArcherFx/VolleyArrow");
         shotSource = gameObject.AddComponent<AudioSource>();
         shotSource.playOnAwake = false;
         shotSource.loop = false;
@@ -66,8 +69,16 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
             float t = arrowCount == 1 ? 0.5f : step / (arrowCount - 1f);
             float angle = Mathf.Lerp(-sweepAngle * 0.5f, sweepAngle * 0.5f, t);
 
-            SkillProjectile.Spawn(arrowSprite, arrowColor, Origin, SkillUtil.Rotate(aim, angle),
+            if (sweepFx != null) Destroy(sweepFx.gameObject);
+            sweepFx = ArcherSkillFrames.Play("Z", Origin, SkillUtil.RotationFor(aim), arrowScale * 2f,
+                61, 0, 1, Mathf.Min(.045f, interval), transform);
+            var arrow = SkillProjectile.Spawn(volleyArrow, Color.white, Origin, SkillUtil.Rotate(aim, angle),
                 speed, range, SkillModifiers.Damage(damage), HitRadius, true, false, Enemies, arrowScale);
+            // The sprite pivot is between the two shoulders of the arrowhead.
+            Vector3 visualScale = arrow.transform.localScale;
+            visualScale.y = 2f * HitRadius * volleyArrow.pixelsPerUnit / volleyArrow.rect.height;
+            arrow.transform.localScale = visualScale;
+            arrow.OnHit = ShowHit;
             GetComponentInParent<PlayerAttackVisual>()?.PlayAttack(SkillUtil.Rotate(aim, angle));
             if (shotSound != null)
             {
@@ -76,12 +87,20 @@ public class ArcherVolleySkill : ArcherSkillBase, ISecondJobSkill
             }
             yield return new WaitForSeconds(Mathf.Max(0.01f, interval));
         }
+        if (sweepFx != null) Destroy(sweepFx.gameObject);
         firing = false;
+    }
+
+    private static void ShowHit(SkillProjectile projectile, Vector2 point, EnemyHealth enemy)
+    {
+        ArcherSkillFrames.Play("Z", point, SkillUtil.RotationFor(projectile.Direction),
+            .65f, 62, 0, 1, .06f);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
+        if (sweepFx != null) Destroy(sweepFx.gameObject);
         firing = false;
         if (shotSource != null) shotSource.Stop();
     }

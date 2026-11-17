@@ -12,15 +12,11 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
     [SerializeField, Min(0.2f)] private float duration = 2.5f;
     [SerializeField, Min(0.05f)] private float tickInterval = 0.25f;
     [SerializeField, Min(1)] private int damagePerTick = 2;
-    [Tooltip("한 번에 떨어지는 화살 연출 개수")]
-    [SerializeField, Range(1, 20)] private int arrowsPerTick = 6;
-    [Tooltip("떨어지는 화살 이미지 크기. 장판 범위와 피해량은 바뀌지 않습니다.")]
-    [SerializeField, Min(0.01f)] private float arrowScale = 0.7f;
     [Tooltip("적이 없을 때 앞쪽 몇 칸에 깔지")]
     [SerializeField, Min(0f)] private float defaultDistance = 3f;
-    [SerializeField] private Color zoneColor = new Color(1f, 0.55f, 0.25f, 0.22f);
 
-    private GameObject zone;
+    private GameObject rainFx;
+    private readonly SpriteRenderer[] arrows = new SpriteRenderer[4];
 
     private void Reset()
     {
@@ -32,6 +28,7 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
     protected override bool Cast()
     {
         StopAllCoroutines();
+        ClearRainFx();
         Vector2 center = Origin + LastMoveDirection * defaultDistance;
         if (preferMultipleTargets)
             center = SkillTargeting.Rain(Enemies, Origin, aimRange, radius, center).Aim;
@@ -47,53 +44,70 @@ public class ArrowRainSkill : ArcherSkillBase, ISecondJobSkill
 
     private IEnumerator Rain(Vector2 center)
     {
-        if (zone != null) Destroy(zone);
-        zone = CreateZone(center);
-        SkillFx.Burst(center, radius * 2f, radius * 2.3f, new Color(1f, 0.7f, 0.3f, 0.7f), 0.3f, true);
-
-        float elapsed = 0f;
-        while (elapsed < duration)
+        rainFx = new GameObject("Rain boundary");
+        rainFx.transform.position = center;
+        rainFx.transform.localScale = Vector3.one * (2f * radius);
+        var boundary = rainFx.AddComponent<SpriteRenderer>();
+        boundary.sprite = Resources.Load<Sprite>("ArcherFx/RainBoundary");
+        boundary.sortingOrder = 61;
+        Sprite[] frames = ArcherSkillFrames.Load("X");
+        for (int i = 0; i < arrows.Length; i++)
         {
-            while (Time.timeScale <= 0f && !OwnerDead) yield return null;
-            if (OwnerDead) break;
-            for (int i = 0; i < arrowsPerTick; i++)
-            {
-                Vector2 spot = center + Random.insideUnitCircle * radius;
-                SkillFx.Fall(arrowSprite, spot, 1.6f, arrowColor, 0.14f, Mathf.Max(0.01f, arrowScale));
-            }
-            SkillUtil.DamageInRadius(Enemies, center, radius, SkillModifiers.Damage(damagePerTick));
-
-            float wait = Mathf.Min(Mathf.Max(0.05f, tickInterval), duration - elapsed);
-            yield return new WaitForSeconds(wait);
-            elapsed += wait;
+            var arrow = new GameObject("Rain arrow").AddComponent<SpriteRenderer>();
+            arrow.transform.SetParent(rainFx.transform, false);
+            arrow.sortingOrder = 62;
+            arrows[i] = arrow;
         }
 
-        if (zone != null) Destroy(zone);
+        double interval = Mathf.Max(0.05f, tickInterval);
+        double started = Time.timeAsDouble;
+        int tickCount = Mathf.CeilToInt(duration / (float)interval);
+        int nextTick = 0;
+        var lastDrop = new int[arrows.Length];
+        while (!OwnerDead)
+        {
+            double elapsed = Time.timeAsDouble - started;
+            for (int i = 0; i < arrows.Length; i++)
+            {
+                // Phase zero is impact. Each arrow starts falling half a cycle earlier.
+                double phase = elapsed / interval - (double)i / arrows.Length;
+                int drop = (int)System.Math.Floor(phase + 0.5);
+                if (drop < 0 || (drop + (double)i / arrows.Length) * interval >= duration)
+                {
+                    arrows[i].sprite = null;
+                    continue;
+                }
+                if (lastDrop[i] != drop + 1)
+                {
+                    arrows[i].transform.localPosition = Random.insideUnitCircle * 0.5f;
+                    lastDrop[i] = drop + 1;
+                }
+                int frame = Mathf.Clamp((int)((phase - drop + 0.5) * 6), 0, 5);
+                arrows[i].sprite = frames[frame];
+            }
+
+            while (nextTick < tickCount && nextTick * interval <= elapsed && !OwnerDead)
+            {
+                SkillUtil.DamageInRadius(Enemies, center, radius, SkillModifiers.Damage(damagePerTick));
+                nextTick++;
+            }
+            if (elapsed >= duration) break;
+            yield return null;
+        }
+        ClearRainFx();
     }
 
-    private GameObject CreateZone(Vector2 center)
+    private void ClearRainFx()
     {
-        GameObject obj = new GameObject("ArrowRainZone");
-        obj.transform.position = center;
-        obj.transform.localScale = Vector3.one * radius * 2f;
-
-        SpriteRenderer fill = obj.AddComponent<SpriteRenderer>();
-        fill.sprite = SkillUtil.CircleSprite();
-        fill.color = zoneColor;
-        fill.sortingOrder = 5;
-
-        GameObject edge = new GameObject("Edge");
-        edge.transform.SetParent(obj.transform, false);
-        SpriteRenderer ring = edge.AddComponent<SpriteRenderer>();
-        ring.sprite = SkillUtil.RingSprite();
-        ring.color = new Color(zoneColor.r, zoneColor.g, zoneColor.b, 0.8f);
-        ring.sortingOrder = 6;
-        return obj;
+        if (rainFx == null) return;
+        rainFx.SetActive(false);
+        Destroy(rainFx);
+        rainFx = null;
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        if (zone != null) Destroy(zone);
+        ClearRainFx();
     }
 }

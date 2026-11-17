@@ -48,8 +48,8 @@ public static class WoodUIMergeSetup
     private const float ExpTop = 2f, ExpHeight = 20f;
     private static readonly Vector2 BadgePos = new Vector2(18f, -30f), BadgeSize = new Vector2(104f, 108f);
     private static readonly Vector2 HpPos = new Vector2(128f, -38f), HpSize = new Vector2(420f, 46f);
-    private static readonly Vector2 StatPos = new Vector2(132f, -92f), StatSize = new Vector2(236f, 44f);
-    private static readonly Vector2 JobPos = new Vector2(378f, -90f), JobSize = new Vector2(236f, 48f);
+    private static readonly Vector2 StatPos = new Vector2(228f, -92f), StatSize = new Vector2(236f, 44f);
+    private static readonly Vector2 JobPos = new Vector2(474f, -90f), JobSize = new Vector2(236f, 48f);
     private static readonly Vector2 TimerPos = new Vector2(0f, -30f), TimerSize = new Vector2(320f, 68f); // 시간판: 크게 (C안)
     private static readonly Vector2 KillPos = new Vector2(-110f, -36f), KillSize = new Vector2(220f, 52f);
     private static readonly Vector2 KeyTagPos = new Vector2(0f, -4f);

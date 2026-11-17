@@ -14,17 +14,16 @@ public static class ChestSetup
     {
         if(EditorApplication.isPlaying)throw new InvalidOperationException("Play 모드를 종료해주세요.");
         var health=UnityEngine.Object.FindAnyObjectByType<PlayerHealth>();
-        var movement=UnityEngine.Object.FindAnyObjectByType<PlayerMovement>();
         var map=UnityEngine.Object.FindAnyObjectByType<MapChunkManager>();
         var navigation=UnityEngine.Object.FindAnyObjectByType<EnemyFlowField>();
         var experience=UnityEngine.Object.FindAnyObjectByType<ExperienceDropManager>();
         Scene scene=SceneManager.GetActiveScene();
-        if(health==null || movement==null || map==null || navigation==null)throw new InvalidOperationException("플레이어와 맵이 있는 게임 씬을 먼저 여세요.");
+        if(health==null || map==null || navigation==null)throw new InvalidOperationException("플레이어와 맵이 있는 게임 씬을 먼저 여세요.");
         if(experience==null) { ExperienceDropSetup.Setup(); experience=UnityEngine.Object.FindAnyObjectByType<ExperienceDropManager>(); }
-        foreach(var component in new Component[]{health,movement,map,navigation,experience})if(component.gameObject.scene!=scene)throw new InvalidOperationException("게임 씬 하나를 활성화해주세요.");
+        foreach(var component in new Component[]{health,map,navigation,experience})if(component.gameObject.scene!=scene)throw new InvalidOperationException("게임 씬 하나를 활성화해주세요.");
         var managers=UnityEngine.Object.FindObjectsByType<ChestManager>(FindObjectsInactive.Include,FindObjectsSortMode.None);
         if(managers.Length>1 || (managers.Length==1 && managers[0].gameObject.scene!=scene))throw new InvalidOperationException("ChestManager 중복 또는 다른 씬 연결을 확인해주세요.");
-        foreach(string name in new[]{"chest-closed","chest-open","healing","magnet","dash-charge"})
+        foreach(string name in new[]{"chest-closed","chest-open","healing","magnet"})
         {
             string path=Root+"/"+name+".png";
             var importer=AssetImporter.GetAtPath(path) as TextureImporter;
@@ -48,9 +47,12 @@ public static class ChestSetup
             item.sortingOrder=chest.sortingOrder+1;
             var data=new SerializedObject(view);
             data.FindProperty("chest").objectReferenceValue=chest;data.FindProperty("item").objectReferenceValue=item;
-            string[] fields={"closedSprite","openSprite","healingSprite","magnetSprite","chargeSprite"};
-            string[] files={"chest-closed","chest-open","healing","magnet","dash-charge"};
-            for(int i=0;i<5;i++)data.FindProperty(fields[i]).objectReferenceValue=AssetDatabase.LoadAssetAtPath<Sprite>(Root+"/"+files[i]+".png");
+            string[] fields={"closedSprite","openSprite","healingSprite","magnetSprite"};
+            string[] files={"chest-closed","chest-open","healing","magnet"};
+            for(int i=0;i<fields.Length;i++)data.FindProperty(fields[i]).objectReferenceValue=AssetDatabase.LoadAssetAtPath<Sprite>(Root+"/"+files[i]+".png");
+            data.FindProperty("shadowSprite").objectReferenceValue = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/CharacterShadows/pixel-oval.png");
+            data.FindProperty("shadowMaterial").objectReferenceValue = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/CharacterShadows/GroundShadow.mat");
+            data.FindProperty("glintSprite").objectReferenceValue = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/ExperienceVisuals/cross.png");
             data.ApplyModifiedPropertiesWithoutUndo();view.Display(false,false,ChestManager.Reward.Heal,0);
             PrefabUtility.SaveAsPrefabAsset(root,prefabPath);UnityEngine.Object.DestroyImmediate(root);
             prefab=AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
@@ -58,8 +60,8 @@ public static class ChestSetup
         if(prefab.GetComponent<ChestView>()==null)throw new InvalidOperationException("Chest 프리팹의 ChestView를 확인해주세요.");
         var manager=managers.Length==1?managers[0]:new GameObject("Chests").AddComponent<ChestManager>();
         Undo.RecordObject(manager,"Setup Chests");var so=new SerializedObject(manager);
-        string[] keys={"health","movement","map","navigation","experience","viewPrefab"};
-        UnityEngine.Object[] refs={health,movement,map,navigation,experience,prefab.GetComponent<ChestView>()};
+        string[] keys={"health","map","navigation","experience","viewPrefab"};
+        UnityEngine.Object[] refs={health,map,navigation,experience,prefab.GetComponent<ChestView>()};
         for(int i=0;i<keys.Length;i++)so.FindProperty(keys[i]).objectReferenceValue=refs[i];
         so.ApplyModifiedProperties();EditorUtility.SetDirty(manager);EditorSceneManager.MarkSceneDirty(scene);AssetDatabase.SaveAssets();
         Debug.Log("CHEST_SETUP_OK: 게임 씬을 저장해주세요.");

@@ -15,7 +15,7 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
     [SerializeField, Min(1)] private int hitDamage = 25;
     [SerializeField, Min(1f)] private float speed = 11f;
     [SerializeField, Min(1f)] private float range = 30f;
-    [SerializeField, Min(0.5f)] private float arrowScale = 3.2f;
+    [SerializeField, Min(0.5f)] private float arrowScale = 1f;
 
     [Header("폭발")]
     [SerializeField, Min(0.5f)] private float explosionRadius = 3f;
@@ -27,7 +27,7 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
     [SerializeField, Min(1)] private int scatterDamage = 5;
     [SerializeField, Min(1f)] private float scatterRange = 6f;
     [Tooltip("첫 분열탄 이미지 크기. 다음 단계는 이 값에 Split Scale Falloff를 곱합니다. 타격 판정은 그대로입니다.")]
-    [SerializeField, Min(0.01f)] private float scatterScale = 0.9f;
+    [SerializeField, Min(0.01f)] private float scatterScale = 1f / 3f;
 
     [Header("연쇄 분열 (맞을 때마다 갈라짐)")]
     [Tooltip("갈라지는 단계별 속도. 1번째(사방 8발) → 2번째 → 3번째. 최대 3단계까지 갈라짐")]
@@ -37,7 +37,7 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
     [Tooltip("갈라질 때 퍼지는 전체 각도")]
     [SerializeField, Range(0f, 120f)] private float splitAngle = 50f;
     [Tooltip("단계가 내려갈수록 화살 크기 배율")]
-    [SerializeField, Range(0.3f, 1f)] private float splitScaleFalloff = 0.8f;
+    [SerializeField, Range(0.3f, 1f)] private float splitScaleFalloff = 0.75f;
 
     private void Reset()
     {
@@ -52,20 +52,20 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
         Vector2 aim = preferMultipleTargets
             ? SkillTargeting.Explosion(Enemies, Origin, aimRange, range, HitRadius, explosionRadius, LastMoveDirection).Aim
             : AimDirection();
-        SkillProjectile arrow = SkillProjectile.Spawn(arrowSprite, arrowColor, Origin, aim,
+        SkillProjectile arrow = SkillProjectile.Spawn(ArcherSkillFrames.Load("C")[0], Color.white, Origin, aim,
             speed, range, SkillModifiers.Damage(hitDamage), HitRadius, false, true, Enemies, arrowScale, 62);
+        ArcherSkillFrames.AnimateFlight(arrow);
         arrow.OnHit = (projectile, point, enemy) => Explode(point, enemy, projectile);
         GetComponentInParent<PlayerAttackVisual>()?.PlayAttack(aim);
 
-        SkillFx.Burst(Origin, 0.5f, 2.2f, new Color(0.6f, 0.9f, 1f, 0.7f), 0.3f, true);
         return true;
     }
 
     private void Explode(Vector2 point, EnemyHealth hitEnemy, SkillProjectile parent)
     {
         if (OwnerDead) return;
-        SkillFx.Burst(point, 0.5f, explosionRadius * 2f, new Color(0.6f, 0.9f, 1f, 0.55f), 0.45f);
-        SkillFx.Burst(point, 0.5f, explosionRadius * 2.2f, new Color(1f, 1f, 1f, 0.9f), 0.35f, true);
+        ArcherSkillFrames.Play("C", point, SkillUtil.RotationFor(parent.Direction),
+            explosionRadius * 2f / 2.56f, 63, 3, 3, .45f);
 
         foreach (EnemyHealth enemy in SkillUtil.Enemies(Enemies))
         {
@@ -92,8 +92,7 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
             return;
 
         float scale = Mathf.Max(0.01f, scatterScale) * Mathf.Pow(splitScaleFalloff, stage);
-        Color color = Color.Lerp(arrowColor, Color.white, stage * 0.25f);
-        SkillProjectile p = SkillProjectile.Spawn(arrowSprite, color, from, dir,
+        SkillProjectile p = SkillProjectile.Spawn(ArcherSkillFrames.Load("C")[0], Color.white, from, dir,
             splitSpeeds[stage], scatterRange, SkillModifiers.Damage(scatterDamage), 0.2f,
             false, false, Enemies, scale);
         p.InheritHits(parent);
@@ -104,7 +103,6 @@ public class CrystalArrowSkill : ArcherSkillBase, ISecondJobSkill
             p.OnHit = (projectile, point, enemy) =>
             {
                 if (OwnerDead) return;
-                SkillFx.Burst(point, 0.2f, 0.9f, new Color(0.7f, 0.95f, 1f, 0.7f), 0.18f, true);
                 for (int i = 0; i < splitCount; i++)
                 {
                     float angle = splitCount == 1 ? 0f

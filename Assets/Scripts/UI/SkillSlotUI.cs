@@ -39,6 +39,7 @@ public class SkillSlotUI : MonoBehaviour
     private float nextBindTry;
     private float nextSwapCheck;
     private CanvasGroup group;
+    private Sprite defaultIcon;
 
     // 지금 슬롯에 표시 중인 키 (예: "X") — 4차 강화 칸이 X/C 칸 위치를 찾을 때 사용
     public string DisplayKey => keyText != null && !string.IsNullOrEmpty(keyText.text) ? keyText.text : fallbackKeyLabel;
@@ -47,11 +48,15 @@ public class SkillSlotUI : MonoBehaviour
     {
         skillSource = source;
         skill = source as ISkillCooldown;
+        if (icon != null)
+            icon.sprite = source is ArcherSkillBase archer && archer.SkillIcon != null ? archer.SkillIcon : defaultIcon;
     }
 
     private void Awake()
     {
-        skill = skillSource as ISkillCooldown;
+        defaultIcon = icon != null ? icon.sprite : null;
+        SetSkill(skillSource);
+        if (icon != null) icon.enabled = false;
 
         group = GetComponent<CanvasGroup>();
         if (group == null)
@@ -178,33 +183,35 @@ public class SkillSlotUI : MonoBehaviour
         }
 
         bool hasSkill = skill != null && skillSource != null;
-        bool usable = hasSkill && skillSource.isActiveAndEnabled;
+        var progression = PlayerProgression.Instance;
+        bool hasJob = progression != null && progression.CurrentJob != PlayerJob.None;
+        bool jobSkill = skillSource is ArcherSkillBase;
+        bool usable = hasSkill && skillSource.isActiveAndEnabled && (!jobSkill || hasJob);
         float remaining = usable ? Mathf.Max(0f, skill.CooldownRemaining) : 0f;
         float duration = hasSkill ? Mathf.Max(0.01f, skill.Cooldown) : 1f;
 
         // 쓸 수 있을 때만 보이기 (부드럽게 나타남/사라짐)
         if (group != null)
         {
-            PlayerProgression progression = PlayerProgression.Instance;
-            bool hasJob = progression != null && progression.CurrentJob != PlayerJob.None;
             bool visible = !hideWhenUnavailable || usable || (showAfterJob && hasJob);
             float target = visible ? 1f : 0f;
             group.alpha = Mathf.MoveTowards(group.alpha, target, fadeSpeed * Time.unscaledDeltaTime);
         }
 
         bool ready = usable && (skillSource is StackDashUIAdapter stack ? stack.Charges > 0 : remaining <= 0f);
+        bool cooling = usable && !ready;
         if (background != null)
-            background.color = !hasSkill ? emptyColor : ready ? readyColor : lockedColor;
+            background.color = cooling ? Color.black : !hasSkill ? emptyColor : ready ? readyColor : lockedColor;
 
         if (icon != null)
         {
-            icon.enabled = hasSkill && icon.sprite != null;
-            icon.color = usable ? Color.white : new Color(1f, 1f, 1f, 0.35f);
+            icon.enabled = usable && icon.sprite != null;
+            icon.color = cooling ? Color.black : usable ? Color.white : new Color(1f, 1f, 1f, 0.35f);
         }
 
         if (cooldownOverlay != null)
         {
-            cooldownOverlay.enabled = remaining > 0f;
+            cooldownOverlay.enabled = cooling && remaining > 0f;
             cooldownOverlay.fillAmount = Mathf.Clamp01(remaining / duration);
         }
 

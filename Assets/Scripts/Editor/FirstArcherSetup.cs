@@ -148,7 +148,7 @@ public static class FirstArcherSetup
         EditorSceneManager.OpenScene("Assets/Scenes/GameCreateProject.unity");
         Setup(); EditorSceneManager.SaveOpenScenes();
         string first = System.IO.File.ReadAllText("Assets/Scenes/GameCreateProject.unity");
-        SecondJobSetup.Setup(); EditorSceneManager.SaveOpenScenes();
+        Setup(); EditorSceneManager.SaveOpenScenes();
         if (first != System.IO.File.ReadAllText("Assets/Scenes/GameCreateProject.unity")) throw new Exception("First archer setup is not idempotent");
         foreach (var root in SceneManager.GetActiveScene().GetRootGameObjects())
             foreach (var transform in root.GetComponentsInChildren<Transform>(true))

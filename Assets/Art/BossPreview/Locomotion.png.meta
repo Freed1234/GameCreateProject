@@ -1,0 +1,3239 @@
+fileFormatVersion: 2
+guid: b5f424914a95eb64fb2237bd16915116
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1511250145268635606
+    second: Locomotion_0
+  - first:
+      213: -2009989794151954013
+    second: Locomotion_1
+  - first:
+      213: 98796720604404653
+    second: Locomotion_2
+  - first:
+      213: 5906313277163238404
+    second: Locomotion_3
+  - first:
+      213: 8772282988276485154
+    second: Locomotion_4
+  - first:
+      213: -8095006206447728465
+    second: Locomotion_5
+  - first:
+      213: 1509797172565013843
+    second: Locomotion_6
+  - first:
+      213: -736847465724389789
+    second: Locomotion_7
+  - first:
+      213: -5427949150586232935
+    second: Locomotion_8
+  - first:
+      213: -3002739651706590214
+    second: Locomotion_9
+  - first:
+      213: 1454411067662274216
+    second: Locomotion_10
+  - first:
+      213: 8549293803894637343
+    second: Locomotion_11
+  - first:
+      213: -5347089433351684311
+    second: Locomotion_12
+  - first:
+      213: 1932546870750563139
+    second: Locomotion_13
+  - first:
+      213: 5765918449944241951
+    second: Locomotion_14
+  - first:
+      213: -6822481955962197096
+    second: Locomotion_15
+  - first:
+      213: -5814210757620547378
+    second: Locomotion_16
+  - first:
+      213: 4691511475565106581
+    second: Locomotion_17
+  - first:
+      213: 2741526913566254713
+    second: Locomotion_18
+  - first:
+      213: -2640648211869036356
+    second: Locomotion_19
+  - first:
+      213: -1275302647656124706
+    second: Locomotion_20
+  - first:
+      213: 1565072504614267069
+    second: Locomotion_21
+  - first:
+      213: -1945444010693685434
+    second: Locomotion_22
+  - first:
+      213: 4036391149893719680
+    second: Locomotion_23
+  - first:
+      213: 5603763954963474904
+    second: Locomotion_24
+  - first:
+      213: 6293909300398990358
+    second: Locomotion_25
+  - first:
+      213: -4566973894135639929
+    second: Locomotion_26
+  - first:
+      213: -474082394980915393
+    second: Locomotion_27
+  - first:
+      213: 5834257197601982173
+    second: Locomotion_28
+  - first:
+      213: -8521673891130634537
+    second: Locomotion_29
+  - first:
+      213: -4793164042370173470
+    second: Locomotion_30
+  - first:
+      213: 2915680852277145154
+    second: Locomotion_31
+  - first:
+      213: 6676260301981806693
+    second: Locomotion_32
+  - first:
+      213: -4965847238367099552
+    second: Locomotion_33
+  - first:
+      213: 4267559656905478859
+    second: Locomotion_34
+  - first:
+      213: -8920363321442587917
+    second: Locomotion_35
+  - first:
+      213: -2284758125189096764
+    second: Locomotion_36
+  - first:
+      213: 3668826356695536442
+    second: Locomotion_37
+  - first:
+      213: -924618595679531536
+    second: Locomotion_38
+  - first:
+      213: -6372024508625242569
+    second: Locomotion_39
+  - first:
+      213: 4895664068596585763
+    second: Locomotion_40
+  - first:
+      213: 6846846818506810507
+    second: Locomotion_41
+  - first:
+      213: -4400350695501909889
+    second: Locomotion_42
+  - first:
+      213: 2043640782205811058
+    second: Locomotion_43
+  - first:
+      213: 5010380685433674351
+    second: Locomotion_44
+  - first:
+      213: 8353190926266734630
+    second: Locomotion_45
+  - first:
+      213: -505359892657003216
+    second: Locomotion_46
+  - first:
+      213: 263681222592349118
+    second: Locomotion_47
+  - first:
+      213: 4060850045303881419
+    second: Locomotion_48
+  - first:
+      213: 3279765802432804282
+    second: Locomotion_49
+  - first:
+      213: 6838807687058401985
+    second: Locomotion_50
+  - first:
+      213: 2424372877432290574
+    second: Locomotion_51
+  - first:
+      213: 6626468125445974529
+    second: Locomotion_52
+  - first:
+      213: -6996167173193337449
+    second: Locomotion_53
+  - first:
+      213: 6551853044246603304
+    second: Locomotion_54
+  - first:
+      213: 6008103891367176502
+    second: Locomotion_55
+  - first:
+      213: -6175064832283127627
+    second: Locomotion_56
+  - first:
+      213: -6890371179114085889
+    second: Locomotion_57
+  - first:
+      213: 7916898517518054481
+    second: Locomotion_58
+  - first:
+      213: -1811096070114178608
+    second: Locomotion_59
+  - first:
+      213: -1884402520679949120
+    second: Locomotion_60
+  - first:
+      213: -2695850919136555165
+    second: Locomotion_61
+  - first:
+      213: -4914899438867950354
+    second: Locomotion_62
+  - first:
+      213: -6293851370772985004
+    second: Locomotion_63
+  - first:
+      213: 6890562693310545011
+    second: Locomotion_64
+  - first:
+      213: 8800855162761894382
+    second: Locomotion_65
+  - first:
+      213: 553895368272393393
+    second: Locomotion_66
+  - first:
+      213: 948107898235978591
+    second: Locomotion_67
+  - first:
+      213: 4721318775601998372
+    second: Locomotion_68
+  - first:
+      213: -8516271163562280831
+    second: Locomotion_69
+  - first:
+      213: 3331911985888776304
+    second: Locomotion_70
+  - first:
+      213: 4341465420051951116
+    second: Locomotion_71
+  - first:
+      213: 8060089174778696546
+    second: Locomotion_72
+  - first:
+      213: 2605948246171922489
+    second: Locomotion_73
+  - first:
+      213: 1449004271069174908
+    second: Locomotion_74
+  - first:
+      213: -2665366701183842023
+    second: Locomotion_75
+  - first:
+      213: 5591811785204761251
+    second: Locomotion_76
+  - first:
+      213: -7880108116671747195
+    second: Locomotion_77
+  - first:
+      213: -7136588421725147863
+    second: Locomotion_78
+  - first:
+      213: 5657330861753069051
+    second: Locomotion_79
+  - first:
+      213: -1989600999156092054
+    second: Locomotion_80
+  - first:
+      213: 6292514204788919256
+    second: Locomotion_81
+  - first:
+      213: 4245522917947347420
+    second: Locomotion_82
+  - first:
+      213: -1167857542936842509
+    second: Locomotion_83
+  - first:
+      213: 3762606439618872375
+    second: Locomotion_84
+  - first:
+      213: -7475265990682211815
+    second: Locomotion_85
+  - first:
+      213: -4362613789181857084
+    second: Locomotion_86
+  - first:
+      213: -4093001903985131457
+    second: Locomotion_87
+  - first:
+      213: 4632246048650427877
+    second: Locomotion_88
+  - first:
+      213: -6594289195287516723
+    second: Locomotion_89
+  - first:
+      213: 1087658437979405762
+    second: Locomotion_90
+  - first:
+      213: 6062416965236353807
+    second: Locomotion_91
+  - first:
+      213: -8005285616605747484
+    second: Locomotion_92
+  - first:
+      213: 560114577782807337
+    second: Locomotion_93
+  - first:
+      213: 5347472367735793314
+    second: Locomotion_94
+  - first:
+      213: -8133095843815550203
+    second: Locomotion_95
+  - first:
+      213: 5239355841079612624
+    second: Locomotion_96
+  - first:
+      213: -2413945798669054772
+    second: Locomotion_97
+  - first:
+      213: 3902401258823897243
+    second: Locomotion_98
+  - first:
+      213: -1207308816377830218
+    second: Locomotion_99
+  - first:
+      213: -5685589142154561282
+    second: Locomotion_100
+  - first:
+      213: 5539062252335206825
+    second: Locomotion_101
+  - first:
+      213: 2220834802764491648
+    second: Locomotion_102
+  - first:
+      213: 8369118807013064329
+    second: Locomotion_103
+  - first:
+      213: 4832004893059374445
+    second: Locomotion_104
+  - first:
+      213: -1414695755205927036
+    second: Locomotion_105
+  - first:
+      213: -8491281488003447609
+    second: Locomotion_106
+  - first:
+      213: 1178550132743529826
+    second: Locomotion_107
+  - first:
+      213: 5818546843732130394
+    second: Locomotion_108
+  - first:
+      213: 2435408802061550435
+    second: Locomotion_109
+  - first:
+      213: -3781988263374898554
+    second: Locomotion_110
+  - first:
+      213: -8919165567244742999
+    second: Locomotion_111
+  - first:
+      213: -1373101952773896237
+    second: Locomotion_112
+  - first:
+      213: -846999333232578557
+    second: Locomotion_113
+  - first:
+      213: -8540353768246635030
+    second: Locomotion_114
+  - first:
+      213: 21700226934651625
+    second: Locomotion_115
+  - first:
+      213: 7477679092791862172
+    second: Locomotion_116
+  - first:
+      213: 3783335386190327931
+    second: Locomotion_117
+  - first:
+      213: 3119763807370072074
+    second: Locomotion_118
+  - first:
+      213: -3508584217864121130
+    second: Locomotion_119
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Locomotion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 501
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a286184fff5f60be0800000000000000
+      internalID: -1511250145268635606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_1
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 553
+        width: 430
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9896d7ee41b14e0800000000000000
+      internalID: -2009989794151954013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_2
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 559
+        width: 380
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab599c081ffe5100800000000000000
+      internalID: 98796720604404653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_3
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 721
+        width: 78
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404fc71f1a077f150800000000000000
+      internalID: 5906313277163238404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_4
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 857
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c0c6976e86db970800000000000000
+      internalID: 8772282988276485154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_5
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 473
+        width: 372
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8c9129eb2c8af80800000000000000
+      internalID: -8095006206447728465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_6
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 813
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35570a97780e3f410800000000000000
+      internalID: 1509797172565013843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_7
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 787
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366d9d7422136c5f0800000000000000
+      internalID: -736847465724389789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_8
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 779
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f9c6c810d0ca4b0800000000000000
+      internalID: -5427949150586232935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_9
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 792
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb6c0b22302456d0800000000000000
+      internalID: -3002739651706590214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_10
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 749
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae0865092b1f2410800000000000000
+      internalID: 1454411067662274216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1386952b6135a670800000000000000
+      internalID: 8549293803894637343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_12
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 646
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ff3de8d725bc5b0800000000000000
+      internalID: -5347089433351684311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 638
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b41eec329c1da10800000000000000
+      internalID: 1932546870750563139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_14
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 695
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f172cc4f748a40050800000000000000
+      internalID: 5765918449944241951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_15
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 703
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b6c50eecca151a0800000000000000
+      internalID: -6822481955962197096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_16
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 666
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0c5c6fe16cf4fa0800000000000000
+      internalID: -5814210757620547378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_17
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 664
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5951ab094d89b1140800000000000000
+      internalID: 4691511475565106581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_18
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 644
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9762a41e33cdb0620800000000000000
+      internalID: 2741526913566254713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_19
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 579
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb096ca21788a5bd0800000000000000
+      internalID: -2640648211869036356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_20
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 636
+        width: 66
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede6751bff63d4ee0800000000000000
+      internalID: -1275302647656124706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_21
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 630
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8a34d962148b510800000000000000
+      internalID: 1565072504614267069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_22
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 618
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f013ccaf46005e0800000000000000
+      internalID: -1945444010693685434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_23
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 525
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08612f77d54240830800000000000000
+      internalID: 4036391149893719680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_24
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 596
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d96cb480a194cd40800000000000000
+      internalID: 5603763954963474904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_25
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 614
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6142fc28925785750800000000000000
+      internalID: 6293909300398990358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_26
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 585
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780109da079de90c0800000000000000
+      internalID: -4566973894135639929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_27
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 271
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3765e4d298bb69f0800000000000000
+      internalID: -474082394980915393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_28
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 590
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6055f820277f050800000000000000
+      internalID: 5834257197601982173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_29
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 297
+        width: 265
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de007beebeecb980800000000000000
+      internalID: -8521673891130634537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_30
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 564
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5b950e2b24b7db0800000000000000
+      internalID: -4793164042370173470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_31
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 502
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e23668944967820800000000000000
+      internalID: 2915680852277145154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_32
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 265
+        width: 334
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560faaf4f57d6ac50800000000000000
+      internalID: 6676260301981806693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_33
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 563
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06546443f34c51bb0800000000000000
+      internalID: -4965847238367099552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_34
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 514
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc293afb5ea693b30800000000000000
+      internalID: 4267559656905478859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_35
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 564
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3faadfd32d0843480800000000000000
+      internalID: -8920363321442587917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_36
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 549
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca9a6e1798ea40e0800000000000000
+      internalID: -2284758125189096764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_37
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 539
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a339d65122a4ae230800000000000000
+      internalID: 3668826356695536442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_38
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 217
+        width: 386
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd0dcb39481b23f0800000000000000
+      internalID: -924618595679531536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_39
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 561
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7363f4748750297a0800000000000000
+      internalID: -6372024508625242569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_40
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 517
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325d7543884e0f340800000000000000
+      internalID: 4895664068596585763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_41
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 529
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84ac90c7e2e40f50800000000000000
+      internalID: 6846846818506810507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_42
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 539
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7037734b50dee2c0800000000000000
+      internalID: -4400350695501909889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_43
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 541
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279f0e7b6787c5c10800000000000000
+      internalID: 2043640782205811058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_44
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 533
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a90c0ffa2788540800000000000000
+      internalID: 5010380685433674351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_45
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 471
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628152de3ee7ce370800000000000000
+      internalID: 8353190926266734630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_46
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 0
+        width: 178
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035237aead99cf8f0800000000000000
+      internalID: -505359892657003216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_47
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 515
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3ce86cca8c8a300800000000000000
+      internalID: 263681222592349118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_48
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 467
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce7774d9990b5830800000000000000
+      internalID: 4060850045303881419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_49
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 483
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab53b70de91148d20800000000000000
+      internalID: 3279765802432804282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_50
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 521
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caa35a9b5358ee50800000000000000
+      internalID: 6838807687058401985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_51
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 487
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d7172894a15a120800000000000000
+      internalID: 2424372877432290574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_52
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 517
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ae7acc6a1f5fb50800000000000000
+      internalID: 6626468125445974529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_53
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 471
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795ff84f50f98ee90800000000000000
+      internalID: -6996167173193337449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_54
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 461
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82661ea61abdcea50800000000000000
+      internalID: 6551853044246603304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 432
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639259a28a2116350800000000000000
+      internalID: 6008103891367176502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_56
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 432
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0d1ce7043cd4aa0800000000000000
+      internalID: -6175064832283127627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_57
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 450
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1c05a5beb7060a0800000000000000
+      internalID: -6890371179114085889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_58
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 446
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154fa7391497edd60800000000000000
+      internalID: 7916898517518054481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_59
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 442
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d90db648b1bdd6e0800000000000000
+      internalID: -1811096070114178608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_60
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 442
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc550534e149d5e0800000000000000
+      internalID: -1884402520679949120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_61
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 424
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f847d4fd9669ad0800000000000000
+      internalID: -2695850919136555165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_62
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 450
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee452872005cacbb0800000000000000
+      internalID: -4914899438867950354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_63
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 442
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b88f7468fb7a8a0800000000000000
+      internalID: -6293851370772985004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_64
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 410
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c7555034230af50800000000000000
+      internalID: 6890562693310545011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_65
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 414
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9d510442be22a70800000000000000
+      internalID: 8800855162761894382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_66
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 392
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b43c9c17e4dfa700800000000000000
+      internalID: 553895368272393393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_67
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 424
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5309133c1b582d00800000000000000
+      internalID: 948107898235978591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_68
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 390
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42aa32b696e758140800000000000000
+      internalID: 4721318775601998372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_69
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 410
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188b7f47f7020d980800000000000000
+      internalID: -8516271163562280831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_70
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 402
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07054c54c445d3e20800000000000000
+      internalID: 3331911985888776304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_71
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 398
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ea6d62ccbff3c30800000000000000
+      internalID: 4341465420051951116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_72
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 388
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263d7a876603bdf60800000000000000
+      internalID: 8060089174778696546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_73
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 362
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930312c7f103a2420800000000000000
+      internalID: 2605948246171922489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_74
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 386
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c1a1715b5eb1410800000000000000
+      internalID: 1449004271069174908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_75
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 374
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91948c36b17b20bd0800000000000000
+      internalID: -2665366701183842023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_76
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 368
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a209f3213b1a9d40800000000000000
+      internalID: 5591811785204761251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_77
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 380
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bab122b6b34a290800000000000000
+      internalID: -7880108116671747195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_78
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 346
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d28e644aeb5fc90800000000000000
+      internalID: -7136588421725147863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_79
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 317
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd65a7e170e28e40800000000000000
+      internalID: 5657330861753069051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_80
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 313
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63f980ce648364e0800000000000000
+      internalID: -1989600999156092054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_81
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 289
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db0b808450835750800000000000000
+      internalID: 6292514204788919256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_82
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 267
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd11802a9902bea30800000000000000
+      internalID: 4245522917947347420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_83
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 287
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe2df490cfeacfe0800000000000000
+      internalID: -1167857542936842509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_84
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 291
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73484172f96773430800000000000000
+      internalID: 3762606439618872375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_85
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 285
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a04d7ef25824890800000000000000
+      internalID: -7475265990682211815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_86
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 265
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c238937fd1e473c0800000000000000
+      internalID: -4362613789181857084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_87
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 253
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3008f7347cb237c0800000000000000
+      internalID: -4093001903985131457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_88
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 0
+        width: 327
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edf3021d3b094040800000000000000
+      internalID: 4632246048650427877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_89
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 402
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9e0b83ae06c74a0800000000000000
+      internalID: -6594289195287516723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_90
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 289
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdf7b03693281f00800000000000000
+      internalID: 1087658437979405762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_91
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 289
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0be63d1c18022450800000000000000
+      internalID: 6062416965236353807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_92
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 17
+        width: 275
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6aba0452387e090800000000000000
+      internalID: -8005285616605747484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_93
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 342
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b134aad3de5c700800000000000000
+      internalID: 560114577782807337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_94
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 267
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6eb1d49c9063a40800000000000000
+      internalID: 5347472367735793314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_95
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 271
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5031b29cb60712f80800000000000000
+      internalID: -8133095843815550203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 5
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d41b6fc06ee5b840800000000000000
+      internalID: 5239355841079612624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_97
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 215
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccc843f511ff7ed0800000000000000
+      internalID: -2413945798669054772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_98
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 134
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b905c33e44d182630800000000000000
+      internalID: 3902401258823897243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_99
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 152
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b42a913707ce3fe0800000000000000
+      internalID: -1207308816377830218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_100
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 128
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef83f0b7ccab811b0800000000000000
+      internalID: -5685589142154561282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_101
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 132
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1173375c3bedc40800000000000000
+      internalID: 5539062252335206825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_102
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 106
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b2a939c7df1de10800000000000000
+      internalID: 2220834802764491648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_103
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 112
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98efd07a635152470800000000000000
+      internalID: 8369118807013064329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_104
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 69
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6dd0c369dabe0340800000000000000
+      internalID: 4832004893059374445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_105
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 84
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f92bdb4bdfd5ce0800000000000000
+      internalID: -1414695755205927036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_106
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 78
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c444b3b978e82a80800000000000000
+      internalID: -8491281488003447609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_107
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 23
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265ea2cf91d0b5010800000000000000
+      internalID: 1178550132743529826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_108
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 80
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5abf91c681afb050800000000000000
+      internalID: 5818546843732130394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_109
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 84
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3630db1f66f4cc120800000000000000
+      internalID: 2435408802061550435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_110
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 29
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ab7d856bda38bc0800000000000000
+      internalID: -3781988263374898554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_111
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 7
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae4b7f1c22c83480800000000000000
+      internalID: -8919165567244742999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_112
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 27
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d744888c03c1fce0800000000000000
+      internalID: -1373101952773896237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_113
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 63
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300fda1189ade34f0800000000000000
+      internalID: -846999333232578557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_114
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 63
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae59d7b1f719a7980800000000000000
+      internalID: -8540353768246635030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_115
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 18
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea3cfdcd381d4000800000000000000
+      internalID: 21700226934651625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_116
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 9
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c936936348d06c760800000000000000
+      internalID: 7477679092791862172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_117
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 22
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b703a002d7b118430800000000000000
+      internalID: 3783335386190327931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_118
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 17
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00d96157a0ab4b20800000000000000
+      internalID: 3119763807370072074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Locomotion_119
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 19
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4daad3e310f4fc0800000000000000
+      internalID: -3508584217864121130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Locomotion_0: -1511250145268635606
+      Locomotion_1: -2009989794151954013
+      Locomotion_10: 1454411067662274216
+      Locomotion_100: -5685589142154561282
+      Locomotion_101: 5539062252335206825
+      Locomotion_102: 2220834802764491648
+      Locomotion_103: 8369118807013064329
+      Locomotion_104: 4832004893059374445
+      Locomotion_105: -1414695755205927036
+      Locomotion_106: -8491281488003447609
+      Locomotion_107: 1178550132743529826
+      Locomotion_108: 5818546843732130394
+      Locomotion_109: 2435408802061550435
+      Locomotion_11: 8549293803894637343
+      Locomotion_110: -3781988263374898554
+      Locomotion_111: -8919165567244742999
+      Locomotion_112: -1373101952773896237
+      Locomotion_113: -846999333232578557
+      Locomotion_114: -8540353768246635030
+      Locomotion_115: 21700226934651625
+      Locomotion_116: 7477679092791862172
+      Locomotion_117: 3783335386190327931
+      Locomotion_118: 3119763807370072074
+      Locomotion_119: -3508584217864121130
+      Locomotion_12: -5347089433351684311
+      Locomotion_13: 1932546870750563139
+      Locomotion_14: 5765918449944241951
+      Locomotion_15: -6822481955962197096
+      Locomotion_16: -5814210757620547378
+      Locomotion_17: 4691511475565106581
+      Locomotion_18: 2741526913566254713
+      Locomotion_19: -2640648211869036356
+      Locomotion_2: 98796720604404653
+      Locomotion_20: -1275302647656124706
+      Locomotion_21: 1565072504614267069
+      Locomotion_22: -1945444010693685434
+      Locomotion_23: 4036391149893719680
+      Locomotion_24: 5603763954963474904
+      Locomotion_25: 6293909300398990358
+      Locomotion_26: -4566973894135639929
+      Locomotion_27: -474082394980915393
+      Locomotion_28: 5834257197601982173
+      Locomotion_29: -8521673891130634537
+      Locomotion_3: 5906313277163238404
+      Locomotion_30: -4793164042370173470
+      Locomotion_31: 2915680852277145154
+      Locomotion_32: 6676260301981806693
+      Locomotion_33: -4965847238367099552
+      Locomotion_34: 4267559656905478859
+      Locomotion_35: -8920363321442587917
+      Locomotion_36: -2284758125189096764
+      Locomotion_37: 3668826356695536442
+      Locomotion_38: -924618595679531536
+      Locomotion_39: -6372024508625242569
+      Locomotion_4: 8772282988276485154
+      Locomotion_40: 4895664068596585763
+      Locomotion_41: 6846846818506810507
+      Locomotion_42: -4400350695501909889
+      Locomotion_43: 2043640782205811058
+      Locomotion_44: 5010380685433674351
+      Locomotion_45: 8353190926266734630
+      Locomotion_46: -505359892657003216
+      Locomotion_47: 263681222592349118
+      Locomotion_48: 4060850045303881419
+      Locomotion_49: 3279765802432804282
+      Locomotion_5: -8095006206447728465
+      Locomotion_50: 6838807687058401985
+      Locomotion_51: 2424372877432290574
+      Locomotion_52: 6626468125445974529
+      Locomotion_53: -6996167173193337449
+      Locomotion_54: 6551853044246603304
+      Locomotion_55: 6008103891367176502
+      Locomotion_56: -6175064832283127627
+      Locomotion_57: -6890371179114085889
+      Locomotion_58: 7916898517518054481
+      Locomotion_59: -1811096070114178608
+      Locomotion_6: 1509797172565013843
+      Locomotion_60: -1884402520679949120
+      Locomotion_61: -2695850919136555165
+      Locomotion_62: -4914899438867950354
+      Locomotion_63: -6293851370772985004
+      Locomotion_64: 6890562693310545011
+      Locomotion_65: 8800855162761894382
+      Locomotion_66: 553895368272393393
+      Locomotion_67: 948107898235978591
+      Locomotion_68: 4721318775601998372
+      Locomotion_69: -8516271163562280831
+      Locomotion_7: -736847465724389789
+      Locomotion_70: 3331911985888776304
+      Locomotion_71: 4341465420051951116
+      Locomotion_72: 8060089174778696546
+      Locomotion_73: 2605948246171922489
+      Locomotion_74: 1449004271069174908
+      Locomotion_75: -2665366701183842023
+      Locomotion_76: 5591811785204761251
+      Locomotion_77: -7880108116671747195
+      Locomotion_78: -7136588421725147863
+      Locomotion_79: 5657330861753069051
+      Locomotion_8: -5427949150586232935
+      Locomotion_80: -1989600999156092054
+      Locomotion_81: 6292514204788919256
+      Locomotion_82: 4245522917947347420
+      Locomotion_83: -1167857542936842509
+      Locomotion_84: 3762606439618872375
+      Locomotion_85: -7475265990682211815
+      Locomotion_86: -4362613789181857084
+      Locomotion_87: -4093001903985131457
+      Locomotion_88: 4632246048650427877
+      Locomotion_89: -6594289195287516723
+      Locomotion_9: -3002739651706590214
+      Locomotion_90: 1087658437979405762
+      Locomotion_91: 6062416965236353807
+      Locomotion_92: -8005285616605747484
+      Locomotion_93: 560114577782807337
+      Locomotion_94: 5347472367735793314
+      Locomotion_95: -8133095843815550203
+      Locomotion_96: 5239355841079612624
+      Locomotion_97: -2413945798669054772
+      Locomotion_98: 3902401258823897243
+      Locomotion_99: -1207308816377830218
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

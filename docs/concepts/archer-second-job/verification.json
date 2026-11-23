@@ -1,0 +1,164 @@
+{
+  "Z1": {
+    "shots": 20,
+    "targets": [
+      0,
+      1,
+      6
+    ],
+    "empty_no_shots": true,
+    "gap_resume": true,
+    "exact_aim": true
+  },
+  "Z2": {
+    "shots": 20,
+    "targets": [
+      0,
+      1,
+      2,
+      3,
+      6
+    ],
+    "empty_no_shots": true,
+    "gap_resume": true,
+    "exact_aim": true
+  },
+  "Z3": {
+    "shots": 12,
+    "targets": [
+      0,
+      6
+    ],
+    "empty_no_shots": true,
+    "gap_resume": true,
+    "exact_aim": true
+  },
+  "C-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "C1.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "C2.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "C3.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Shift-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "Shift1.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Shift2.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Shift3.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "X-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "X1.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "X2.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "X3.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Z-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "Z1.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Z2.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Z3.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  }
+}

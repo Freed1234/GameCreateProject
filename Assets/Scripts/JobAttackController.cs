@@ -137,6 +137,8 @@ public class JobAttackController : MonoBehaviour
         // 이전 공격을 먼저 끈 다음 새 공격을 켭니다.
         // The retired single piercing shot must never return through an old attack list.
         selected.RemoveWhere(attack => attack is PiercingProjectileSkill);
+        var advanced = GetComponent<SecondJobSystem>();
+        if (advanced != null) selected.RemoveWhere(attack => advanced.Replaces(attack));
 
         foreach (MonoBehaviour attack in managed)
             if (attack != null && !selected.Contains(attack)) attack.enabled = false;

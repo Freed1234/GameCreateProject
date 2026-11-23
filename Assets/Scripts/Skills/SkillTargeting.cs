@@ -65,6 +65,22 @@ public static class SkillTargeting
         foreach(var hit in hits)if(hit.collider!=null && (owner==null || !hit.collider.transform.IsChildOf(owner)))wall=Mathf.Min(wall,hit.distance);
         return wall;
     }
+    // Match the new wind arrow's swept-disc collision instead of scoring collider shapes.
+    public static Result WindPiercing(Transform container, Vector2 origin, float range, float radius, Vector2 fallback)
+    {
+        var targets = Snapshot(container, origin, range + radius + SkillUtil.EnemyRadius);
+        Vector2 nearest = NearestDirection(targets, origin, range, fallback);
+        var best = new Result { Aim = fallback }; float alignment = -2;
+        foreach (float angle in Angles(targets, origin, range, fallback))
+        {
+            Vector2 direction = Direction(angle); int count = 0; float sum = 0;
+            foreach (var target in targets)
+                if (SkillProjectile.SegmentEntryDistance(origin, direction, range, target.position, radius + SkillUtil.EnemyRadius) <= range)
+                { count++; sum += target.distance; }
+            Consider(ref best, ref alignment, direction, count, sum, direction, nearest);
+        }
+        return best;
+    }
     // First-job projectile uses real colliders, unlike the second-job analytic enemy discs.
     public static Result Piercing(Transform container,Transform owner,Vector2 origin,float aimRange,float radius,int obstacles,Vector2 fallback)
     {

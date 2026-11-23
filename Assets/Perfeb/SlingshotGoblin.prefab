@@ -229,8 +229,8 @@ MonoBehaviour:
   cooldown: 1.25
   stoneSpeed: 7
   damage: 1
-  "\uCC44\uC6C0\uC0C9": {r: 1, g: 0.1, b: 0.08, a: 1}
-  "\uACBD\uACC4\uC120_\uC0C9": {r: 1, g: 0.84, b: 0.56, a: 1}
+  "\uCC44\uC6C0\uC0C9": {r: 1, g: 0.06, b: 0.08, a: 0.5}
+  "\uACBD\uACC4\uC120_\uC0C9": {r: 1, g: 1, b: 1, a: 1}
   backstepSpeed: 0.8
   backstepStart: 2
   backstepStop: 2.5

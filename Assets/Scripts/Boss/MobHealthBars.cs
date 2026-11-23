@@ -34,6 +34,9 @@ public class MobHealthBars : MonoBehaviour
         seen.Clear();
         foreach (EnemyHealth enemy in SkillUtil.Enemies(SkillUtil.EnemyContainer(null)))
         {
+            // The per-frame cache can still contain enemies removed after it was built.
+            if (enemy == null || !enemy.isActiveAndEnabled || enemy.IsDead)
+                continue;
             if (enemy.GetComponent<BossController>() != null || enemy.GetComponent<BossHitProxy>() != null)
                 continue;
             seen.Add(enemy);

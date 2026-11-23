@@ -57,6 +57,25 @@ public static class GameUIBuilder
     };
     private static readonly string[] SlotFallbackKeys = { "SHIFT", "Z", "X", "C" };
 
+    [MenuItem("Tools/Game UI/Connect Boss Augment Rewards")]
+    public static void ConnectBossRewards()
+    {
+        if (EditorApplication.isPlaying) return;
+        if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+        var scene = EditorSceneManager.OpenScene("Assets/Scenes/GameCreateProject.unity");
+        if (Object.FindAnyObjectByType<AugmentSystem>(FindObjectsInactive.Include) != null) return;
+        var canvas = GameObject.Find(CanvasName);
+        if (canvas == null) throw new System.InvalidOperationException("GameUICanvas is missing");
+        LoadAssets();
+        BuildAugmentPanel(canvas);
+        // Connect rewards without granting the old prototype's starting lifesteal buff.
+        var so = new SerializedObject(canvas.GetComponent<AugmentSystem>());
+        var entries = so.FindProperty("augments");
+        for (int i=0;i<entries.arraySize;i++) entries.GetArrayElementAtIndex(i).FindPropertyRelative("startOwned").boolValue=false;
+        so.ApplyModifiedPropertiesWithoutUndo();
+        EditorSceneManager.SaveScene(scene);
+    }
+
     [MenuItem("Tools/Game UI/Build Gameplay UI")]
     public static void Build()
     {

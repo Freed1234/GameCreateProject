@@ -1,0 +1,1007 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 20576)
+VBCSCompiler prewarm took 4.47 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-minwo" at "2026-11-20T05:51:53.954158Z"
+Built from '6000.6/staging' branch; Version is '6000.6.2f1 (770e33f6875c) revision 7802419'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26300) Core' Language: 'ko' Physical Memory: 32397 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-20T05:51:53Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9364, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              004861ae9dce47eaaf7aa6dad2f6eec9
+  Correlation Id:          2ac34118965dada8af71e2fc3e691354
+  External correlation Id: 2520793567392823926
+  Machine Id:              X7qNodpFchZxCYLNODCfFCimSAo=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-minwo" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-minwo-notifications" at "2026-11-20T05:51:53.9772516Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569721435963-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.03s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.2f1\Editor\Unity.exe
+-batchmode
+-projectPath
+C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117
+-executeMethod
+EnemyLifetimeCheck.Run
+-logFile
+C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\EnemyLifetimeCheck-Motion.log
+Successfully changed project path to: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117
+C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [36820]  Target information:
+
+Player connection [36820]  * "[IP] 100.65.112.6 [Port] 55506 [Flags] 2 [Guid] 1365839533 [EditorId] 1365839533 [Version] 1048832 [Id] WindowsEditor(7,團辦) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36820]  * "[IP] 172.22.238.31 [Port] 55506 [Flags] 2 [Guid] 1365839533 [EditorId] 1365839533 [Version] 1048832 [Id] WindowsEditor(7,團辦) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36820] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [36820] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-7740" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.6.2f1 (770e33f6875c)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5070 Laptop GPU (ID=0x2d58)
+    Vendor:          NVIDIA
+    VRAM:            7891 MB
+    App VRAM Budget: 7123 MB
+    Driver:          32.0.16.2124
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001271 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.603 seconds
+Domain Reload Profiling: 1030ms
+	BeginReloadAssembly (115ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (99ms)
+		TypeCache.Refresh (167ms)
+			TypeCache.ScanAssembly (156ms)
+		AnalyzeDomain (0ms)
+	FinalizeReload (604ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (186ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 78 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@16.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.animation@899988b542b9)
+    com.unity.2d.aseprite@6.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.aseprite@ab909e3e9b5f)
+    com.unity.2d.psdimporter@15.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.psdimporter@e02a9153d8d9)
+    com.unity.2d.spriteshape@16.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.spriteshape@42798c9d35d3)
+    com.unity.2d.tilemap.extras@9.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.tilemap.extras@9446f3c60919)
+    com.unity.2d.tooling@4.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.tooling@4e93af4036ee)
+    com.unity.ai.assistant@2.19.0-pre.2 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ai.assistant@8d1e3e89e3a7)
+    com.unity.ai.inference@2.6.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ai.inference@9a123aee5df7)
+    com.unity.collab-proxy@2.13.6 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.learn.iet-framework@6.0.7 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.learn.iet-framework@96330db47073)
+    com.unity.services.cloud-build@2.1.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.services.cloud-build@a5d06c741c51)
+    com.unity.visualscripting@1.9.12 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.visualscripting@4edfcc09512f)
+    com.unity.services.core@1.18.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.services.core@3464cb68d709)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.settings-manager@2.1.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.settings-manager@0b8638c5ce86)
+    com.unity.dt.app-ui@2.1.11 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.dt.app-ui@cd5609b130ce)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.2d.common@15.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.common@b779c433ed47)
+    com.unity.searcher@4.9.5 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.sprite@947350d67f82)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.tilemap@2c6966496615)
+    com.unity.render-pipelines.universal@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.render-pipelines.universal@1e1cf3dcbd40)
+    com.unity.test-framework@1.8.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.test-framework@7a3849e09bd0)
+    com.unity.timeline@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.timeline@c56d56b0070b)
+    com.unity.ugui@2.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ugui@0f30cee369f3)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.render-pipelines.core@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.render-pipelines.core@a14850be21a6)
+    com.unity.shadergraph@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.shadergraph@96a7923f6bed)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.editorcoroutines@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.editorcoroutines@8cd72baa102a)
+    com.unity.burst@2.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.mathematics@1.4.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.mathematics@8306a64d0cd6)
+    com.unity.graph-authoring@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.test-framework.performance@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.test-framework.performance@0a60b857a52e)
+  Git packages:
+    com.coplaydev.unity-mcp@https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.coplaydev.unity-mcp@4384f8b518e8)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.accessibility/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.accessibility/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.adaptiveperformance/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.adaptiveperformance/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.ai/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.ai/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.androidjni/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.androidjni/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.animation/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.animation/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.assetbundle/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.assetbundle/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.audio/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.audio/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.cloth/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.cloth/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.director/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.director/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.hierarchycore/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.hierarchycore/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.particlesystem/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.particlesystem/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physicscore2d/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physicscore2d/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.subsystems/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.subsystems/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.terrain/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.terrain/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.terrainphysics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.terrainphysics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.tetgen/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.tetgen/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.tilemap/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.tilemap/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.timelinefoundation/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.timelinefoundation/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.ui/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.ui/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.uielements/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.uielements/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.umbra/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.umbra/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unityanalytics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unityanalytics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequest/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequest/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestassetbundle/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestassetbundle/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestaudio/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestaudio/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequesttexture/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequesttexture/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestwww/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestwww/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.vectorgraphics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.vectorgraphics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.vehicles/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.vehicles/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.video/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.video/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.wind/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.wind/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.xr/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.xr/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.shadergraph/Editor/Importers/_.sgsubgraphdb' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.shadergraph/Editor/Importers/_.sgsubgraphdb.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.shadergraph/Editor/Resources/Styles/MaterialGraph.uss' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.shadergraph/Editor/Resources/Styles/MaterialGraph.uss.meta because it's in an immutable folder.
+Refreshing native plugins compatible for Editor in 2.88 ms, found 6 plugins.
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.2f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s405ms
+[1572/2095  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.38 seconds), 1 items updated, 2095 evaluated
+AssetDatabase: script compilation time: 0.914977s
+Begin MonoManager ReloadAssembly
+Total cache size 268241424
+Total cache size after purge 268241424, took 00:00:00.2429903
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.96 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 6 plugins.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.689 seconds
+Domain Reload Profiling: 2914ms
+	BeginReloadAssembly (210ms)
+		DisableScriptedObjects (47ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (910ms)
+		LoadAssemblies (397ms)
+		TypeCache.Refresh (327ms)
+			TypeCache.ScanAssembly (309ms)
+		AnalyzeDomain (117ms)
+			BuildScriptInfoCaches (109ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1690ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (916ms)
+			ProcessInitializeOnLoadMethodAttributes (405ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Starting new worker id: 0 with log in C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=8ba48524899b00046b8933ae046a43dd): Total: 4.697 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2348 ms
+		Asset DB Callback time: managed=30 ms, native=15 ms
+		Scripting: domain reloads=1, domain reload time=1297 ms, compile time=917 ms, other=88 ms
+		Project Asset Count: scripts=2671, non-scripts=6921
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 16.599ms
+	ApplyChangesToAssetFolders: 0.671ms
+	Scan: 158.925ms
+	Collect global state as custom dependencies: 16.491ms
+	CategorizeScriptCompilationAssets: 63.043ms
+	ProcessAssetsWithTransientArtifactChanges: 105.374ms
+	CategorizeAssets: 87.352ms
+	CompileScripts: 916.687ms
+	ImportOutOfDateAssets: 1713.103ms (1701.780ms without children)
+		UnloadImportedAssets: 1.091ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.001ms
+		ImportSchedulerStart: 9.196ms
+	PostProcessAllAssets: 30.463ms
+		MonoPostProcessAllAssets: 30.408ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 12.186ms
+			SyncVS.PostprocessSyncProject 2.329ms
+			GraphRefreshPostprocessor.OnPostprocessAllAssets 1.703ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.467ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.194ms
+			AssetChangeDetector.OnPostprocessAllAssets 0.716ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.708ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.567ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.412ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.226ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.196ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.165ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.132ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.110ms
+	UnloadStreamsBegin: 1.077ms
+	PersistCurrentRevisions: 0.312ms
+	GenerateScriptTypeHashes: 1.709ms
+	GenerateScriptTypeSerializationHashes: 2.907ms
+	Untracked: 1542.206ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 0.694ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-ProtoType(ver 0.1)
+Unloading 197 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12129 unused Assets / (34.2 MB). Loaded Objects now: 12898.
+Memory consumption went from 0.59 GB to 0.56 GB.
+Total: 21.392700 ms (FindLiveObjects: 1.745800 ms CreateObjectMapping: 0.488200 ms MarkObjects: 13.757700 ms  DeleteObjects: 5.048300 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (34.0 KB). Loaded Objects now: 12900.
+Memory consumption went from 0.55 GB to 0.55 GB.
+Total: 13.903200 ms (FindLiveObjects: 0.447100 ms CreateObjectMapping: 0.186000 ms MarkObjects: 12.609900 ms  DeleteObjects: 0.132900 ms)
+
+[Project] Loading completed in 7.744 seconds
+	Project init time: 				7.117 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.241 seconds
+		Asset Database init time: 		0.189 seconds
+		Global illumination init time: 	0.002 seconds
+		Assemblies load time: 			1.066 seconds
+		Unity extensions init time: 	0.046 seconds
+		Asset Database refresh time: 	4.697 seconds
+	Scene opening time: 			0.269 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1795153921611,"processId":7740,"projectLoad":7.7436849,"projectInit":7.1174727,"templateInit":0.0,"packageManagerInit":0.2411904,"assetDatabaseInit":0.1889268,"globalIlluminationInit":0.0018112,"assembliesLoad":1.0660414,"unityExtensionsInit":0.0463649,"assetDatabaseRefresh":4.6970516,"sceneOpening":0.2689286}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1795153921611,"processId":7740,"editorVersion":"6000.6.2f1 (770e33f6875c)","branch":"6000.6/staging","buildType":"Release","platform":"Windows"}
+SpriteAtlasPacking completed in 0.005524 sec
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.82 ms, found 6 plugins.
+Worker ready: AssetImportWorkerHW0 0
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.78 ms, found 6 plugins.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.569 seconds
+Domain Reload Profiling: 2173ms
+	BeginReloadAssembly (265ms)
+		DisableScriptedObjects (34ms)
+		CreateAndSetChildDomain (101ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (241ms)
+		LoadAssemblies (145ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (11ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1570ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (139ms)
+			ProcessInitializeOnLoadAttributes (780ms)
+			ProcessInitializeOnLoadMethodAttributes (274ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (38ms)
+No restricted APIs configured; Validation skipped.
+Checking 34 assemblies for restricted APIs found 0 usage(s) in 2 ms
+Refreshing native plugins compatible for Editor in 2.72 ms, found 6 plugins.
+
+Asset Pipeline Refresh (id=56788c7565067514abd7e397a5cbb915): Total: 4.340 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1978 ms
+		Asset DB Callback time: managed=1235 ms, native=462 ms
+		Scripting: domain reloads=1, domain reload time=661 ms, compile time=2 ms, other=0 ms
+		Project Asset Count: scripts=2671, non-scripts=6921
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 1.355ms
+	ApplyChangesToAssetFolders: 0.225ms
+	Collect global state as custom dependencies: 3.126ms
+	ProcessAssetsWithTransientArtifactChanges: 248.105ms
+	CategorizeAssets: 86.850ms
+	CompileScripts: 1.632ms
+	ImportOutOfDateAssets: 1584.132ms (1581.947ms without children)
+		CollectScriptTypesHashes: 1.115ms
+		ReloadNativeAssets: 0.759ms
+		UnloadImportedAssets: 0.166ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.988ms
+		ImportSchedulerStart: 0.248ms
+	PostProcessAllAssets: 1693.526ms
+		AssemblyValidation.PostprocessAllAssets 48.233ms
+		PostProcessCallbackCreateDeferredMaterials 46.517ms
+		ShaderAssetModifiedCallback 21.954ms
+		SpriteAtlasDatabase.OnAssetPostprocessCallback 18.237ms
+		RaytracingShaderImportPostprocess 10.504ms
+		ComputeShaderImportPostprocess 10.122ms
+		SpeedTreeImporter.PostprocessAllAssets 7.532ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 4.338ms
+		BlockShaderImporter.PostprocessAllAssets 4.242ms
+		XRBuildSystem.XRAssetImported 0.845ms
+		MonoPostProcessAllAssets: 1234.837ms
+			SyncVS.PostprocessSyncProject 303.627ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 247.431ms
+			AssetPostprocessor.OnPostprocessAllAssets 80.843ms
+			PostProcessor.OnPostprocessAllAssets 47.805ms
+			MaterialPostprocessor.OnPostprocessAllAssets 44.278ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 43.308ms
+			AssetReferenceReimportMonitor.OnPostprocessAllAssets 42.766ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 42.202ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 25.138ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 22.582ms
+			AssetChangedListener.OnPostprocessAllAssets 17.311ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 16.074ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 12.786ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 6.072ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 4.903ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.586ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.710ms
+			GraphRefreshPostprocessor.OnPostprocessAllAssets 1.663ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 0.974ms
+			AssetChangeDetector.OnPostprocessAllAssets 0.846ms
+			SkillsProjectAssetPostprocessor.OnPostprocessAllAssets 0.559ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.514ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.407ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.393ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.344ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.341ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.339ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.298ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.284ms
+			ModelAssetProcessor.OnPostprocessAllAssets 0.261ms
+			AssetProcessor.OnPostprocessAllAssets 0.252ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.244ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.240ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.220ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.204ms
+			AssetEvents.OnPostprocessAllAssets 0.168ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.160ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.151ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.128ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.120ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.116ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.104ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.090ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.089ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.085ms
+			TrackSelectedAssetsProcessor.OnPostprocessAllAssets 0.070ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.057ms
+	PostAssetChangesProfiler: 4.636ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.414ms
+	PersistCurrentRevisions: 0.249ms
+	GenerateScriptTypeHashes: 3.142ms
+	GenerateScriptTypeSerializationHashes: 5.204ms
+	Untracked: 690.738ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.259 ms
+	Integration:            450.380 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       39.862 ms
+	Total Operation Time:   490.503 ms
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at C:/Users/minwo/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.011s, timestamps: [12.654 - 12.666]
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+CHECK_PASS: destroyed-cache regression safe: WindRushDash
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:78)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: destroyed-cache regression safe: DarkSnipeSkill
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:78)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: target destroyed during delayed aim is safe
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:86)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+Experience drop manager is missing or not configured. Experience was not awarded.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+ExperienceDropManager:Spawn (UnityEngine.Vector2,int) (at Assets/Scripts/ExperienceDropManager.cs:124)
+EnemyHealth:TakeDamage (int) (at Assets/Scripts/EnemyHealth.cs:37)
+JobTierUtil:Hit (EnemyHealth,int) (at Assets/Scripts/ThirdJob/ArcherBranch.cs:63)
+DarkSnipeSkill/<Snipe>d__9:MoveNext () (at Assets/Scripts/ThirdJob/Shadow/DarkSnipeSkill.cs:60)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:91)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/ExperienceDropManager.cs Line: 124)
+
+CHECK_PASS: skip dead/inactive targets while damaging live target
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:92)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+Experience drop manager is missing or not configured. Experience was not awarded.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+ExperienceDropManager:Spawn (UnityEngine.Vector2,int) (at Assets/Scripts/ExperienceDropManager.cs:124)
+EnemyHealth:TakeDamage (int) (at Assets/Scripts/EnemyHealth.cs:37)
+FeatherDashSkill:LateUpdate () (at Assets/Scripts/SecondJob/FeatherDashSkill.cs:36)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+EnemyLifetimeCheck:Call (object,string,object[]) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:57)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:97)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/ExperienceDropManager.cs Line: 124)
+
+Experience drop manager is missing or not configured. Experience was not awarded.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+ExperienceDropManager:Spawn (UnityEngine.Vector2,int) (at Assets/Scripts/ExperienceDropManager.cs:124)
+EnemyHealth:TakeDamage (int) (at Assets/Scripts/EnemyHealth.cs:37)
+FeatherDashSkill:LateUpdate () (at Assets/Scripts/SecondJob/FeatherDashSkill.cs:36)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+EnemyLifetimeCheck:Call (object,string,object[]) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:57)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:97)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/ExperienceDropManager.cs Line: 124)
+
+CHECK_PASS: feather dash kills multiple targets and keeps hit effects safe
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck:Skills (bool) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:98)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:105)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+Unloading 327 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.538800 ms
+Loaded scene 'Assets/Scenes/GameCreateProject.unity'
+	Deserialize:            176.827 ms
+	Integration:            84.090 ms
+	Integration of assets:  144.221 ms
+	Thread Wait Time:       73.325 ms
+	Total Operation Time:   478.463 ms
+Unloading 10736 unused Assets / (3.2 MB). Loaded Objects now: 17515.
+Memory consumption went from 0.84 GB to 0.84 GB.
+Total: 28.907900 ms (FindLiveObjects: 1.186100 ms CreateObjectMapping: 0.616700 ms MarkObjects: 25.152000 ms  DeleteObjects: 1.589400 ms)
+
+CHECK_PASS: normal spawns and health bars enabled
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:112)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: augment system exists
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:113)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: five-minute warning and natural boss spawn
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:117)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: live-scene pattern with concurrent mob deaths: Charge
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:138)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: live-scene pattern with concurrent mob deaths: Slam
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:138)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: live-scene pattern with concurrent mob deaths: Volley
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:138)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: distant enemy cleanup with health bars active
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:145)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: boss death and kill registration
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:150)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: experience reward
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:151)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: augments disabled without queued reward
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:153)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: reward panel remains hidden
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:154)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: boss proxy and attack effects removed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:155)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: boss defeat does not pause combat
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:156)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: ten seconds of combat without augment offer
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:158)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.718100 ms
+Loaded scene 'Assets/Scenes/GameCreateProject.unity'
+	Deserialize:            10.348 ms
+	Integration:            22.694 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.393 ms
+	Total Operation Time:   33.435 ms
+Unloading 37 unused Assets / (0.5 MB). Loaded Objects now: 15636.
+Memory consumption went from 0.85 GB to 0.85 GB.
+Total: 25.217700 ms (FindLiveObjects: 0.713500 ms CreateObjectMapping: 0.236600 ms MarkObjects: 23.719400 ms  DeleteObjects: 0.204100 ms)
+
+CHECK_PASS: scene restart resets session
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:161)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+CHECK_PASS: restart has no stale boss references
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Check (bool,string) (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:58)
+EnemyLifetimeCheck/<Verify>d__16:MoveNext () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:162)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 58)
+
+ENEMY_LIFETIME_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EnemyLifetimeCheck:Tick () (at Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs:50)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/EnemyLifetimeCheck.cs Line: 50)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.239 ms
+	Integration:            12.568 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.057 ms
+	Total Operation Time:   12.865 ms
+Unloading 481 unused Assets / (49.9 MB). Loaded Objects now: 14016.
+Memory consumption went from 0.84 GB to 0.80 GB.
+Total: 25.024800 ms (FindLiveObjects: 0.619400 ms CreateObjectMapping: 0.249000 ms MarkObjects: 23.268700 ms  DeleteObjects: 0.555300 ms)
+
+MonoPathRemapper: Attempts to remap: 31988; Successful remaps: 20
+Serialized file version minimum: 23, current 23
+Importing 'GUID: 00000000000000009000000000000000 - Path: ProjectSettings/QualitySettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000009000000000000000' -> (Import Result ID: 'ad6ca2034549a8dd6f88c2e2fb528c97') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=2a108b3da874f726c62fbe5f12be4a8a DependenciesID=1aedbe56ae62f321fe459982db2fa012 StaticDependenciesID=e9a43e809c5953780a851aff477bfce8 
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: '0342beff4377b789433a20d840e51224') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=3242fba7d565759946ccdde13ea946d9 StaticDependenciesID=9bd43eb23a26ba5da146d085cc95f8b1 
+Refreshing native plugins compatible for Editor in 2.46 ms, found 6 plugins.
+Asset Pipeline Refresh (id=dc0b0d77e90f10c42bccec8fa9e6102e): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-minwo-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-minwo channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1795153934259,"processId":7740,"allocatedMemory":25412755,"memoryLabels":[{"Default":4390274},{"Permanent":15516},{"NewDelete":71439},{"Thread":4200616},{"Manager":827837},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":852624},{"Material":68},{"GfxDevice":59640},{"Animation":952},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":33664},{"Input":42840},{"JobScheduler":256},{"TextLib":7414},{"Mono":48},{"MonoCode":128},{"ScriptingNativeRuntime":1368416},{"BaseObject":70016},{"Resource":1252},{"Renderer":2376},{"Transform":4685},{"File":7397},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":523735},{"StaticString":3808},{"Utility":2675894},{"Curl":2579},{"PoolAlloc":2984},{"AI":80},{"TypeTree":14869},{"ScriptManager":18984},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7152},{"WebRequest":8571},{"VR":49650},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"Camera":729},{"Secure":2377},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":768},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":230},{"EditorUtility":126833},{"VersionControl":8},{"Undo":931},{"AssetDatabase":9548177},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":40465},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9778},{"CoreBusinessMetrics":3600},{"Windowing":456},{"Licensing":12757},{"AssetReference":32},{"IPCStream":32}]}

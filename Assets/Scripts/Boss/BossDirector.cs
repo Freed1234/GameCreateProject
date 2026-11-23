@@ -28,6 +28,7 @@ public class BossDirector : MonoBehaviour
         public Color color = new Color(0.55f, 0.1f, 0.12f);
         [Tooltip("보스 이미지. 비워두면 임시 원")]
         public Sprite sprite;
+        public bool goldenCarapace;
         [Min(0)] public int contactDamage = 1;
         [Min(0)] public int attackDamage = 2;
         [Tooltip("공격 사이 간격 (초)")]
@@ -45,9 +46,10 @@ public class BossDirector : MonoBehaviour
     {
         new BossTier
         {
-            displayName = "숲의 파수꾼", spawnTime = 300f, maxHealth = 250, moveSpeed = 1.6f, scale = 2f,
+            displayName = "황금갑각 돌격대장", spawnTime = 300f, maxHealth = 250, moveSpeed = 1.6f, scale = 1f,
+            goldenCarapace = true, contactDamage = 0,
             color = new Color(0.45f, 0.3f, 0.15f), attackInterval = 3f, phases = 1, expReward = 10,
-            patterns = new[] { BossController.Pattern.Slam, BossController.Pattern.Charge }
+            patterns = new[] { BossController.Pattern.Charge, BossController.Pattern.Slam, BossController.Pattern.Radial }
         },
         new BossTier
         {
@@ -65,7 +67,9 @@ public class BossDirector : MonoBehaviour
     };
 
     [SerializeField, Min(0f)] private float warningSeconds = 3f;
-    [SerializeField] private bool offerAugmentOnKill = true;
+    [SerializeField] private bool offerAugmentOnKill = false;
+    [SerializeField] private Sprite groundShadowSprite;
+    [SerializeField] private Material groundShadowMaterial;
     [Tooltip("마지막 보스(15분)를 쓰러뜨리면 게임 클리어 (GameClear가 화면 표시)")]
     [SerializeField] private bool lastBossEndsGame = true;
 
@@ -114,7 +118,7 @@ public class BossDirector : MonoBehaviour
     private void Update()
     {
         GameSession session = GameSession.Instance;
-        if (session != null && !session.IsGameOver && !spawning
+        if (session != null && !session.IsGameOver && Time.timeScale > 0f && !spawning && (boss == null || boss.IsDead)
             && nextTier < tiers.Length && session.SurvivalTime >= tiers[nextTier].spawnTime)
         {
             StartCoroutine(SpawnRoutine(nextTier));
@@ -153,6 +157,7 @@ public class BossDirector : MonoBehaviour
         showIncoming = true;
         ShowBanner("WARNING", $"{tier.displayName} 이(가) {BossUtil.CompassName(incomingDirection)}에서 다가옵니다", warningSeconds + 1f);
         yield return new WaitForSeconds(warningSeconds);
+        if (player == null || player.IsDead) { spawning = false; showIncoming = false; yield break; }
 
         // 카메라 바로 바깥, 정해진 방향에 생성
         if (player != null) center = player.transform.position;
@@ -161,6 +166,26 @@ public class BossDirector : MonoBehaviour
             ? Mathf.Max(cam.orthographicSize * cam.aspect, cam.orthographicSize) + tier.scale + 1f
             : 12f;
         Vector2 position = center + incomingDirection * distance;
+        if (tier.goldenCarapace)
+        {
+            // Search loaded, obstacle-free ground; retry rather than spawn inside a tree.
+            bool found = false;
+            while (!found && player != null && !player.IsDead)
+            {
+                center = player.transform.position;
+                for (int i = 0; i < 32; i++)
+                {
+                    Vector2 direction = SkillUtil.Rotate(incomingDirection, (i % 8) * 45);
+                    Vector2 candidate = center + direction * (distance - (i / 8) * 2f);
+                    var navigation = EnemyFlowField.Instance;
+                    if (navigation == null || !navigation.Ready || !navigation.Contains(candidate)) continue;
+                    if (SkillUtil.HitsObstacle(candidate, .8f, SkillUtil.ObstacleMask)) continue;
+                    position = candidate; found = true; break;
+                }
+                if (!found) yield return new WaitForSeconds(.5f);
+            }
+            if (!found) { spawning = false; showIncoming = false; yield break; }
+        }
 
         Transform container = SkillUtil.EnemyContainer(null);
         int layer = 0;
@@ -172,7 +197,7 @@ public class BossDirector : MonoBehaviour
         obj.transform.position = position;
 
         boss = obj.AddComponent<BossController>();
-        boss.Init(tier, tier.sprite, layer, container);
+        boss.Init(tier, tier.sprite, layer, container, groundShadowSprite, groundShadowMaterial);
         boss.SkillAnnounced += name => ShowCallout($"【 {name} 】");
         boss.PhaseChanged += (phase, title) =>
         {

@@ -1,0 +1,108 @@
+{
+  "selected": {
+    "Z": "Z-A",
+    "X": "X-B"
+  },
+  "motion_sha256": {
+    "C": "ce758d0d84e3523d44b8ead4ed995132ee44cd3525b48da911c007b7efdb7b0c",
+    "Shift": "9b5f90c662a4d6e5dddc7e972261869009f3d2710bd35bdac6de2913887ecf60"
+  },
+  "gifs": {
+    "C-compare.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        1200,
+        560
+      ]
+    },
+    "C-R1.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "C-R2.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "C-R3.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "C-R4.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "C-R5.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "Shift-compare.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        1200,
+        560
+      ]
+    },
+    "Shift-R1.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "Shift-R2.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "Shift-R3.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "Shift-R4.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    },
+    "Shift-R5.gif": {
+      "frames": 130,
+      "duration_ms": 6500,
+      "size": [
+        800,
+        560
+      ]
+    }
+  }
+}

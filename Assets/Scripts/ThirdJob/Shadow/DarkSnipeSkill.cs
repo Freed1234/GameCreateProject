@@ -47,7 +47,9 @@ public class DarkSnipeSkill : ThirdJobSkill
 
         foreach (EnemyHealth enemy in SkillUtil.Enemies(Enemies))
         {
-            Vector2 v = (Vector2)enemy.transform.position - from;
+            if (enemy == null || !enemy.isActiveAndEnabled || enemy.IsDead) continue;
+            Vector2 position = enemy.transform.position;
+            Vector2 v = position - from;
             float along = Vector2.Dot(v, dir);
             float side = Mathf.Abs(v.x * dir.y - v.y * dir.x);
             if (along < 0f || along > beamLength || side > beamWidth * 0.5f + SkillUtil.EnemyRadius)
@@ -56,7 +58,7 @@ public class DarkSnipeSkill : ThirdJobSkill
             int dmg = Dmg(damage, enemy);
             if (marked) { dmg = Mathf.RoundToInt(dmg * markedMultiplier); ShadowMark.Consume(enemy); }
             JobTierUtil.Hit(enemy, dmg);
-            SkillFx.Burst(enemy.transform.position, 0.3f, 1.3f, marked ? new Color(1f, 0.5f, 0.85f) : JobTierUtil.ShadowColor, 0.25f, true);
+            SkillFx.Burst(position, 0.3f, 1.3f, marked ? new Color(1f, 0.5f, 0.85f) : JobTierUtil.ShadowColor, 0.25f, true);
         }
     }
 }

@@ -16,6 +16,17 @@ public sealed class CharacterGroundShadow : MonoBehaviour
     [SerializeField, Min(1)] private int orderBehindCharacter = 3;
     private SpriteRenderer shadow;
 
+    public void Configure(SpriteRenderer target, Sprite sprite, Material material, Vector2 offset, float sizeX, float sizeY)
+    {
+        targetRenderer = target;
+        shadowSprite = sprite;
+        shadowMaterial = material;
+        footOffset = offset;
+        width = sizeX;
+        height = sizeY;
+        Refresh();
+    }
+
     private void Start()
     {
         if (targetRenderer == null) targetRenderer = GetComponent<SpriteRenderer>();

@@ -205,6 +205,11 @@ public class SkillSlotUI : MonoBehaviour
 
         if (icon != null)
         {
+            if (skillSource is StackDashUIAdapter)
+            {
+                bool second = SecondJobSystem.Instance != null && SecondJobSystem.Instance.HasAdvanced;
+                icon.sprite = second ? SecondArcherFx.DashIcon : defaultIcon;
+            }
             icon.enabled = usable && icon.sprite != null;
             icon.color = cooling ? Color.black : usable ? Color.white : new Color(1f, 1f, 1f, 0.35f);
         }

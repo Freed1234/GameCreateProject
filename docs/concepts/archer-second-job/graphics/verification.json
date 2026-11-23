@@ -1,0 +1,137 @@
+{
+  "note": "Shared motion snapshots for every graphic variant; not Unity footage.",
+  "motion": {
+    "Z": "12fab03ad374de870b7773846be0136ee37733db916cb826567a3cdad239cce3",
+    "X": "5002b2c7a38a73d19409b0c0fe7e24268ceb0081990e1794e9ef09782aa0b784",
+    "C": "ce758d0d84e3523d44b8ead4ed995132ee44cd3525b48da911c007b7efdb7b0c",
+    "Shift": "9b5f90c662a4d6e5dddc7e972261869009f3d2710bd35bdac6de2913887ecf60"
+  },
+  "C-A.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "C-B.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "C-C.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "C-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "Shift-A.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Shift-B.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Shift-C.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Shift-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "X-A.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "X-B.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "X-C.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "X-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  },
+  "Z-A.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Z-B.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Z-C.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      800,
+      560
+    ]
+  },
+  "Z-compare.gif": {
+    "frames": 130,
+    "duration_ms": 6500,
+    "size": [
+      1200,
+      280
+    ]
+  }
+}

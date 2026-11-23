@@ -36,10 +36,12 @@ public class WindRushDash : ThirdJobSkill
         {
             foreach (EnemyHealth e in SkillUtil.Enemies(Enemies))
             {
+                if (e == null || !e.isActiveAndEnabled || e.IsDead) continue;
                 if (hit.Contains(e) || Vector2.Distance(to, e.transform.position) > hitRadius) continue;
+                Vector2 position = e.transform.position;
                 hit.Add(e);
                 JobTierUtil.Hit(e, Dmg(damage));
-                float s = Vector2.Dot((Vector2)e.transform.position - to, side) >= 0f ? 1f : -1f;
+                float s = Vector2.Dot(position - to, side) >= 0f ? 1f : -1f;
                 JobTierUtil.Knockback(e, side * s * knockback);
             }
         });

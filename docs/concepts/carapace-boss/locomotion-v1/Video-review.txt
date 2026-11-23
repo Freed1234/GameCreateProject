@@ -1,0 +1,733 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 12816)
+VBCSCompiler prewarm took 4.27 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.2f1 (770e33f6875c) revision 7802419'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-minwo" at "2026-11-20T05:53:25.4604339Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'ko' Physical Memory: 32397 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-20T05:53:25Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9364, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              0eb6a10c0d3e489184e6b7ec85fc5d0c
+  Correlation Id:          2ac34118965dada8af71e2fc3e691354
+  External correlation Id: 1207538756329091080
+  Machine Id:              X7qNodpFchZxCYLNODCfFCimSAo=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-minwo" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-minwo-notifications" at "2026-11-20T05:53:25.4826894Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569721435963-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.03s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.2f1\Editor\Unity.exe
+-batchmode
+-projectPath
+C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117
+-executeMethod
+CarapaceNaturalVideoReview.Motion
+-logFile
+C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\CarapaceNaturalVideoReview-MotionFinal.log
+Successfully changed project path to: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117
+C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [39548]  Target information:
+
+Player connection [39548]  * "[IP] 100.65.112.6 [Port] 55506 [Flags] 2 [Guid] 3765710107 [EditorId] 3765710107 [Version] 1048832 [Id] WindowsEditor(7,團辦) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [39548]  * "[IP] 172.22.238.31 [Port] 55506 [Flags] 2 [Guid] 3765710107 [EditorId] 3765710107 [Version] 1048832 [Id] WindowsEditor(7,團辦) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [39548] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [39548] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-7100" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.6.2f1 (770e33f6875c)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5070 Laptop GPU (ID=0x2d58)
+    Vendor:          NVIDIA
+    VRAM:            7891 MB
+    App VRAM Budget: 7123 MB
+    Driver:          32.0.16.2124
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001254 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.589 seconds
+Domain Reload Profiling: 1022ms
+	BeginReloadAssembly (108ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (3ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (254ms)
+		LoadAssemblies (95ms)
+		TypeCache.Refresh (172ms)
+			TypeCache.ScanAssembly (160ms)
+		AnalyzeDomain (0ms)
+	FinalizeReload (590ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (187ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 78 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@16.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.animation@899988b542b9)
+    com.unity.2d.aseprite@6.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.aseprite@ab909e3e9b5f)
+    com.unity.2d.psdimporter@15.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.psdimporter@e02a9153d8d9)
+    com.unity.2d.spriteshape@16.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.spriteshape@42798c9d35d3)
+    com.unity.2d.tilemap.extras@9.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.tilemap.extras@9446f3c60919)
+    com.unity.2d.tooling@4.0.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.tooling@4e93af4036ee)
+    com.unity.ai.assistant@2.19.0-pre.2 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ai.assistant@8d1e3e89e3a7)
+    com.unity.ai.inference@2.6.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ai.inference@9a123aee5df7)
+    com.unity.collab-proxy@2.13.6 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.learn.iet-framework@6.0.7 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.learn.iet-framework@96330db47073)
+    com.unity.services.cloud-build@2.1.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.services.cloud-build@a5d06c741c51)
+    com.unity.visualscripting@1.9.12 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.visualscripting@4edfcc09512f)
+    com.unity.services.core@1.18.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.services.core@3464cb68d709)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.settings-manager@2.1.1 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.settings-manager@0b8638c5ce86)
+    com.unity.dt.app-ui@2.1.11 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.dt.app-ui@cd5609b130ce)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.2d.common@15.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.common@b779c433ed47)
+    com.unity.searcher@4.9.5 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.sprite@947350d67f82)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.2d.tilemap@2c6966496615)
+    com.unity.render-pipelines.universal@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.render-pipelines.universal@1e1cf3dcbd40)
+    com.unity.test-framework@1.8.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.test-framework@7a3849e09bd0)
+    com.unity.timeline@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.timeline@c56d56b0070b)
+    com.unity.ugui@2.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ugui@0f30cee369f3)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.render-pipelines.core@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.render-pipelines.core@a14850be21a6)
+    com.unity.shadergraph@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.shadergraph@96a7923f6bed)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.editorcoroutines@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.editorcoroutines@8cd72baa102a)
+    com.unity.burst@2.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.mathematics@1.4.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.mathematics@8306a64d0cd6)
+    com.unity.graph-authoring@1.0.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.test-framework.performance@6.6.0 (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.unity.test-framework.performance@0a60b857a52e)
+  Git packages:
+    com.coplaydev.unity-mcp@https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main (location: C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\Library\PackageCache\com.coplaydev.unity-mcp@4384f8b518e8)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.accessibility/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.accessibility/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.adaptiveperformance/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.adaptiveperformance/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.ai/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.ai/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.androidjni/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.androidjni/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.animation/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.animation/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.assetbundle/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.assetbundle/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.audio/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.audio/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.cloth/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.cloth/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.director/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.director/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.hierarchycore/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.hierarchycore/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.particlesystem/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.particlesystem/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physicscore2d/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physicscore2d/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.subsystems/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.subsystems/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.terrain/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.terrain/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.terrainphysics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.terrainphysics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.tetgen/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.tetgen/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.tilemap/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.tilemap/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.timelinefoundation/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.timelinefoundation/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.ui/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.ui/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.uielements/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.uielements/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.umbra/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.umbra/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unityanalytics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unityanalytics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequest/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequest/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestassetbundle/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestassetbundle/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestaudio/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestaudio/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequesttexture/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequesttexture/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestwww/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestwww/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.vectorgraphics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.vectorgraphics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.vehicles/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.vehicles/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.video/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.video/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.wind/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.wind/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.xr/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.xr/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.shadergraph/Editor/Importers/_.sgsubgraphdb' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.shadergraph/Editor/Importers/_.sgsubgraphdb.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.shadergraph/Editor/Resources/Styles/MaterialGraph.uss' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.shadergraph/Editor/Resources/Styles/MaterialGraph.uss.meta because it's in an immutable folder.
+Refreshing native plugins compatible for Editor in 2.62 ms, found 6 plugins.
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.2f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s401ms
+[1572/2095  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.38 seconds), 1 items updated, 2095 evaluated
+AssetDatabase: script compilation time: 0.914609s
+Begin MonoManager ReloadAssembly
+Total cache size 268241424
+Total cache size after purge 268241424, took 00:00:00.2568054
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.37 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.51 ms, found 6 plugins.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.709 seconds
+Domain Reload Profiling: 2980ms
+	BeginReloadAssembly (254ms)
+		DisableScriptedObjects (68ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (915ms)
+		LoadAssemblies (400ms)
+		TypeCache.Refresh (325ms)
+			TypeCache.ScanAssembly (306ms)
+		AnalyzeDomain (115ms)
+			BuildScriptInfoCaches (107ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1709ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (917ms)
+			ProcessInitializeOnLoadMethodAttributes (412ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Starting new worker id: 0 with log in C:/Users/minwo/AppData/Local/Temp/SecondArcherCheck-20261117/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=f3ca5fe0e80a09e4088588ab859ba509): Total: 4.827 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2419 ms
+		Asset DB Callback time: managed=33 ms, native=13 ms
+		Scripting: domain reloads=1, domain reload time=1353 ms, compile time=916 ms, other=92 ms
+		Project Asset Count: scripts=2671, non-scripts=6921
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 14.426ms
+	ApplyChangesToAssetFolders: 0.555ms
+	Scan: 199.677ms
+	Collect global state as custom dependencies: 16.830ms
+	CategorizeScriptCompilationAssets: 60.192ms
+	ProcessAssetsWithTransientArtifactChanges: 103.444ms
+	CategorizeAssets: 82.792ms
+	CompileScripts: 916.443ms
+	ImportOutOfDateAssets: 1742.186ms (1722.122ms without children)
+		UnloadImportedAssets: 0.634ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.988ms
+		ImportSchedulerStart: 18.407ms
+	PostProcessAllAssets: 33.140ms
+		MonoPostProcessAllAssets: 33.088ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 14.352ms
+			SyncVS.PostprocessSyncProject 2.344ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.609ms
+			GraphRefreshPostprocessor.OnPostprocessAllAssets 1.495ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.187ms
+			AssetChangeDetector.OnPostprocessAllAssets 0.695ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.667ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.632ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.427ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.256ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.212ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.176ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.148ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.123ms
+	UnloadStreamsBegin: 1.121ms
+	PersistCurrentRevisions: 0.266ms
+	GenerateScriptTypeHashes: 1.669ms
+	GenerateScriptTypeSerializationHashes: 2.875ms
+	Untracked: 1602.929ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 0.783ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-ProtoType(ver 0.1)
+Unloading 197 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12129 unused Assets / (34.4 MB). Loaded Objects now: 12898.
+Memory consumption went from 0.59 GB to 0.56 GB.
+Total: 21.008300 ms (FindLiveObjects: 0.728800 ms CreateObjectMapping: 0.497500 ms MarkObjects: 14.015900 ms  DeleteObjects: 5.390100 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (183.5 KB). Loaded Objects now: 12900.
+Memory consumption went from 0.55 GB to 0.55 GB.
+Total: 13.587000 ms (FindLiveObjects: 0.503000 ms CreateObjectMapping: 0.193700 ms MarkObjects: 12.499500 ms  DeleteObjects: 0.042100 ms)
+
+[Project] Loading completed in 7.910 seconds
+	Project init time: 				7.242 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.231 seconds
+		Asset Database init time: 		0.209 seconds
+		Global illumination init time: 	0.002 seconds
+		Assemblies load time: 			1.057 seconds
+		Unity extensions init time: 	0.047 seconds
+		Asset Database refresh time: 	4.827 seconds
+	Scene opening time: 			0.304 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1795154013293,"processId":7100,"projectLoad":7.9099618,"projectInit":7.241918,"templateInit":0.0,"packageManagerInit":0.2311993,"assetDatabaseInit":0.2094121,"globalIlluminationInit":0.0018637,"assembliesLoad":1.0568575,"unityExtensionsInit":0.0471071,"assetDatabaseRefresh":4.8274449,"sceneOpening":0.3036661}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1795154013293,"processId":7100,"editorVersion":"6000.6.2f1 (770e33f6875c)","branch":"6000.6/staging","buildType":"Release","platform":"Windows"}
+SpriteAtlasPacking completed in 0.005762 sec
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.80 ms, found 6 plugins.
+Worker ready: AssetImportWorkerHW0 0
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.04 ms, found 6 plugins.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.474 seconds
+Domain Reload Profiling: 2094ms
+	BeginReloadAssembly (284ms)
+		DisableScriptedObjects (56ms)
+		CreateAndSetChildDomain (103ms)
+	RebuildCommonClasses (9ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (240ms)
+		LoadAssemblies (137ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (11ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1475ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (728ms)
+			ProcessInitializeOnLoadMethodAttributes (267ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (37ms)
+No restricted APIs configured; Validation skipped.
+Checking 34 assemblies for restricted APIs found 0 usage(s) in 2 ms
+Refreshing native plugins compatible for Editor in 2.55 ms, found 6 plugins.
+
+Asset Pipeline Refresh (id=560d23a357be21845adea4ba1edbfea3): Total: 4.270 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1866 ms
+		Asset DB Callback time: managed=1248 ms, native=475 ms
+		Scripting: domain reloads=1, domain reload time=677 ms, compile time=2 ms, other=0 ms
+		Project Asset Count: scripts=2671, non-scripts=6921
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 1.615ms
+	ApplyChangesToAssetFolders: 0.260ms
+	Collect global state as custom dependencies: 2.810ms
+	ProcessAssetsWithTransientArtifactChanges: 240.196ms
+	CategorizeAssets: 85.038ms
+	CompileScripts: 1.695ms
+	ImportOutOfDateAssets: 1488.088ms (1485.848ms without children)
+		CollectScriptTypesHashes: 1.151ms
+		ReloadNativeAssets: 0.788ms
+		UnloadImportedAssets: 0.141ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.993ms
+		ImportSchedulerStart: 0.292ms
+	PostProcessAllAssets: 1718.741ms
+		AssemblyValidation.PostprocessAllAssets 47.717ms
+		PostProcessCallbackCreateDeferredMaterials 46.499ms
+		ShaderAssetModifiedCallback 22.443ms
+		SpriteAtlasDatabase.OnAssetPostprocessCallback 20.008ms
+		ComputeShaderImportPostprocess 10.405ms
+		RaytracingShaderImportPostprocess 10.075ms
+		SpeedTreeImporter.PostprocessAllAssets 8.535ms
+		BlockShaderImporter.PostprocessAllAssets 4.599ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 4.539ms
+		XRBuildSystem.XRAssetImported 0.866ms
+		MonoPostProcessAllAssets: 1247.840ms
+			SyncVS.PostprocessSyncProject 295.673ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 239.353ms
+			AssetPostprocessor.OnPostprocessAllAssets 83.721ms
+			PostProcessor.OnPostprocessAllAssets 47.401ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 45.717ms
+			AssetReferenceReimportMonitor.OnPostprocessAllAssets 45.033ms
+			MaterialPostprocessor.OnPostprocessAllAssets 43.319ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 42.176ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 32.281ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 29.742ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 22.506ms
+			AssetChangedListener.OnPostprocessAllAssets 17.068ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 12.498ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 6.702ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 6.265ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.480ms
+			GraphRefreshPostprocessor.OnPostprocessAllAssets 1.664ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.523ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.160ms
+			AssetChangeDetector.OnPostprocessAllAssets 0.829ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.718ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.630ms
+			SkillsProjectAssetPostprocessor.OnPostprocessAllAssets 0.596ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.415ms
+			AssetProcessor.OnPostprocessAllAssets 0.402ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.374ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.354ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.332ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.320ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.306ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.288ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.281ms
+			ModelAssetProcessor.OnPostprocessAllAssets 0.278ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.260ms
+			AssetEvents.OnPostprocessAllAssets 0.256ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.217ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.199ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.195ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.175ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.163ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.131ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.118ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.118ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.088ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.087ms
+			TrackSelectedAssetsProcessor.OnPostprocessAllAssets 0.060ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.059ms
+	PostAssetChangesProfiler: 5.052ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.363ms
+	PersistCurrentRevisions: 0.268ms
+	GenerateScriptTypeHashes: 3.177ms
+	GenerateScriptTypeSerializationHashes: 5.200ms
+	Untracked: 706.125ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.266 ms
+	Integration:            451.274 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       28.397 ms
+	Total Operation Time:   479.939 ms
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Color primaries 0 is unknown or unsupported by WindowsMediaFoundation. Falling back to default may result in color shift. C:\Users\minwo\AppData\Local\Temp\SecondArcherCheck-20261117\CarapaceMotionCapture\CarapaceMotion.mp4
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at C:/Users/minwo/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.010s, timestamps: [12.730 - 12.740]
+[Licensing::Client] Successfully resolved entitlement details
+NATURAL_VIDEO_METADATA width=1280 height=720 fps=30 duration=24.9333324432373 frames=748
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:77)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 77)
+
+[Licensing::Client] Successfully resolved entitlement details
+NATURAL_VIDEO_REVIEW_FRAME Idle frame=30
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME WalkRight frame=145
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME WalkLeft frame=235
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME WalkDown frame=325
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME Blocked frame=420
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME Charge frame=465
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME Slam frame=570
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_FRAME Volley frame=670
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:84)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 84)
+
+NATURAL_VIDEO_REVIEW_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CarapaceNaturalVideoReview:Tick () (at Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs:85)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Scripts/Boss/Editor/CarapaceNaturalVideoReview.cs Line: 85)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.226 ms
+	Integration:            10.664 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   10.901 ms
+Unloading 10730 unused Assets / (2.8 MB). Loaded Objects now: 13065.
+Memory consumption went from 0.59 GB to 0.59 GB.
+Total: 27.521700 ms (FindLiveObjects: 1.044000 ms CreateObjectMapping: 0.582200 ms MarkObjects: 24.026800 ms  DeleteObjects: 1.506400 ms)
+
+MonoPathRemapper: Attempts to remap: 32000; Successful remaps: 20
+Serialized file version minimum: 23, current 23
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: '0342beff4377b789433a20d840e51224') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=3242fba7d565759946ccdde13ea946d9 StaticDependenciesID=9bd43eb23a26ba5da146d085cc95f8b1 
+Refreshing native plugins compatible for Editor in 2.57 ms, found 6 plugins.
+Asset Pipeline Refresh (id=773d1a15dc7e5a84e93442b2db9f568e): Total: 0.029 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-minwo-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-minwo channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1795154022735,"processId":7100,"allocatedMemory":24561260,"memoryLabels":[{"Default":4387138},{"Permanent":15516},{"NewDelete":71311},{"Thread":4205720},{"Manager":41149},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":852624},{"Material":68},{"GfxDevice":59136},{"Animation":952},{"Audio":896},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":16704},{"Input":42840},{"JobScheduler":256},{"TextLib":336},{"Mono":48},{"MonoCode":128},{"ScriptingNativeRuntime":1368416},{"BaseObject":49104},{"Resource":1252},{"Renderer":2376},{"Transform":4685},{"File":4416},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":488872},{"StaticString":3808},{"Utility":2675894},{"Curl":2696},{"PoolAlloc":2888},{"AI":80},{"TypeTree":14869},{"ScriptManager":18984},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7008},{"WebRequest":9055},{"VR":49650},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"Camera":729},{"Secure":2377},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":768},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":128},{"EditorUtility":126841},{"VersionControl":8},{"Undo":931},{"AssetDatabase":9548177},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":40465},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9778},{"CoreBusinessMetrics":3600},{"Windowing":456},{"Licensing":12757},{"AssetReference":32},{"IPCStream":32}]}

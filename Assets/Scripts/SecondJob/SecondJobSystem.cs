@@ -69,6 +69,9 @@ public class SecondJobSystem : MonoBehaviour
     public SecondJob Current => HasAdvanced ? jobs[ChosenIndex] : null;
     public event Action<SecondJob> Advanced;
 
+    public bool Replaces(MonoBehaviour skill) => isActiveAndEnabled && HasAdvanced
+        && Array.IndexOf(disableOnAdvance, skill) >= 0;
+
     // 3차 이상 전직 시스템이 켜는 값. 켜지면 2차 스킬을 다시 켜지 않습니다.
     public static bool SupersededByHigherJob;
 
@@ -103,7 +106,7 @@ public class SecondJobSystem : MonoBehaviour
         Instance = this;
         progression = GetComponent<PlayerProgression>();
         health = GetComponent<PlayerHealth>();
-        AutoFillLists();
+        SupersededByHigherJob = false;
 
         // 2차 스킬은 전직 전까지 꺼둡니다.
         foreach (SecondJob job in jobs)
@@ -168,7 +171,8 @@ public class SecondJobSystem : MonoBehaviour
     private void AutoFillLists()
     {
         if (disableOnAdvance == null || disableOnAdvance.Length == 0)
-            disableOnAdvance = GetComponentsInChildren<PiercingProjectileSkill>(true);
+            disableOnAdvance = new MonoBehaviour[] { GetComponent<ArcherVolleySkill>(),
+                GetComponent<ArrowRainSkill>(), GetComponent<CrystalArrowSkill>(), GetComponent<EvasiveShotSkill>() };
 
         if (jobs != null && jobs.Length > 0
             && (jobs[0].enableSkills == null || jobs[0].enableSkills.Length == 0))
@@ -176,7 +180,8 @@ public class SecondJobSystem : MonoBehaviour
             var found = new System.Collections.Generic.List<MonoBehaviour>();
             foreach (MonoBehaviour behaviour in GetComponentsInChildren<MonoBehaviour>(true))
             {
-                if (behaviour is ISecondJobSkill)
+                if (behaviour is StormBarrageSkill || behaviour is LeafVortexSkill
+                    || behaviour is CompressedWindSkill || behaviour is FeatherDashSkill)
                     found.Add(behaviour);
             }
             jobs[0].enableSkills = found.ToArray();

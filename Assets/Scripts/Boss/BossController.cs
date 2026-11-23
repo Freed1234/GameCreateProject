@@ -49,6 +49,7 @@ public class BossController : MonoBehaviour
     private bool busy;
     private Pattern lastPattern = (Pattern)(-1);
     private Coroutine attackRoutine;
+    private CarapaceCombat carapace;
 
     private EnemyHealth hitPoint;
     private readonly HashSet<SkillProjectile> served = new HashSet<SkillProjectile>();
@@ -57,16 +58,17 @@ public class BossController : MonoBehaviour
     private float TempoScale => 1f - 0.2f * (Phase - 1);
     private int AttackDamage => tier.attackDamage + (Phase >= 3 ? 1 : 0);
 
-    public void Init(BossDirector.BossTier config, Sprite sprite, int layer, Transform enemyContainer)
+    public void Init(BossDirector.BossTier config, Sprite sprite, int layer, Transform enemyContainer,
+        Sprite groundShadowSprite = null, Material groundShadowMaterial = null)
     {
         tier = config;
         DisplayName = config.displayName;
         MaxHp = Mathf.Max(1, config.maxHealth);
         CurrentHp = MaxHp;
         PhaseCount = Mathf.Max(1, config.phases);
-        HitRadius = 0.5f * config.scale;
+        HitRadius = config.goldenCarapace ? CarapaceGeometry.ChargeRadius : 0.5f * config.scale;
         gameObject.layer = layer;
-        transform.localScale = Vector3.one * config.scale;
+        transform.localScale = Vector3.one * (config.goldenCarapace ? 1f : config.scale);
 
         body = gameObject.AddComponent<SpriteRenderer>();
         body.sprite = sprite != null ? sprite : SkillUtil.CircleSprite();
@@ -77,7 +79,16 @@ public class BossController : MonoBehaviour
         Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
         CircleCollider2D col = gameObject.AddComponent<CircleCollider2D>();
-        col.radius = 0.5f;
+        col.radius = config.goldenCarapace ? HitRadius : 0.5f;
+        if (config.goldenCarapace)
+        {
+            carapace = gameObject.AddComponent<CarapaceCombat>();
+            carapace.Initialize(this, body);
+            gameObject.AddComponent<CarapaceLocomotion>().Initialize(this, carapace, body);
+            if (groundShadowSprite != null && groundShadowMaterial != null)
+                gameObject.AddComponent<CharacterGroundShadow>().Configure(body, groundShadowSprite,
+                    groundShadowMaterial, Vector2.zero, 2.2f, .65f);
+        }
 
         health = gameObject.AddComponent<EnemyHealth>();
         BossUtil.SetHp(health, Guard, Guard);
@@ -110,14 +121,14 @@ public class BossController : MonoBehaviour
         if (player != null && !player.IsDead)
         {
             // 몸통 접촉 피해
-            if (Vector2.Distance(transform.position, player.transform.position) <= HitRadius + 0.3f)
+            if (carapace == null && Vector2.Distance(transform.position, player.transform.position) <= HitRadius + 0.3f)
                 BossUtil.DamagePlayer(player, tier.contactDamage);
 
             if (!busy && !IsTransitioning)
             {
                 ChasePlayer();
                 attackTimer -= Time.deltaTime;
-                if (attackTimer <= 0f)
+                if (attackTimer <= 0f && Time.timeScale > 0f && (carapace == null || Vector2.Distance(transform.position, player.transform.position) <= CarapaceGeometry.ShardRange))
                     attackRoutine = StartCoroutine(Attack());
             }
         }
@@ -125,6 +136,7 @@ public class BossController : MonoBehaviour
 
     private void ChasePlayer()
     {
+        if (carapace != null) { carapace.Chase(player, tier.moveSpeed); return; }
         Vector2 to = (Vector2)player.transform.position - (Vector2)transform.position;
         if (to.magnitude <= HitRadius + 0.6f)
             return;
@@ -200,6 +212,19 @@ public class BossController : MonoBehaviour
             Destroy(hitPoint.gameObject);
     }
 
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        busy = false;
+        if (carapace != null) carapace.Cancel();
+        if (hitPoint != null) hitPoint.gameObject.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        if (hitPoint != null && !IsDead) hitPoint.gameObject.SetActive(true);
+    }
+
     private void StartPhaseTransition()
     {
         if (attackRoutine != null) StopCoroutine(attackRoutine);
@@ -235,6 +260,8 @@ public class BossController : MonoBehaviour
         if (IsDead) return;
         IsDead = true;
         StopAllCoroutines();
+        if (carapace != null) carapace.Cancel();
+        if (hitPoint != null) hitPoint.gameObject.SetActive(false);
 
         SkillFx.Burst(transform.position, HitRadius, HitRadius * 8f, new Color(1f, 0.85f, 0.4f, 0.8f), 0.8f);
         SkillFx.Burst(transform.position, HitRadius, HitRadius * 10f, new Color(1f, 1f, 1f, 0.9f), 0.6f, true);
@@ -254,6 +281,15 @@ public class BossController : MonoBehaviour
         busy = true;
         Pattern pattern = ChoosePattern();
         lastPattern = pattern;
+
+        if (carapace != null)
+        {
+            SkillAnnounced?.Invoke(pattern == Pattern.Charge ? "뿔 돌진" : pattern == Pattern.Slam ? "양 주먹 강타" : "등가시 방출");
+            yield return carapace.Attack(pattern, player, AttackDamage);
+            attackTimer = tier.attackInterval;
+            busy = false;
+            yield break;
+        }
 
         switch (pattern)
         {
